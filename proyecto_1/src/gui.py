@@ -1,4 +1,4 @@
-from email.mime import image
+from asyncio.windows_events import NULL
 from os import getcwd
 import sys
 from PyQt5 import uic, QtGui
@@ -18,6 +18,7 @@ class Ui_MainWindow(QMainWindow):
         uic.loadUi("gui.ui", self)
         self.abrirBtn.clicked.connect(self.cargarImagen)
         self.cancelarBtn.clicked.connect(self.labelImgOrigin.clear)
+        self.startBtn.clicked.connect(self.startProcess)
         self.actionOpen.triggered.connect(self.cargarImagen)
         self.actionExit.triggered.connect(self.salir)
 
@@ -33,39 +34,81 @@ class Ui_MainWindow(QMainWindow):
         file1.write(matrix)
         file1.close() 
         self.setPhoto(self.image)
-        pixmap = QPixmap(self.labelImgOrigin.size())
-        qp = QPainter(pixmap)
-        pen = QPen(Qt.red, 3)
-        qp.setPen(pen)
-        qp.drawLine(10, 10, 50, 50)
-        qp.end()
-        #self.labelImgOrigin.setPixmap(pixmap)
 
     def setPhoto(self, image):
         image = imutils.resize(image, width=390, height=390)
         frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
         self.labelImgOrigin.setPixmap(QtGui.QPixmap.fromImage(image))
-        self.divImage()
+    
+    def startProcess(self):
+        quadrant = int(self.comboBox.currentText())
+
+        if quadrant == 1:  # Row 1
+            print('0, 0')
+            self.divImage(0, 0)
+        elif quadrant == 2:
+            print('0, 1')
+            self.divImage(0, 1)
+        elif quadrant == 3:
+            print('0, 2')
+            self.divImage(0, 2)
+        elif quadrant == 4:
+            print('0, 3')
+            self.divImage(0, 3)
+        elif quadrant == 5: # Row 2
+            print('1, 0')
+            self.divImage(1, 0)
+        elif quadrant == 6:
+            print('1, 1')
+            self.divImage(1, 1)
+        elif quadrant == 7:
+            print('1, 2')
+            self.divImage(1, 2)
+        elif quadrant == 8:
+            print('1, 3')
+            self.divImage(1, 3)
+        elif quadrant == 9: # Row 3
+            print('2, 0')
+            self.divImage(2, 0)
+        elif quadrant == 10:
+            print('2, 1')
+            self.divImage(2, 1)
+        elif quadrant == 11:
+            print('2, 2')
+            self.divImage(2, 2)
+        elif quadrant == 12:
+            print('2, 3')
+            self.divImage(2, 3)
+        elif quadrant == 13: # Row 4
+            print('3, 0')
+            self.divImage(3, 0)
+        elif quadrant == 14:
+            print('3, 1')
+            self.divImage(3, 1)
+        elif quadrant == 15:
+            print('3, 2')
+            self.divImage(3, 2)
+        elif quadrant == 16:
+            print('3, 3')
+            self.divImage(3, 3)
 
     def salir(self):
         sys.exit()
 
-    def divImage(self):
+    # https://answers.opencv.org/question/173852/how-to-split-image-into-small-blocks-process-on-them-and-then-join-all-the-blocks-together-again/
+    def divImage(self, row, col):
         img = self.image
   
         # cv2.imread() -> takes an image as an input
-        h, w, channels = img.shape
+        h, w, _ = img.shape
 
         if not os.path.exists('patches'):
             os.makedirs('patches')
+        
+        roi = img[row*h//4:row*h//4 + h//4 ,col*w//4:col*w//4 + w//4]
 
-        for i in range(0, 4):
-            for j in range(0, 4):
-                roi = img[i*h//4:i*h//4 + h//4 ,j*w//4:j*w//4 + w//4]
-                #cv2.imshow('rois'+str(i)+str(j), roi)
-                cv2.imwrite('patches/patch_'+str(i)+str(j)+".jpg", roi)
-                
+        cv2.imwrite('patches/patch_'+str(row)+str(col)+".jpg", roi)   
 
         cv2.waitKey(0)
 
