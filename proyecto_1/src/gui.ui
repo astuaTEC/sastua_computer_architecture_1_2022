@@ -249,7 +249,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -279,7 +280,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -309,7 +311,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -339,7 +342,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -369,7 +373,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -399,7 +404,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -429,7 +435,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -459,7 +466,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -489,7 +497,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -520,7 +529,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -550,7 +560,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -580,7 +591,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -610,7 +622,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -640,7 +653,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -670,7 +684,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -700,7 +715,8 @@ padding: 4px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: transparent;</string>
+     <string notr="true">background-color: transparent;
+color: orange;</string>
     </property>
     <property name="lineWidth">
      <number>1</number>

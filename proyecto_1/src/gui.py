@@ -123,9 +123,10 @@ class Ui_MainWindow(QMainWindow):
         open('image.txt', 'w').close() # clear the file
         file = open("image.txt", "a")
         for i in range (img.shape[0]): #traverses through height of the image
+            if i != 0 : file.write("\n")
             for j in range (img.shape[1]): #traverses through width of the image
                 newArray.append(img[i][j])
-                file.write(str(img[i][j]) + " ")
+                file.write(str(img[i][j]) + ", ")
         
 
 if __name__ == "__main__":
