@@ -20,13 +20,17 @@ class Ui_MainWindow(QMainWindow):
         super().__init__()
         uic.loadUi("gui.ui", self)
         self.abrirBtn.clicked.connect(self.cargarImagen)
-        self.limpiarBtn.clicked.connect(self.labelImgOrigin.clear)
+        self.limpiarBtn.clicked.connect(self.limpiar)
         self.startBtn.clicked.connect(self.startProcess)
         self.actionOpen.triggered.connect(self.cargarImagen)
         self.actionExit.triggered.connect(self.salir)
 
     def salir(self):
         sys.exit()
+    
+    def limpiar(self):
+        self.labelImgOrigin.clear
+        self.image = np.ndarray(shape=(0, 0))
 
     def cargarImagen(self):
         filename, _ = QFileDialog.getOpenFileName(self, "Seleccionar imagen",
@@ -36,6 +40,7 @@ class Ui_MainWindow(QMainWindow):
         if self.image.shape != (390, 390):
             error_dialog = QErrorMessage(self)
             error_dialog.showMessage('Por favor seleccione una imagen 390x390')
+            self.image = np.ndarray(shape=(0, 0))
         else:
             self.setPhoto(self.image)
 
