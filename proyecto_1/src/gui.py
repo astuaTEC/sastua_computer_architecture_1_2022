@@ -133,7 +133,10 @@ class Ui_MainWindow(QMainWindow):
             if i != 0 : file.write("\n")
             for j in range (img.shape[1]): #traverses through width of the image
                 newArray.append(img[i][j])
-                file.write(str(img[i][j]) + ", ")
+                if j == img.shape[1] - 1:
+                    file.write(str(img[i][j]))
+                else:
+                    file.write(str(img[i][j]) + ", ")
 
         file.close()
 

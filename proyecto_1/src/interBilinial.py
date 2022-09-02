@@ -10,7 +10,6 @@ def interpolacionBilineal():
     for line in completeArray:
         arr = line.strip().split(', ')
         for ele in arr:
-            ele = ele.split(',')[0]
             array.append(int(ele))
         matrix.append(array)
         array = []
