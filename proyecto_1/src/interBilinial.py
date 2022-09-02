@@ -1,4 +1,3 @@
-from cgi import print_arguments
 import numpy as np
 from PIL import Image as im
 
@@ -34,6 +33,7 @@ def bilinearInterpolation(matrixIn, widthIn, heightIn, arrayOut):
     for row1 in range(heightIn - 1): # filas
         for col1 in range(widthIn - 1): #columnas
 
+            # Vertices de la submatriz 2x2
             v1 = matrixIn[row1][col1]
             v2 = matrixIn[row1][col1+1]
             v3 = matrixIn[row1+1][col1]
@@ -41,7 +41,7 @@ def bilinearInterpolation(matrixIn, widthIn, heightIn, arrayOut):
 
             a = int( 2/3*v1 + 1/3*v2 )
             b = int( 1/3*v1 + 2/3*v2 )
-            c = int( 2/3*v1 + 1/3*v3)
+            c = int( 2/3*v1 + 1/3*v3 )
             g = int( 1/3*v1 + 2/3*v3 )
             k = int( 2/3*v3 + 1/3*v4 )
             l = int( 1/3*v3 + 2/3*v4 )
@@ -56,8 +56,11 @@ def bilinearInterpolation(matrixIn, widthIn, heightIn, arrayOut):
             row2 = row1*3
             col2 = col1*3
 
+            arrayOut[row2][col2] = v1
             arrayOut[row2][col2+1] = a
             arrayOut[row2][col2+2] = b
+            arrayOut[row2][col2+3] = v2
+
             arrayOut[row2+1][col2] = c
             arrayOut[row2+1][col2+1] = d
             arrayOut[row2+1][col2+2] = e
@@ -66,8 +69,11 @@ def bilinearInterpolation(matrixIn, widthIn, heightIn, arrayOut):
             arrayOut[row2+2][col2+1] = h
             arrayOut[row2+2][col2+2] = i
             arrayOut[row2+2][col2+3] = j
+
+            arrayOut[row2+3][col2] = v3
             arrayOut[row2+3][col2+1] = k
             arrayOut[row2+3][col2+2] = l
+            arrayOut[row2+3][col2+3] = v4
 
     return arrayOut
 
