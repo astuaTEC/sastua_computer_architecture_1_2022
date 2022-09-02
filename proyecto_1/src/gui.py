@@ -12,6 +12,7 @@ from PyQt5.QtGui import QImage
 from PyQt5.QtWidgets import (QApplication, QErrorMessage, QFileDialog,
                              QMainWindow)
 
+from interBilinial import *
 
 class Ui_MainWindow(QMainWindow):
 
@@ -29,7 +30,8 @@ class Ui_MainWindow(QMainWindow):
         sys.exit()
     
     def limpiar(self):
-        self.labelImgOrigin.clear
+        self.labelImgOrigin.clear()
+        self.labelImgDest.clear()
         self.image = np.ndarray(shape=(0, 0))
 
     def cargarImagen(self):
@@ -132,6 +134,14 @@ class Ui_MainWindow(QMainWindow):
             for j in range (img.shape[1]): #traverses through width of the image
                 newArray.append(img[i][j])
                 file.write(str(img[i][j]) + ", ")
+
+        file.close()
+
+        frame = interpolacionBilineal()
+        frame = np.array(frame)
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        image = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
+        self.labelImgDest.setPixmap(QtGui.QPixmap.fromImage(image))
         
 
 if __name__ == "__main__":
