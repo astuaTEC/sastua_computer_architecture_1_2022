@@ -5,11 +5,11 @@ section .data
     msgExito db "Archivo abierto con exito",0xa,0xd
     lonExito equ $-msgExito
 
-    archivo db "archivo.txt",0
+    archivo db "../image.txt",0
 
 section .bss
 idArchivo resd 1
-contenido resb 16384
+contenido resb 50000
 
 section .text
 global _start
@@ -34,13 +34,13 @@ _start:
     mov eax, 3
     mov ebx, [idArchivo]
     mov ecx, contenido
-    mov edx, 16384
+    mov edx, 50000
     int 0x80
 
     mov eax, 4
     mov ebx, 1
     mov ecx, contenido
-    mov edx, 16384
+    mov edx, 50000
     int 0x80
 
     mov eax, 6

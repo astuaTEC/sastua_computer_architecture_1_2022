@@ -1,8 +1,5 @@
 import os
 import sys
-from asyncio import sleep
-from asyncio.windows_events import NULL
-from email.mime import image
 from os import getcwd
 
 import cv2
