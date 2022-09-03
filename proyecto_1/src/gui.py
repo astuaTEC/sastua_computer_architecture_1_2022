@@ -131,9 +131,9 @@ class Ui_MainWindow(QMainWindow):
             for j in range (img.shape[1]): #traverses through width of the image
                 newArray.append(img[i][j])
                 if j == img.shape[1] - 1:
-                    file.write(str(img[i][j]))
+                    file.write( "{0:0=3d}".format( img[i][j] ))
                 else:
-                    file.write(str(img[i][j]) + ", ")
+                    file.write("{0:0=3d}".format( img[i][j])  + " ")
 
         file.close()
 

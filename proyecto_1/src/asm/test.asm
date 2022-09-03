@@ -9,40 +9,45 @@ section .data
 
 section .bss
 idArchivo resd 1
-contenido resb 50000
+contenido resb 50000 ; Almacenar n cantidad de bytes
 
 section .text
 global _start
 
 _start:
+    ; Interrupcion para abrir el archivo
     mov eax, 5
     mov ebx, archivo
     mov ecx, 0002h ;lectura y escritura
     int 0x80
 
-    cmp eax, 0
+    cmp eax, 0 ; ver si su pudo abrir el archivo
     jl error
 
-    mov dword[idArchivo], eax
+    mov dword[idArchivo], eax ; trasladar 4 bytes a idArchivo
 
+    ; Imprimir mensaje de exito
     mov eax, 4
     mov ebx, 1
     mov ecx, msgExito
     mov edx, lonExito
     int 0x80
 
-    mov eax, 3
-    mov ebx, [idArchivo]
-    mov ecx, contenido
-    mov edx, 50000
+    ; Transferir txt a la dirección de memoria "contenido"
+    mov eax, 3 ;Indicar al sistema para leer contenido
+    mov ebx, [idArchivo] ; De donde hay que leer
+    mov ecx, contenido ; Almacenar contenido del archivo
+    mov edx, 50000 ; leer cierta cantidad de bytes
     int 0x80
 
+    ; Imprimir lo que hay en la dirección "contenido"
     mov eax, 4
-    mov ebx, 1
+    mov ebx, 1 ; Escribir en consola
     mov ecx, contenido
-    mov edx, 50000
+    mov edx, 3 ; Bytes a imprimir
     int 0x80
 
+    ; Cerrar el archivo
     mov eax, 6
     mov ebx, [idArchivo]
     int 0x80

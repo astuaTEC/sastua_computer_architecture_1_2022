@@ -8,7 +8,7 @@ def interpolacionBilineal():
     array = []
     matrix = []
     for line in completeArray:
-        arr = line.strip().split(', ')
+        arr = line.strip().split(' ')
         for ele in arr:
             array.append(int(ele))
         matrix.append(array)
