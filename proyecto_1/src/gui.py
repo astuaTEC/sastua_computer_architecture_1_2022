@@ -12,7 +12,7 @@ from PyQt5.QtGui import QImage
 from PyQt5.QtWidgets import (QApplication, QErrorMessage, QFileDialog,
                              QMainWindow)
 
-from interBilinial import *
+from interBilineal import *
 
 class Ui_MainWindow(QMainWindow):
 
