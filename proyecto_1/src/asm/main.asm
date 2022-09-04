@@ -19,11 +19,15 @@ section .data
     msgExito db "Archivo abierto con exito",0xa,0xd
     lonExito equ $-msgExito
 
-    archivo db "../image.txt",0
+    archivo db "archivo.txt",0
+    archivoDest db "destino.txt",0
 
 section .bss
 idArchivo resd 1
 contenido resb 50000 ; Almacenar n cantidad de bytes
+
+idArchivoDest resd 1
+contenidoDest resb 50000;
 
 section .text
 global _start
@@ -54,15 +58,9 @@ _start:
     mov edx, 50000 ; leer cierta cantidad de bytes
     int 0x80
 
-    movsx r8, dword[contenido]; dirección de memoria de contenido
+    mov esi, contenido; dirección de memoria de contenido
 
-    ; Cierra el archivo
-    mov eax, 6
-    mov ebx, [idArchivo]
-    int 0x80
-
-    jmp salir
-
+    jmp atoi
 
 error:
     mov eax, 4
@@ -70,6 +68,29 @@ error:
     mov ecx, msgError
     mov edx, len
     int 0x80
+
+; https://stackoverflow.com/questions/19461476/convert-string-to-int-x86-32-bit-assembler-using-nasm
+; el resultado se guarda en edi (rdi)
+atoi:
+    xor edi, edi ; zero a "result so far"
+top:
+    movzx ebp, byte [esi] ; get a character
+    inc esi ; ready for next one
+    cmp ebp, '0' ; valid?
+    jb done
+    cmp ebp, '9'
+    ja done
+    sub ebp, '0' ; "convert" character to number
+    imul edi, 10 ; multiply "result so far" by ten
+    add edi, ebp ; add in current digit
+    jmp top ; until done
+done:
+    ; Cierra el archivo
+    mov eax, 6
+    mov ebx, [idArchivo]
+    int 0x80
+
+    jmp salir
 
 salir:
     mov eax,1
