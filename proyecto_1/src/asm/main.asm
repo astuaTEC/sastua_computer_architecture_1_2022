@@ -22,7 +22,8 @@ section .data
     archivo db "archivo.txt",0
     archivoDest db "destino.txt",0
 
-    strResult db 16 dup (0) ; string buffer to store results
+    strResult db "    " ; string buffer to store results
+    lenstr equ $-strResult
 
 section .bss
 idArchivo resd 1
@@ -86,10 +87,17 @@ _start:
 
 loopFilas:
     mov r9, 0 ; se limpia el contador de columnas
-    cmp r8, 97 ; se compara el contador de filas
-    jb loopCol ; si es menor, se imprime una nueva columna    
+    cmp r8, 3 ; se compara el contador de filas
+    jb loopCol ; si es menor, se imprime una nueva columna  
+    jmp done  
+
+updateRowCount:
+    inc r8
+    jmp loopFilas
 
 loopCol:
+    cmp r9, 3
+    je updateRowCount
 
 getV1:
     mov r10, contenido
@@ -398,15 +406,18 @@ getI:
 
     mov [i], r10d
 
-    mov eax, [v1]    ; number to be converted
-    call int_to_string
-
-    jmp done
+    ; Convertir a string el numero
+    ; mov eax, [v1]    ; number to be converted
+    ; mov edi, strResult
+    ; call int_to_string
+    ; mov r11, contenidoDest
+    ; mov r12, [strResult]
+    ; mov [r11], r12
 
     imul r11, r8, 3
     imul r12, r9, 3
-    mov [row2], r11d ; row2 = row*3
-    mov [col2], r12d ; col2 = col*3
+    mov [row2], r11 ; row2 = row*3
+    mov [col2], r12 ; col2 = col*3
 
 validateRowColumn:
     cmp r8, 0
@@ -414,28 +425,347 @@ validateRowColumn:
 
     cmp r9, 0
     jne validateColumn2
+
     ; arrayOut[row2][col2] = v1
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2] 
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [v1]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
 
 validateColumn2:
     ; arrayOut[row2][col2+1] = a
+
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    inc r12
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [a]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
     ; arrayOut[row2][col2+2] = b
+
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r12, 2
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [b]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
     ; arrayOut[row2][col2+3] = v2
+
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r12, 3
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [v2]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
 
 validateColumn1:
     cmp r9, 0
     jne continue
 
+    ;arrayOut[row2+1][col2] = c
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    inc r11
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [c]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
+    ;arrayOut[row2+2][col2] = g
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 2
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [g]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
+    ;arrayOut[row2+3][col2] = v3 
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 3
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [v3]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 continue:
 ; arrayOut[row2+1][col2+1] = d
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    inc r11
+    inc r12
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [d]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+1][col2+2] = e
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    inc r11
+    add r12, 2
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [e]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+1][col2+3] = f
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    inc r11
+    add r12, 3
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [f]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+2][col2+1] = h
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 2
+    inc r12
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [h]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+2][col2+2] = i
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 2
+    add r12, 2
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [i]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+2][col2+3] = j
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 2
+    add r12, 3
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [j]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
 
 ; arrayOut[row2+3][col2+1] = k
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 3
+    inc r12
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [k]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+3][col2+2] = l
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 3
+    add r12, 2
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [l]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+
 ; arrayOut[row2+3][col2+3] = v4
+
+    mov r10, contenidoDest
+    mov r11d, [row2]
+    mov r12d, [col2]
+    add r11, 3
+    add r12, 3
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
+    add r11, r12 ; se suma fila + columna
+    add r10, r11 ; se suma a la posicion
+
+    ; Convertir a string el numero
+    mov eax, [v4]    ; number to be converted
+    mov edi, strResult
+    call int_to_string
+    mov r11, [strResult]
+
+    mov [r10], r11 ; se guarda el resultado
+    add r10, 3
+    mov byte[r10], 10 ; se agrega un espacio
+
+    inc r9 
+    jmp loopCol
 
 error:
     mov eax, 4
@@ -462,34 +792,67 @@ top:
 done_m:
     ret
 
+; Input
+; EAX = pointer to the int to convert
+; EDI = address of the result
+; Output:
+; None
+; https://stackoverflow.com/questions/13523530/printing-an-int-or-int-to-string
 int_to_string:
-    mov ecx, 10         ; divisor
-    xor bx, bx          ; count digits
+    xor   ebx, ebx        ; clear the ebx, I will use as counter for stack pushes
+push_chars:
+    xor edx, edx          ; clear edx
+    mov ecx, 10           ; ecx is divisor, devide by 10
+    div ecx               ; devide edx by ecx, result in eax remainder in edx
+    add edx, 0x30         ; add 0x30 to edx convert int => ascii
+    push dx              ; push result to stack
+    inc ebx               ; increment my stack push counter
+    test eax, eax         ; is eax 0?
+    jnz push_chars       ; if eax not 0 repeat
 
-divide:
-    xor edx, edx        ; high part = 0
-    div ecx             ; eax = edx:eax/ecx, edx = remainder
-    push rdx             ; DL is a digit in range [0..9]
-    inc bx              ; count digits
-    test eax, eax       ; EAX is 0?
-    jnz divide          ; no, continue
-
-    ; POP digits from stack in reverse order
-    mov cx, bx          ; number of digits
-    lea esi, strResult   ; DS:SI points to string buffer
-
-next_digit:
-    pop ax
-    add ax, '0'         ; convert to ASCII
-    mov [esi], ax        ; write it to the buffer
-    inc si
-    loop next_digit
-    ret
+pop_chars:
+    pop ax               ; pop result from stack into eax
+    stosb                ; store contents of eax in at the address of num which is in EDI
+    dec ebx               ; decrement my stack push counter
+    cmp ebx, 0            ; check if stack push counter is 0
+    jg pop_chars         ; not 0 repeat
+    mov eax, 0x0
+    stosb         ; add line feed
+    ret                   ; return to main
 
 done:
     ;Cierra el archivo
     mov eax, 6
     mov ebx, [idArchivo]
+    int 0x80
+
+    ;abre otro archivo
+    mov eax, 5
+    mov ebx, archivoDest
+    mov ecx, 002h
+    int 0x80
+
+    cmp eax, 0
+    jl error
+
+    mov dword[idArchivoDest], eax
+
+    ; Imprimir mensaje de exito
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, msgExito
+    mov edx, lonExito
+    int 0x80
+
+    mov eax, 4
+    mov ebx, [idArchivoDest]
+    mov ecx, contenidoDest
+    mov edx, 400  
+    int 0x80
+
+    ;Cierra el archivo
+    mov eax, 6
+    mov ebx, [idArchivoDest]
     int 0x80
 
     jmp salir
