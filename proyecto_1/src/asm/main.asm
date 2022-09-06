@@ -22,7 +22,7 @@ section .data
     archivo db "archivo.txt",0
     archivoDest db "destino.txt",0
 
-    strResult db "0000" ; string buffer to store results
+    strResult db "" ; string buffer to store results
     lenstr equ $-strResult
 
 section .bss
@@ -30,7 +30,7 @@ idArchivo resd 1
 contenido resb 50000 ; Almacenar n cantidad de bytes
 
 idArchivoDest resd 1
-contenidoDest resb 50000
+contenidoDest resb 500
 
 a resd 1
 b resd 1
@@ -420,10 +420,10 @@ getI:
     mov [col2], r12d ; col2 = col*3
 
 validateRowColumn:
-    cmp r8, 0
+    cmp r8d, 0
     jne validateColumn1
 
-    cmp r9, 0
+    cmp r9d, 0
     jne validateColumn2
 
     ; arrayOut[row2][col2] = v1
@@ -441,9 +441,10 @@ validateRowColumn:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 validateColumn2:
     ; arrayOut[row2][col2+1] = a
@@ -463,9 +464,10 @@ validateColumn2:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
     ; arrayOut[row2][col2+2] = b
 
@@ -484,9 +486,10 @@ validateColumn2:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
     ; arrayOut[row2][col2+3] = v2
 
@@ -496,6 +499,7 @@ validateColumn2:
     add r12, 3
     imul r11, 40 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
+    mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -505,21 +509,23 @@ validateColumn2:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 validateColumn1:
     cmp r9, 0
     jne continue
 
+    mov r15, 10
     ;arrayOut[row2+1][col2] = c
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
     inc r11
-    imul r11d, 40 ; se obtiene la fila
-    imul r12d, 4 ; se obtiene la columna
+    imul r11, 40 ; se obtiene la fila
+    imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -529,9 +535,10 @@ validateColumn1:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
     ;arrayOut[row2+2][col2] = g
     mov r10, contenidoDest
@@ -549,9 +556,10 @@ validateColumn1:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
     ;arrayOut[row2+3][col2] = v3 
     mov r10, contenidoDest
@@ -569,9 +577,12 @@ validateColumn1:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
+
+    mov r15, contenidoDest
 
 continue:
 ; arrayOut[row2+1][col2+1] = d
@@ -591,9 +602,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+1][col2+2] = e
     mov r10, contenidoDest
@@ -612,9 +624,10 @@ continue:
     call int_to_string
     mov r11, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+1][col2+3] = f
     mov r10, contenidoDest
@@ -624,6 +637,7 @@ continue:
     add r12d, 3
     imul r11d, 40 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
+    mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -633,9 +647,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+2][col2+1] = h
     mov r10, contenidoDest
@@ -654,9 +669,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+2][col2+2] = i
     mov r10, contenidoDest
@@ -675,9 +691,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+2][col2+3] = j
     mov r10, contenidoDest
@@ -687,6 +704,7 @@ continue:
     add r12, 3
     imul r11d, 40 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
+    mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -696,9 +714,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+3][col2+1] = k
     mov r10, contenidoDest
@@ -717,9 +736,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+3][col2+2] = l
     mov r10, contenidoDest
@@ -738,9 +758,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
 ; arrayOut[row2+3][col2+3] = v4
 
@@ -751,6 +772,7 @@ continue:
     add r12, 3
     imul r11d, 40 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
+    mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -760,9 +782,10 @@ continue:
     call int_to_string
     mov r11d, [strResult]
 
-    mov [r10], r11 ; se guarda el resultado
-    add r10, 3
-    mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[r10], r11d ; se guarda el resultado
+    ; add r10, 3
+    ; mov byte[r10], ' ' ; se agrega un espacio
+    call verifyEndLine
 
     inc r9 
     jmp loopCol
@@ -819,6 +842,19 @@ pop_chars:
     mov eax, 0x0
     stosb         ; add line feed
     ret                   ; return to main
+
+verifyEndLine:
+    cmp r14, 36
+    je endLine
+    add r10, 3
+    mov byte[r10], ' ' ; se agrega un espacio
+    ret
+
+endLine:
+    add r10, 3
+    mov byte[r10], 10 ; se agrega un salto
+    mov r14, 0
+    ret
 
 done:
     ;Cierra el archivo
