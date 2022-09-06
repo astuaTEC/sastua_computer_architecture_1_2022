@@ -22,7 +22,7 @@ section .data
     archivo db "archivo.txt",0
     archivoDest db "destino.txt",0
 
-    strResult db "    " ; string buffer to store results
+    strResult db "0000" ; string buffer to store results
     lenstr equ $-strResult
 
 section .bss
@@ -414,10 +414,10 @@ getI:
     ; mov r12, [strResult]
     ; mov [r11], r12
 
-    imul r11, r8, 3
-    imul r12, r9, 3
-    mov [row2], r11 ; row2 = row*3
-    mov [col2], r12 ; col2 = col*3
+    imul r11d, r8d, 3
+    imul r12d, r9d, 3
+    mov [row2], r11d ; row2 = row*3
+    mov [col2], r12d ; col2 = col*3
 
 validateRowColumn:
     cmp r8, 0
@@ -439,7 +439,7 @@ validateRowColumn:
     mov eax, [v1]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -461,7 +461,7 @@ validateColumn2:
     mov eax, [a]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -482,7 +482,7 @@ validateColumn2:
     mov eax, [b]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -503,7 +503,7 @@ validateColumn2:
     mov eax, [v2]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -518,8 +518,8 @@ validateColumn1:
     mov r11d, [row2]
     mov r12d, [col2]
     inc r11
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -527,7 +527,7 @@ validateColumn1:
     mov eax, [c]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -547,7 +547,7 @@ validateColumn1:
     mov eax, [g]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -558,8 +558,8 @@ validateColumn1:
     mov r11d, [row2]
     mov r12d, [col2]
     add r11, 3
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -567,7 +567,7 @@ validateColumn1:
     mov eax, [v3]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -578,10 +578,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11
-    inc r12
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    inc r11d
+    inc r12d
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -589,7 +589,7 @@ continue:
     mov eax, [d]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -599,10 +599,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11
-    add r12, 2
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    inc r11d
+    add r12d, 2
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -620,10 +620,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11
-    add r12, 3
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    inc r11d
+    add r12d, 3
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -631,7 +631,7 @@ continue:
     mov eax, [f]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -641,10 +641,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 2
-    inc r12
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    add r11d, 2
+    inc r12d
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -652,7 +652,7 @@ continue:
     mov eax, [h]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -662,10 +662,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 2
-    add r12, 2
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    add r11d, 2
+    add r12d, 2
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -673,7 +673,7 @@ continue:
     mov eax, [i]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -685,8 +685,8 @@ continue:
     mov r12d, [col2]
     add r11, 2
     add r12, 3
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -694,7 +694,7 @@ continue:
     mov eax, [j]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -704,10 +704,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 3
-    inc r12
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    add r11d, 3
+    inc r12d
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -715,7 +715,7 @@ continue:
     mov eax, [k]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -725,10 +725,10 @@ continue:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 3
-    add r12, 2
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    add r11d, 3
+    add r12d, 2
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -736,7 +736,7 @@ continue:
     mov eax, [l]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
@@ -749,8 +749,8 @@ continue:
     mov r12d, [col2]
     add r11, 3
     add r12, 3
-    imul r11, 40 ; se obtiene la fila
-    imul r12, 4 ; se obtiene la columna
+    imul r11d, 40 ; se obtiene la fila
+    imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -758,11 +758,11 @@ continue:
     mov eax, [v4]    ; number to be converted
     mov edi, strResult
     call int_to_string
-    mov r11, [strResult]
+    mov r11d, [strResult]
 
     mov [r10], r11 ; se guarda el resultado
     add r10, 3
-    mov byte[r10], 10 ; se agrega un espacio
+    mov byte[r10], ' ' ; se agrega un espacio
 
     inc r9 
     jmp loopCol
