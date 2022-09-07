@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image as im
 
 def interpolacionBilineal():
-    file = open('./asm/archivo.txt', 'r')
+    file = open('image.txt', 'r')
     
     completeArray = file.readlines()
     array = []
@@ -14,11 +14,12 @@ def interpolacionBilineal():
         matrix.append(array)
         array = []
 
-    out = np.zeros((10, 10), dtype=int)
-    out = bilinearInterpolation(matrix, 4, 4, out)
+    out = np.zeros((289, 289), dtype=int)
+    out = bilinearInterpolation(matrix, 97, 97, out)
       
     # show the shape of the array
-    print(out)
+    #print(out)
+    imageToMatrix(out)
     
     # creating image object of
     # above array
@@ -80,6 +81,22 @@ def bilinearInterpolation(matrixIn, widthIn, heightIn, arrayOut):
             arrayOut[row2+3][col2+3] = v4
 
     return arrayOut
+
+def imageToMatrix(img):
+
+        newArray = []
+        open('result.txt', 'w').close() # clear the file
+        file = open("result.txt", "a")
+        for i in range (281): #traverses through height of the image
+            if i != 0 : file.write("\n")
+            for j in range (281): #traverses through width of the image
+                newArray.append(img[i][j])
+                if j == img.shape[1] - 1:
+                    file.write( "{0:0=3d}".format( img[i][j] ))
+                else:
+                    file.write("{0:0=3d}".format( img[i][j])  + " ")
+
+        file.close()
 
 
 if __name__ == '__main__':

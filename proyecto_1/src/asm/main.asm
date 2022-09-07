@@ -19,18 +19,18 @@ section .data
     msgExito db "Archivo abierto con exito",0xa,0xd
     lonExito equ $-msgExito
 
-    archivo db "archivo.txt",0
+    archivo db "../image.txt",0
     archivoDest db "destino.txt",0
 
-    strResult db "" ; string buffer to store results
+    strResult db "   " ; string buffer to store results
     lenstr equ $-strResult
 
 section .bss
 idArchivo resd 1
-contenido resb 50000 ; Almacenar n cantidad de bytes
+contenido resb 37600 ; Almacenar n cantidad de bytes   
 
 idArchivoDest resd 1
-contenidoDest resb 500
+contenidoDest resb 334084
 
 a resd 1
 b resd 1
@@ -79,7 +79,7 @@ _start:
     mov eax, 3 ;Indicar al sistema para leer contenido
     mov ebx, [idArchivo] ; De donde hay que leer
     mov ecx, contenido ; Almacenar contenido del archivo
-    mov edx, 50000 ; leer cierta cantidad de bytes
+    mov edx, 37600 ; leer cierta cantidad de bytes
     int 0x80
 
     mov r8, 0 ;contador de filas
@@ -87,7 +87,7 @@ _start:
 
 loopFilas:
     mov r9, 0 ; se limpia el contador de columnas
-    cmp r8, 3 ; se compara el contador de filas
+    cmp r8, 96 ; se compara el contador de filas
     jb loopCol ; si es menor, se imprime una nueva columna  
     jmp done  
 
@@ -96,7 +96,7 @@ updateRowCount:
     jmp loopFilas
 
 loopCol:
-    cmp r9, 3
+    cmp r9, 96
     je updateRowCount
 
 getV1:
@@ -394,7 +394,7 @@ getI:
     div ebx
     mov r10d, eax
 
-    imul r11d, [k], 2
+    imul r11, [k], 2
     mov rdx, 0
     mov eax, r11d
     mov ebx, 3
@@ -405,14 +405,6 @@ getI:
     add r10d, r11d
 
     mov [i], r10d
-
-    ; Convertir a string el numero
-    ; mov eax, [v1]    ; number to be converted
-    ; mov edi, strResult
-    ; call int_to_string
-    ; mov r11, contenidoDest
-    ; mov r12, [strResult]
-    ; mov [r11], r12
 
     imul r11d, r8d, 3
     imul r12d, r9d, 3
@@ -430,7 +422,7 @@ validateRowColumn:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2] 
-    imul r11, 40 ; se obtiene la fila
+    imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -442,8 +434,8 @@ validateRowColumn:
     mov r11d, [strResult]
 
     mov dword[r10], r11d ; se guarda el resultado
-    ; add r10, 3
-    ; mov byte[r10], ' ' ; se agrega un espacio
+    mov dword[strResult], '   '
+ 
     call verifyEndLine
 
 validateColumn2:
@@ -453,7 +445,7 @@ validateColumn2:
     mov r11d, [row2]
     mov r12d, [col2]
     inc r12
-    imul r11, 40 ; se obtiene la fila
+    imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -475,7 +467,7 @@ validateColumn2:
     mov r11d, [row2]
     mov r12d, [col2]
     add r12, 2
-    imul r11, 40 ; se obtiene la fila
+    imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -497,7 +489,7 @@ validateColumn2:
     mov r11d, [row2]
     mov r12d, [col2]
     add r12, 3
-    imul r11, 40 ; se obtiene la fila
+    imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
@@ -524,7 +516,7 @@ validateColumn1:
     mov r11d, [row2]
     mov r12d, [col2]
     inc r11
-    imul r11, 40 ; se obtiene la fila
+    imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -545,7 +537,7 @@ validateColumn1:
     mov r11d, [row2]
     mov r12d, [col2]
     add r11, 2
-    imul r11, 40 ; se obtiene la fila
+    imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -566,7 +558,7 @@ validateColumn1:
     mov r11d, [row2]
     mov r12d, [col2]
     add r11, 3
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -591,7 +583,7 @@ continue:
     mov r12d, [col2]
     inc r11d
     inc r12d
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -613,7 +605,7 @@ continue:
     mov r12d, [col2]
     inc r11d
     add r12d, 2
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -635,7 +627,7 @@ continue:
     mov r12d, [col2]
     inc r11d
     add r12d, 3
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
@@ -658,7 +650,7 @@ continue:
     mov r12d, [col2]
     add r11d, 2
     inc r12d
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -680,7 +672,7 @@ continue:
     mov r12d, [col2]
     add r11d, 2
     add r12d, 2
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -702,7 +694,7 @@ continue:
     mov r12d, [col2]
     add r11, 2
     add r12, 3
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
@@ -725,7 +717,7 @@ continue:
     mov r12d, [col2]
     add r11d, 3
     inc r12d
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -747,7 +739,7 @@ continue:
     mov r12d, [col2]
     add r11d, 3
     add r12d, 2
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
@@ -770,7 +762,7 @@ continue:
     mov r12d, [col2]
     add r11, 3
     add r12, 3
-    imul r11d, 40 ; se obtiene la fila
+    imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
     add r11, r12 ; se suma fila + columna
@@ -839,15 +831,16 @@ pop_chars:
     dec ebx               ; decrement my stack push counter
     cmp ebx, 0            ; check if stack push counter is 0
     jg pop_chars         ; not 0 repeat
-    mov eax, 0x0
+    mov eax, 0x20
     stosb         ; add line feed
     ret                   ; return to main
 
 verifyEndLine:
-    cmp r14, 36
+    cmp r14, 1152
     je endLine
     add r10, 3
     mov byte[r10], ' ' ; se agrega un espacio
+    mov r14, 0
     ret
 
 endLine:
@@ -883,7 +876,7 @@ done:
     mov eax, 4
     mov ebx, [idArchivoDest]
     mov ecx, contenidoDest
-    mov edx, 400  
+    mov edx, 334084
     int 0x80
 
     ;Cierra el archivo
