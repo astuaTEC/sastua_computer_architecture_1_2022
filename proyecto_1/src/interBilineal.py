@@ -18,7 +18,7 @@ def interpolacionBilineal():
     out = bilinearInterpolation(matrix, 97, 97, out)
       
     # show the shape of the array
-    #print(out)
+    print(out)
     imageToMatrix(out)
     
     # creating image object of

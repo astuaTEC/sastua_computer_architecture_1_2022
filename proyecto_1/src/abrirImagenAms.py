@@ -1,3 +1,5 @@
+import numpy as np
+from PIL import Image as im
 
 def abrirImg():
     file = open('./asm/destino.txt', 'r')
@@ -15,9 +17,15 @@ def abrirImg():
         matrix.append(array)
         array = []
 
-    #data = im.fromarray(out)
+    out = np.zeros((289, 289), dtype=np.uint8)
+    for i in range(289):
+        for j in range(289):
+            out[i][j] = matrix[i][j]
+        
+    print(out)
+    data = im.fromarray(out)
 
-    #data.show()
+    data.show()
 
 def limpiarNum(elemento):
     final = elemento[-1]
