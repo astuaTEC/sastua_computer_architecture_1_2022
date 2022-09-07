@@ -1,6 +1,7 @@
 import os
 import sys
 from os import getcwd
+from time import sleep
 
 import cv2
 import numpy as np
@@ -113,10 +114,10 @@ class Ui_MainWindow(QMainWindow):
         
         roi = img[row*h//4 : row*h//4 + h//4, col*w//4 : col*w//4 + w//4]
 
-        newFilename = 'patches/patch_' + str(row) + str(col) + ".jpg"
+        # newFilename = 'patches/patch_' + str(row) + str(col) + ".jpg"
 
-        cv2.imwrite(newFilename, roi)   
-        cv2.waitKey(0)
+        # cv2.imwrite(newFilename, roi)   
+        # cv2.waitKey(0)
 
         self.imageToMatrix(roi)
 
@@ -136,13 +137,38 @@ class Ui_MainWindow(QMainWindow):
                     file.write("{0:0=3d}".format( img[i][j])  + " ")
 
         file.close()
+        os.system('./asm/main')
+        self.readImageAsm()
+    
+    def readImageAsm(self):
+        file = open('./asm/destino.img', 'r')
+    
+        completeArray = file.readlines()
+        array = []
+        matrix = []
+        for line in completeArray:
+            arr = line[:-1].split(';')
+            for ele in arr:
+                e = self.limpiarNum(ele)
+                array.append(int(e))
+            matrix.append(array)
+            array = []
 
-        frame = interpolacionBilineal()
-        frame = np.array(frame)
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        out = np.array(matrix, dtype=np.uint8)
+            
+        #print(out)
+        frame = cv2.cvtColor(out, cv2.COLOR_BGR2RGB)
         image = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
         self.labelImgDest.setPixmap(QtGui.QPixmap.fromImage(image))
-        
+
+    def limpiarNum(self, elemento):
+        final = elemento[-1]
+        while(final == ' ' or final == '\n'):
+            elemento = elemento[:-1]
+            final = elemento[-1]
+
+        return elemento
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

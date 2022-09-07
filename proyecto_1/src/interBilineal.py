@@ -14,19 +14,19 @@ def interpolacionBilineal():
         matrix.append(array)
         array = []
 
-    out = np.zeros((289, 289), dtype=int)
+    out = np.zeros((289, 289), dtype=np.uint8)
     out = bilinearInterpolation(matrix, 97, 97, out)
       
     # show the shape of the array
-    print(out)
-    imageToMatrix(out)
+    #print(out)
+    #imageToMatrix(out)
     
     # creating image object of
     # above array
-    #data = im.fromarray(out)
+    data = im.fromarray(out)
 
     #data.show()
-    #return data.convert('RGB')
+    return data.convert('RGB')
 
 
 def bilinearInterpolation(matrixIn, widthIn, heightIn, arrayOut):

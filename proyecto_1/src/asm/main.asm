@@ -20,7 +20,7 @@ section .data
     lonExito equ $-msgExito
 
     archivo db "../image.txt",0
-    archivoDest db "destino.txt",0
+    archivoDest db "destino.img",0
 
     strResult db "   " ; string buffer to store results
     lenstr equ $-strResult

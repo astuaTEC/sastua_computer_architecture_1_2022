@@ -2,10 +2,9 @@ import numpy as np
 from PIL import Image as im
 
 def abrirImg():
-    file = open('./asm/destino.txt', 'r')
+    file = open('./asm/destino.img', 'r')
     
     completeArray = file.readlines()
-    completeArray.pop()
     array = []
     matrix = []
     for line in completeArray:
@@ -16,10 +15,7 @@ def abrirImg():
         matrix.append(array)
         array = []
 
-    out = np.zeros((289, 289), dtype=np.uint8)
-    for i in range(289):
-        for j in range(289):
-            out[i][j] = matrix[i][j]
+    out = np.array(matrix, dtype=np.uint8)
         
     #print(out)
     data = im.fromarray(out)
