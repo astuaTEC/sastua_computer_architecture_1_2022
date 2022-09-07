@@ -87,9 +87,9 @@ def imageToMatrix(img):
         newArray = []
         open('result.txt', 'w').close() # clear the file
         file = open("result.txt", "a")
-        for i in range (281): #traverses through height of the image
+        for i in range (289): #traverses through height of the image
             if i != 0 : file.write("\n")
-            for j in range (281): #traverses through width of the image
+            for j in range (289): #traverses through width of the image
                 newArray.append(img[i][j])
                 if j == img.shape[1] - 1:
                     file.write( "{0:0=3d}".format( img[i][j] ))

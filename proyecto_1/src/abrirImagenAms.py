@@ -6,7 +6,6 @@ def abrirImg():
     
     completeArray = file.readlines()
     completeArray.pop()
-    #print(completeArray)
     array = []
     matrix = []
     for line in completeArray:
@@ -22,7 +21,7 @@ def abrirImg():
         for j in range(289):
             out[i][j] = matrix[i][j]
         
-    print(out)
+    #print(out)
     data = im.fromarray(out)
 
     data.show()

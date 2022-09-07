@@ -128,7 +128,7 @@ getV3:
     mov r11, r8
     inc r11; row + 1
     imul r11, 388 ; se obtiene la fila
-    imul r12, r8, 4 ; se obtiene la columna
+    imul r12, r9, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
     add r10, r11 ; se suma a la posicion
 
@@ -156,17 +156,17 @@ getV4:
 
 getA:
     imul r10d, [v1], 2
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     mov r11d, [v2]
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -177,17 +177,17 @@ getA:
 
 getB:
     mov r10d, [v1]
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     imul r11d, [v2], 2
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -198,17 +198,17 @@ getB:
 
 getC:
     imul r10d, [v1], 2
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     mov r11d, [v3]
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -219,17 +219,17 @@ getC:
 
 getG:
     mov r10d, [v1]
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     imul r11d, [v3], 2
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -240,17 +240,17 @@ getG:
 
 getK:
     imul r10d, [v3], 2
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     mov r11d, [v4]
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -261,17 +261,17 @@ getK:
 
 getL:
     mov r10d, [v3]
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     imul r11d, [v4], 2
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -282,17 +282,17 @@ getL:
 
 getF:
     imul r10d, [v2], 2
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     mov r11d, [v4]
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -303,17 +303,17 @@ getF:
 
 getJ:
     mov r10d, [v2]
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     imul r11d, [v4], 2
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -324,17 +324,17 @@ getJ:
 
 getD:
     imul r10d, [c], 2
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     mov r11d, [f]
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -345,17 +345,17 @@ getD:
 
 getE:
     mov r10d, [c]
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     imul r11d, [f], 2
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -366,17 +366,17 @@ getE:
 
 getH:
     imul r10d, [g], 2
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     mov r11d, [k]
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
@@ -387,17 +387,17 @@ getH:
 
 getI:
     mov r10d, [g]
-    mov rdx, 0
-    mov eax, r10d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r10d
 
     div ebx
     mov r10d, eax
 
     imul r11, [k], 2
-    mov rdx, 0
-    mov eax, r11d
     mov ebx, 3
+    mov edx, 0
+    mov eax, r11d
 
     div ebx
     mov r11d, eax
