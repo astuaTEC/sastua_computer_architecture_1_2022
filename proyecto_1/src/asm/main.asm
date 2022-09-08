@@ -1,10 +1,8 @@
-%macro imprime 2
-mov eax,4
-mov ebx,1
-mov ecx,%1
-mov edx,%2
-int 0x80
-%endmacro
+; Programa para la aplicación del algoritmo de 
+; interpolación bilineal a una imagen de 97x97 pixeles
+; 
+; Autor: Saymon Astúa Madrigal
+; GitHub: @astuaTEC
 
 section .data
     msgError db "Se produjo un error",0xa,0xd
@@ -13,25 +11,23 @@ section .data
     ln db 0xA,0xD
     lenln equ $-ln
 
-    space db 0x20
-    lenSpace equ $-space
-
     msgExito db "Archivo abierto con exito",0xa,0xd
     lonExito equ $-msgExito
 
-    archivo db "image.txt",0
-    archivoDest db "./asm/destino.img",0
+    archivo db "image.txt",0 ; archivo para leer la matriz de la imagen
+    archivoDest db "./asm/destino.img",0 ; archivo donde se escribe el resultado del algoritmo
 
-    strResult db "   " ; string buffer to store results
+    strResult db "   " ; string buffer para almacenar el casteo de int a string
     lenstr equ $-strResult
 
 section .bss
 idArchivo resd 1
-contenido resb 37600 ; Almacenar n cantidad de bytes   
+contenido resb 37600 ; Reservar n cantidad de bytes   
 
 idArchivoDest resd 1
-contenidoDest resb 334084
+contenidoDest resb 334084 ; Reservar n cantidad de bytes 
 
+; Se reserva espacio en memoria para usar variables dentro del programa
 a resd 1
 b resd 1
 c resd 1
@@ -92,11 +88,11 @@ loopFilas:
     jmp done  
 
 updateRowCount:
-    inc r8
+    inc r8 ; incrementa el contador de filas
     jmp loopFilas
 
 loopCol:
-    cmp r9, 96
+    cmp r9, 96 ; compara si el contador de columnas llega a su límite
     je updateRowCount
 
 getV1:
@@ -120,8 +116,8 @@ getV2:
     add r10, r11 ; se suma a la posicion
     
     mov rsi, r10 
-    call atoi
-    mov [v2], edi
+    call atoi ; se pasa el string a entero
+    mov [v2], edi ; se guarda en memoria
     
 getV3:
     mov r10, contenido
@@ -133,9 +129,9 @@ getV3:
     add r10, r11 ; se suma a la posicion
 
     mov rsi, r10 
-    call atoi
+    call atoi ; se pasa el string a entero
 
-    mov [v3], edi
+    mov [v3], edi ; se guarda en memoria el resultado
 
 getV4:
     mov r10, contenido
@@ -150,30 +146,30 @@ getV4:
     add r10, r11 ; se suma a la posicion
 
     mov rsi, r10 
-    call atoi
+    call atoi ; se pasa el string a entero
 
-    mov [v4], edi
+    mov [v4], edi ; se guarda en memoria el resultado
 
 getA:
-    imul r10d, [v1], 2
+    imul r10d, [v1], 2 ; v1*2
     mov ebx, 3
     mov edx, 0
     mov eax, r10d
 
-    div ebx
-    mov r10d, eax
+    div ebx ; eax = v1*2/3
+    mov r10d, eax 
 
     mov r11d, [v2]
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [a], r10d
+    mov [a], r10d ; se guarda el resultado en memoria
 
 getB:
     mov r10d, [v1]
@@ -181,28 +177,28 @@ getB:
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v1/3
     mov r10d, eax
 
-    imul r11d, [v2], 2
+    imul r11d, [v2], 2 ; v2*2
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v2*2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [b], r10d
+    mov [b], r10d ; se guarda el resultado en memoria
 
 getC:
-    imul r10d, [v1], 2
+    imul r10d, [v1], 2 ; v1*2
     mov ebx, 3
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v1*2/3
     mov r10d, eax
 
     mov r11d, [v3]
@@ -210,12 +206,12 @@ getC:
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v3/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [c], r10d
+    mov [c], r10d ; sea guarda el resultado en memoria
 
 getG:
     mov r10d, [v1]
@@ -223,28 +219,28 @@ getG:
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v1/3
     mov r10d, eax
 
-    imul r11d, [v3], 2
+    imul r11d, [v3], 2 ; v3*2
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v3*2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [g], r10d
+    mov [g], r10d ; se guarda el resultado en memoria
 
 getK:
-    imul r10d, [v3], 2
+    imul r10d, [v3], 2 ; v3*2
     mov ebx, 3
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v3*2/3
     mov r10d, eax
 
     mov r11d, [v4]
@@ -252,12 +248,12 @@ getK:
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v4/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [k], r10d
+    mov [k], r10d ; se guarda el resultado en memoria
 
 getL:
     mov r10d, [v3]
@@ -265,28 +261,28 @@ getL:
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v3/3
     mov r10d, eax
 
-    imul r11d, [v4], 2
+    imul r11d, [v4], 2 ; v4*2
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v4*2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [l], r10d
+    mov [l], r10d ; se guarda el resultado en memoria
 
 getF:
-    imul r10d, [v2], 2
+    imul r10d, [v2], 2 ; v2*2
     mov ebx, 3
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v2*2/3
     mov r10d, eax
 
     mov r11d, [v4]
@@ -294,12 +290,12 @@ getF:
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v4/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [f], r10d
+    mov [f], r10d ; sea guarda el resultado en memoria
 
 getJ:
     mov r10d, [v2]
@@ -307,28 +303,28 @@ getJ:
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = v2/3
     mov r10d, eax
 
-    imul r11d, [v4], 2
+    imul r11d, [v4], 2 ; v4*2
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = v4*2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [j], r10d
+    mov [j], r10d ; se guarda el resultado en memoria
 
 getD:
-    imul r10d, [c], 2
+    imul r10d, [c], 2 ; c*2
     mov ebx, 3
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = c2*2/3
     mov r10d, eax
 
     mov r11d, [f]
@@ -336,12 +332,12 @@ getD:
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = f/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [d], r10d
+    mov [d], r10d ; se guarda el resultado en memoria
 
 getE:
     mov r10d, [c]
@@ -349,28 +345,28 @@ getE:
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = c/3
     mov r10d, eax
 
-    imul r11d, [f], 2
+    imul r11d, [f], 2 ; f*2
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = f*2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [e], r10d
+    mov [e], r10d ; se guarda el resultado en memoria
 
 getH:
-    imul r10d, [g], 2
+    imul r10d, [g], 2 ; g*2
     mov ebx, 3
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = g*2/3
     mov r10d, eax
 
     mov r11d, [k]
@@ -378,12 +374,12 @@ getH:
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = k/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [h], r10d
+    mov [h], r10d ; se guarda el resultado en memoria
 
 getI:
     mov r10d, [g]
@@ -391,20 +387,20 @@ getI:
     mov edx, 0
     mov eax, r10d
 
-    div ebx
+    div ebx ; eax = g/3
     mov r10d, eax
 
-    imul r11, [k], 2
+    imul r11, [k], 2 ; k*2
     mov ebx, 3
     mov edx, 0
     mov eax, r11d
 
-    div ebx
+    div ebx ; eax = k*2/3
     mov r11d, eax
 
     add r10d, r11d
 
-    mov [i], r10d
+    mov [i], r10d ; se guarda el resultado en memoria
 
     imul r11d, r8d, 3
     imul r12d, r9d, 3
@@ -412,11 +408,11 @@ getI:
     mov [col2], r12d ; col2 = col*3
 
 validateRowColumn:
-    cmp r8d, 0
-    jne validateColumn1
+    cmp r8d, 0 ; cmp fila == 0
+    jne validateColumn1 ; if
 
-    cmp r9d, 0
-    jne validateColumn2
+    cmp r9d, 0 ; cmp columna == 0
+    jne validateColumn2 ; if
 
     ; arrayOut[row2][col2] = v1
     mov r10, contenidoDest
@@ -444,7 +440,7 @@ validateColumn2:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r12
+    inc r12 ; col2 + 1
     imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -465,7 +461,7 @@ validateColumn2:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r12, 2
+    add r12, 2 ; col2 + 2
     imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -486,7 +482,7 @@ validateColumn2:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r12, 3
+    add r12, 3 ; col2 + 3
     imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
@@ -512,7 +508,7 @@ validateColumn1:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11
+    inc r11 ; row2 + 1
     imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -532,7 +528,7 @@ validateColumn1:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 2
+    add r11, 2 ; row2 + 2
     imul r11, 1156 ; se obtiene la fila
     imul r12, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -552,7 +548,7 @@ validateColumn1:
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 3
+    add r11, 3 ; row2 + 3
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -571,12 +567,12 @@ validateColumn1:
     mov r15, contenidoDest
 
 continue:
-; arrayOut[row2+1][col2+1] = d
+    ; arrayOut[row2+1][col2+1] = d
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11d
-    inc r12d
+    inc r11d ; row2 + 1
+    inc r12d ; col2 + 1
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -592,12 +588,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+1][col2+2] = e
+    ; arrayOut[row2+1][col2+2] = e
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11d
-    add r12d, 2
+    inc r11d ; row2 + 1
+    add r12d, 2 ; col2 + 2
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -613,12 +609,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+1][col2+3] = f
+    ; arrayOut[row2+1][col2+3] = f
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    inc r11d
-    add r12d, 3
+    inc r11d ; row2 + 1
+    add r12d, 3 ; col2 + 3
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
@@ -635,12 +631,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+2][col2+1] = h
+    ; arrayOut[row2+2][col2+1] = h
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11d, 2
-    inc r12d
+    add r11d, 2 ; row2 + 2
+    inc r12d ; col2 + 1
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -656,12 +652,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+2][col2+2] = i
+    ; arrayOut[row2+2][col2+2] = i
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11d, 2
-    add r12d, 2
+    add r11d, 2 ; row2 + 2
+    add r12d, 2 ; col2 + 2
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -677,12 +673,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+2][col2+3] = j
+    ; arrayOut[row2+2][col2+3] = j
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 2
-    add r12, 3
+    add r11, 2 ; row2 + 2
+    add r12, 3 ; col2 + 3
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
@@ -699,12 +695,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+3][col2+1] = k
+    ; arrayOut[row2+3][col2+1] = k
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11d, 3
-    inc r12d
+    add r11d, 3 ; row2 + 3
+    inc r12d ; col2 + 1
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -720,12 +716,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+3][col2+2] = l
+    ; arrayOut[row2+3][col2+2] = l
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11d, 3
-    add r12d, 2
+    add r11d, 3 ; row2 + 3
+    add r12d, 2 ; col2 + 2
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     add r11, r12 ; se suma fila + columna
@@ -741,13 +737,12 @@ continue:
     mov dword[strResult], '   '
     call verifyEndLine
 
-; arrayOut[row2+3][col2+3] = v4
-
+    ; arrayOut[row2+3][col2+3] = v4
     mov r10, contenidoDest
     mov r11d, [row2]
     mov r12d, [col2]
-    add r11, 3
-    add r12, 3
+    add r11, 3 ; row2 + 3
+    add r12, 3 ; col2 + 2
     imul r11d, 1156 ; se obtiene la fila
     imul r12d, 4 ; se obtiene la columna
     mov r14, r12 ; auxiliar para saber si hay salto de línea o no
@@ -774,8 +769,10 @@ error:
     mov edx, len
     int 0x80
 
-; https://stackoverflow.com/questions/19461476/convert-string-to-int-x86-32-bit-assembler-using-nasm
+; Procedimiento para pasar un string a int
+; el string a covertir se ingresa en el registro rsi
 ; el resultado se guarda en edi (rdi)
+; https://stackoverflow.com/questions/19461476/convert-string-to-int-x86-32-bit-assembler-using-nasm
 atoi:
     xor edi, edi ; zero a "result so far"
 top:
@@ -792,6 +789,7 @@ top:
 done_m:
     ret
 
+; Procedimiento para pasar un int a string
 ; Input
 ; EAX = pointer to the int to convert
 ; EDI = address of the result
@@ -820,11 +818,12 @@ pop_chars:
     stosb         ; add line feed
     ret                   ; return to main
 
+; Procedimiento para saber si hay que escribir un punto y coma (;) o un salto de línea (\n)
 verifyEndLine:
-    cmp r14, 1152
+    cmp r14, 1152 ; compara con el registro auxiliar
     je endLine
     add r10, 3
-    mov byte[r10], ';' ; se agrega un espacio
+    mov byte[r10], ';' ; se agrega un punto y coma
     mov r14, 0
     ret
 
@@ -840,10 +839,10 @@ done:
     mov ebx, [idArchivo]
     int 0x80
 
-    ;abre otro archivo
+    ;abre oel archivo de destino
     mov eax, 5
     mov ebx, archivoDest
-    mov ecx, 002h
+    mov ecx, 002h ; modo escritura
     int 0x80
 
     cmp eax, 0
@@ -858,10 +857,11 @@ done:
     mov edx, lonExito
     int 0x80
 
+    ; se escribe en el archivo de destino
     mov eax, 4
     mov ebx, [idArchivoDest]
-    mov ecx, contenidoDest
-    mov edx, 334084
+    mov ecx, contenidoDest ; de donde se toma lo que hay que escribir
+    mov edx, 334084 ; bytes a escribir
     int 0x80
 
     ;Cierra el archivo

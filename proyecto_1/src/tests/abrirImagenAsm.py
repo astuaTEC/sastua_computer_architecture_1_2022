@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image as im
 
 def abrirImg():
-    file = open('./asm/destino.img', 'r')
+    file = open('../asm/destino.img', 'r')
     
     completeArray = file.readlines()
     array = []

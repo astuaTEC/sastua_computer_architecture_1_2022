@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image as im
 
 def interpolacionBilineal():
-    file = open('image.txt', 'r')
+    file = open('../image.txt', 'r')
     
     completeArray = file.readlines()
     array = []

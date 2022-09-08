@@ -1,8 +1,7 @@
 import os
+import subprocess
 import sys
 from os import getcwd
-from time import sleep
-import subprocess
 
 import cv2
 import numpy as np
@@ -11,11 +10,13 @@ from PyQt5.QtGui import QImage
 from PyQt5.QtWidgets import (QApplication, QErrorMessage, QFileDialog,
                              QMainWindow)
 
-from interBilineal import *
 
+"""
+    Clase que maneja la ventana principal del programa
+"""
 class Ui_MainWindow(QMainWindow):
 
-    image = np.ndarray(shape=(0, 0))
+    image = np.ndarray(shape=(0, 0)) #imagen vacía
     def __init__(self):
         super().__init__()
         uic.loadUi("gui.ui", self)
@@ -28,16 +29,18 @@ class Ui_MainWindow(QMainWindow):
     def salir(self):
         sys.exit()
     
+    # Método que limpia los label donde pueden haber imágenes
     def limpiar(self):
         self.labelImgOrigin.clear()
         self.labelImgDest.clear()
         self.image = np.ndarray(shape=(0, 0))
 
+    # Método para cargar una imagen desde la computadora
     def cargarImagen(self):
         filename, _ = QFileDialog.getOpenFileName(self, "Seleccionar imagen",
                                                 getcwd(), "Imagen (*.jpg *.png)", 
                                                 options=QFileDialog.Options())
-        self.image = cv2.imread(filename, 0)
+        self.image = cv2.imread(filename, 0) #Se extrae solo en escala de grises
         if self.image.shape != (390, 390):
             error_dialog = QErrorMessage(self)
             error_dialog.showMessage('Por favor seleccione una imagen 390x390')
@@ -45,11 +48,15 @@ class Ui_MainWindow(QMainWindow):
         else:
             self.setPhoto(self.image)
 
+    # Método para colocar la imagen seleccionana en un label
     def setPhoto(self, image):
         frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
         self.labelImgOrigin.setPixmap(QtGui.QPixmap.fromImage(image))
     
+    # Método para iniciar la interpolación bilineal
+    # Este método llama a la función para tomar
+    # el trozo de imagen según el cuadrante seleccionado
     def startProcess(self):
         quadrant = int(self.comboBox.currentText())
 
@@ -103,7 +110,8 @@ class Ui_MainWindow(QMainWindow):
                 print('3, 3')
                 self.divImage(3, 3)
 
-    
+    # Método para dividir una imagen según la fila y columna seleccionada
+    # Este método manda a llamar otra función para guardar la imagen en un archivo txt
     # https://answers.opencv.org/question/173852/how-to-split-image-into-small-blocks-process-on-them-and-then-join-all-the-blocks-together-again/
     def divImage(self, row, col):
         img = self.image
@@ -122,6 +130,8 @@ class Ui_MainWindow(QMainWindow):
 
         self.imageToMatrix(roi)
 
+    # Método para convertir el cuadrante seleccionado en una matriz de valores
+    # entre [0 - 255] y guardarla en un txt con cierto formato
     # https://stackoverflow.com/questions/33388534/how-to-get-grayscale-image-pixel-matrix-values-within-the-0-255-range-python
     def imageToMatrix(self, img):
 
@@ -138,9 +148,13 @@ class Ui_MainWindow(QMainWindow):
                     file.write("{0:0=3d}".format( img[i][j])  + " ")
 
         file.close()
-        subprocess.run('./asm/main')
-        self.readImageAsm()
+        subprocess.run('./asm/main') # Se llama al algoritmo implementado en ensamblador x86
+        self.readImageAsm() # se llama el método para leer el resultado
     
+    # Método para leer el archivo que contiene el resultado
+    # del algoritmo de interpolación bilineal hecho en ensamblador
+    # Adicionalmente este método coloca la imagen interpolada en
+    # el label correspondiente
     def readImageAsm(self):
         file = open('./asm/destino.img', 'r')
     
@@ -162,6 +176,8 @@ class Ui_MainWindow(QMainWindow):
         image = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
         self.labelImgDest.setPixmap(QtGui.QPixmap.fromImage(image))
 
+    # Método auxiliar para limpiar caracteres indeseados
+    # dentro de un string dado (elemento)
     def limpiarNum(self, elemento):
         final = elemento[-1]
         while(final == ' ' or final == '\n'):
