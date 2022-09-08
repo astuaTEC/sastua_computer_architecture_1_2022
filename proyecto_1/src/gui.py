@@ -2,6 +2,7 @@ import os
 import sys
 from os import getcwd
 from time import sleep
+import subprocess
 
 import cv2
 import numpy as np
@@ -137,7 +138,7 @@ class Ui_MainWindow(QMainWindow):
                     file.write("{0:0=3d}".format( img[i][j])  + " ")
 
         file.close()
-        os.system('./asm/main')
+        subprocess.run('./asm/main')
         self.readImageAsm()
     
     def readImageAsm(self):

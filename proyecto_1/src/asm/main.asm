@@ -19,8 +19,8 @@ section .data
     msgExito db "Archivo abierto con exito",0xa,0xd
     lonExito equ $-msgExito
 
-    archivo db "../image.txt",0
-    archivoDest db "destino.img",0
+    archivo db "image.txt",0
+    archivoDest db "./asm/destino.img",0
 
     strResult db "   " ; string buffer to store results
     lenstr equ $-strResult
