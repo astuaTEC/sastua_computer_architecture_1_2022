@@ -15,7 +15,7 @@ section .data
     lonExito equ $-msgExito
 
     archivo db "image.txt",0 ; archivo para leer la matriz de la imagen
-    archivoDest db "./asm/destino.img",0 ; archivo donde se escribe el resultado del algoritmo
+    archivoDest db "destino.img",0 ; archivo donde se escribe el resultado del algoritmo
 
     strResult db "   " ; string buffer para almacenar el casteo de int a string
     lenstr equ $-strResult

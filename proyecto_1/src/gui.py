@@ -156,7 +156,7 @@ class Ui_MainWindow(QMainWindow):
     # Adicionalmente este método coloca la imagen interpolada en
     # el label correspondiente
     def readImageAsm(self):
-        file = open('./asm/destino.img', 'r')
+        file = open('destino.img', 'r')
     
         completeArray = file.readlines()
         array = []
