@@ -1,0 +1,12 @@
+loop:
+    JALI r1, 10
+    SUM r1, r2, r3
+    MOD r5, r6, r7
+    CMP r2, r3
+    BCI loop3
+
+loop2:
+    JALI r10, 200
+
+loop3:
+    JAL r11, r12
