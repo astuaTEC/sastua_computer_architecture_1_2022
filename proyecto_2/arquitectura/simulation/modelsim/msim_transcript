@@ -10,64 +10,36 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:17:02 on Oct 05,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv 
-# -- Compiling module ALU
+# Start time: 15:52:46 on Oct 06,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/regfile.sv 
+# -- Compiling module regfile
 # 
 # Top level modules:
-# 	ALU
-# End time: 22:17:02 on Oct 05,2022, Elapsed time: 0:00:00
+# 	regfile
+# End time: 15:52:46 on Oct 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/regfile_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:17:02 on Oct 05,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv 
-# -- Compiling module ALU_tb
+# Start time: 15:52:46 on Oct 06,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/regfile_tb.sv 
+# -- Compiling module regfile_tb
 # 
 # Top level modules:
-# 	ALU_tb
-# End time: 22:17:02 on Oct 05,2022, Elapsed time: 0:00:00
+# 	regfile_tb
+# End time: 15:52:46 on Oct 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.ALU_tb
-# vsim work.ALU_tb 
-# Start time: 22:17:08 on Oct 05,2022
+vsim work.regfile_tb
+# vsim work.regfile_tb 
+# Start time: 15:52:51 on Oct 06,2022
 # Loading sv_std.std
-# Loading work.ALU_tb
-# Loading work.ALU
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'ctrl'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv(14).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/Test File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv Line: 12
+# Loading work.regfile_tb
+# Loading work.regfile
+add wave sim:/regfile_tb/*
 run
-# =============SUMADOR=============
-# exito para A = 0001, B = 0001
-# exito para A = 1111, B = 1110
-# exito para A = 0000, B = 1110
-# exito para A = 1111, B = 1111
-# =============RESTADOR=============
-# exito para A = 0001, B = 0001
-# exito para A = 1111, B = 1110
-# exito para A = 0000, B = 1110
-# exito para A = 1111, B = 1111
-# =============MODULO=============
-# exito para A = 0000, B = 1100
-# exito para A = 0011, B = 0010
 run
-# exito para A = 0100, B = 1000
-# exito para A = 0111, B = 0110
-# exito para A = 1101, B = 1010
-# =============AND=============
-# exito para A = 0011, B = 0000
-# exito para A = 0110, B = 1001
-# exito para A = 1100, B = 1110
-# exito para A = 1111, B = 0001
-# =============SHIFT-R=============
-# exito para A = 0101
-# exito para A = 1100
-# exito para A = 0100
 run
-# exito para A = 0110
-run
-# End time: 22:17:48 on Oct 05,2022, Elapsed time: 0:00:40
-# Errors: 0, Warnings: 1
+# End time: 16:02:32 on Oct 06,2022, Elapsed time: 0:09:41
+# Errors: 0, Warnings: 0
