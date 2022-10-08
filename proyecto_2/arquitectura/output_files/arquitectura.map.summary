@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Oct 06 15:52:35 2022
+Analysis & Elaboration Status : Successful - Fri Oct 07 21:33:51 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : arquitectura
-Top-level Entity Name : regfile_tb
+Top-level Entity Name : control
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

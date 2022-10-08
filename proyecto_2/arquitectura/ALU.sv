@@ -2,6 +2,8 @@
 /*
     0000 add A + B       Addition
     0001 sub A - B       Subtraction
+	 0010 A 					 Out = a
+	 0011 B 					 Out = b
     0100 mod A % B       Module
     0101 and  A &  B     Logical and
     0110 or A or B     Exclusive or 
@@ -40,7 +42,10 @@ module ALU #(parameter N = 16)(
 	//arithmetic result
 	assign sb = ctrl[0] ? ~b : b;
 	assign {cout, sumres} = a + sb + ctrl[0];
-	assign ares = sumres;
+	
+	assign ares = (ctrl[1:0] == 2'b10) ? a	:
+					  (ctrl[1:0] == 2'b11) ? b	:
+					  sumres;
 
 	//logical result
 	assign lres = (ctrl[2:0] == 3'b100) ? a % b    :
