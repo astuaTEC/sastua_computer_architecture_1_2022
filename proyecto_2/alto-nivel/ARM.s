@@ -54,6 +54,12 @@ actualizarRes:
 guardarCero:
 	MOV r0, #0
 	STR r0, [r12] // se guarda un cero
+	ADD r9, #1 // actualiza contador
+	ADD r11, #1 // se actualiza el offset de la palabra a leer
+	ADD r12, #1 // se actualiza el offset de donde escribir
+	CMP r9, r10 // se comparan las iteraciones maximas
+	BNE RSA
+	B salir
 	
 returnRes:
 	STR r1, [r12] // se guarda un res
@@ -63,4 +69,5 @@ returnRes:
 	CMP r9, r10 // se comparan las iteraciones maximas
 	BNE RSA
 	
-	
+salir:
+	MOV r0, #0
