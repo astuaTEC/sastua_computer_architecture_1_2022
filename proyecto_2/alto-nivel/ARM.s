@@ -2,9 +2,9 @@
 _start:
 	MOV r0, #1806
 	LDR r1, [r0] // acceder al switch
-	MOV r1, #1
+	MOV r0, #1
 	CMP r0, r1
-	BEQ iniciar_algoritmo
+	BEQ algoritmo
 	
 	B _start
 	
@@ -14,9 +14,9 @@ algoritmo:
 	MOV r10, #100 // iteraciones maximas
 	MOV r9, #0 // contador
 	MOV r8, #2
-	LDR r8, [r8] // se carga el valor de d
+	LDR r8, [r8] // se carga el valor de d - y
 	MOV r7, #8
-	LDR r7, [r7] // se carga el valor de n
+	LDR r7, [r7] // se carga el valor de n - p
 	
 
 RSA:

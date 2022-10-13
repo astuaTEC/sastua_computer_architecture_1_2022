@@ -34,7 +34,7 @@ INSTR = {
     "JAL":	{"OP": 3, "category": "MOV"},  # Mover
     "JALI":	{"OP": 2, "category": "MOVI"},  # Mover inmediato
     "ECH":	{"OP": 1, "category": "STW"},  # Guardar palabra
-    # "OUT":	{"OP": 4, "category": "OUT"}   # ???
+    "OUT":	{"OP": 4, "category": "OUT"}   # ???
 }
 
 
