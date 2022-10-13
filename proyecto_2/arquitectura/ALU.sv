@@ -6,7 +6,7 @@
 	 0011 B 					 Out = b
     0100 mod A % B       Module
     0101 and  A &  B     Logical and
-    0110 or A or B     Exclusive or 
+    0110 mul A * B     	 multiplication
     0111  Shift right A >> B Logical shift right
 */
 // Referencia: https://github.com/liaukovv/single_cycle/blob/master/datapath/alu.v
@@ -50,7 +50,7 @@ module ALU #(parameter N = 16)(
 	//logical result
 	assign lres = (ctrl[2:0] == 3'b100) ? a % b    :
 					  (ctrl[2:0] == 3'b101) ? a & b    :
-					  (ctrl[2:0] == 3'b110) ? a | b    :
+					  (ctrl[2:0] == 3'b110) ? a * b    :
 					  (ctrl[2:0] == 3'b111) ? a >> 1   :
 															0    ;
 

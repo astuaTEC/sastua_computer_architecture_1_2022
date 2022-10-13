@@ -10,48 +10,115 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:03:41 on Oct 12,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv 
-# -- Compiling module memory
+# Start time: 23:48:51 on Oct 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv 
+# -- Compiling module ALU
 # 
 # Top level modules:
-# 	memory
-# End time: 18:03:41 on Oct 12,2022, Elapsed time: 0:00:00
+# 	ALU
+# End time: 23:48:51 on Oct 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:03:42 on Oct 12,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv 
-# -- Compiling module memory_tb
+# Start time: 23:48:51 on Oct 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv 
+# -- Compiling module ALU_tb
 # 
 # Top level modules:
-# 	memory_tb
-# End time: 18:03:42 on Oct 12,2022, Elapsed time: 0:00:00
+# 	ALU_tb
+# End time: 23:48:51 on Oct 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv}
+# 
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:03:42 on Oct 12,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv 
-# -- Compiling module loadedMem
+# Start time: 23:48:51 on Oct 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv 
+# -- Compiling module decode_tb
 # 
 # Top level modules:
-# 	loadedMem
-# End time: 18:03:42 on Oct 12,2022, Elapsed time: 0:00:00
+# 	decode_tb
+# End time: 23:48:51 on Oct 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.memory_tb
-# vsim work.memory_tb 
-# Start time: 18:03:59 on Oct 12,2022
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  decode_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" decode_tb 
+# Start time: 23:48:52 on Oct 12,2022
 # Loading sv_std.std
-# Loading work.memory_tb
-# Loading work.memory
-# Loading work.loadedMem
-add wave -r /*
-add wave sim:/memory_tb/*
+# Loading work.decode_tb
+# ** Error: (vsim-3033) Instantiation of 'decode' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /decode_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv Line: 14
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/simulation/modelsim/rtl_work
+#             C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./arquitectura_run_msim_rtl_verilog.do PAUSED at line 13
+vsim work.decode_tb
+# vsim work.decode_tb 
+# Start time: 23:48:52 on Oct 12,2022
+# Loading sv_std.std
+# Loading work.decode_tb
+# ** Error: (vsim-3033) Instantiation of 'decode' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /decode_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv Line: 14
+#         Searched libraries:
+#             C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./arquitectura_run_msim_rtl_verilog.do PAUSED at line 13
+vsim work.ALU_tb
+# vsim work.ALU_tb 
+# Start time: 23:48:52 on Oct 12,2022
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'ctrl'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/Test File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv Line: 12
 run
+# =============SUMADOR=============
+# exito para A = 0001, B = 0001
+# exito para A = 1111, B = 1110
+# exito para A = 0000, B = 1110
+# exito para A = 1111, B = 1111
+# =============RESTADOR=============
+# exito para A = 0001, B = 0001
+# exito para A = 1111, B = 1110
+# exito para A = 0000, B = 1110
+# exito para A = 1111, B = 1111
+# =============MODULO=============
+# exito para A = 0000, B = 1100
+# exito para A = 0011, B = 0010
 run
+# exito para A = 0100, B = 1000
+# exito para A = 0111, B = 0110
+# exito para A = 1101, B = 1010
+# =============AND=============
+# exito para A = 0011, B = 0000
+# exito para A = 0110, B = 1001
+# exito para A = 1100, B = 1110
+# exito para A = 1111, B = 0001
+# =============SHIFT-R=============
+# exito para A = 0101
+# exito para A = 1100
+# exito para A = 0100
 run
-# End time: 18:06:08 on Oct 12,2022, Elapsed time: 0:02:09
-# Errors: 0, Warnings: 0
+# exito para A = 0110
+# =============MULTIPLICADOR=============
+# exito para A = 0011, B = 0010
+# exito para A = 0010, B = 0001
+# exito para A = 0010, B = 0010
+# exito para A = 0010, B = 1000
+run
+# End time: 23:49:55 on Oct 12,2022, Elapsed time: 0:01:03
+# Errors: 2, Warnings: 1

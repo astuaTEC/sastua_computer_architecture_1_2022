@@ -119,14 +119,14 @@ module control #(parameter OPCODEWIDTH = 4)
 				resultSelectorWBD = 0;
 				outFlag = 0;			
 			end
-//			4'b1110: begin 
-//				writeEnableDD = 0;
-//				data2SelectorED = 1;
-//				aluControlED = 3'b111;
-//				writeDataEnableMD = 0;
-//				resultSelectorWBD = 0;
-//				outFlag = 0;					
-//			end
+			4'b1110: begin // MUL multiplicacion
+				writeEnableDD = 1;
+				data2SelectorED = 0;
+				aluControlED = 3'b110; // Multiplicacion
+				writeDataEnableMD = 0;
+				resultSelectorWBD = 0;
+				outFlag = 0;					
+			end
 			4'b1111: begin // Salto inmediato
 				writeEnableDD = 0;
 				data2SelectorED = 1;

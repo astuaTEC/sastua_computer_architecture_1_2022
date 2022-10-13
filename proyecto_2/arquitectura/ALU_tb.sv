@@ -331,6 +331,65 @@ module ALU_tb();
 				$display ($sformatf("exito para A = %b", A));
 		else $error($sformatf("fallo para A = %b", A));
 		
+		
+		$display ("=============MULTIPLICADOR=============");
+		
+		sel = 3'b110;
+		
+		A = 4'b0011;
+		B = 4'b0010;
+		OutExpected = 4'b0110;
+		ZExpected=0;
+		VExpected=0;
+		NExpected=0;
+		CExpected=0;
+		
+		#10
+		assert (Out == OutExpected && CExpected == flags[1] && ZExpected == flags[2] && VExpected == flags[0] && NExpected == flags[3]) 
+			$display ($sformatf("exito para A = %b, B = %b", A, B));
+		else $error($sformatf("fallo para A = %b, B = %b", A, B));
+		
+		A = 4'b0010;
+		B = 4'b0001;
+		OutExpected = 4'b0010;
+		ZExpected=0;
+		VExpected=0;
+		NExpected=0;
+		CExpected=0;
+		
+		#10
+		assert (Out == OutExpected && CExpected == flags[1] && ZExpected == flags[2] && VExpected == flags[0] && NExpected == flags[3]) 
+			$display ($sformatf("exito para A = %b, B = %b", A, B));
+		else $error($sformatf("fallo para A = %b, B = %b", A, B));
+		
+		
+		A = 4'b0010;
+		B = 4'b0010;
+		OutExpected = 4'b0100;
+		ZExpected=0;
+		VExpected=0;
+		NExpected=0;
+		CExpected=0;
+		
+		#10
+		assert (Out == OutExpected && CExpected == flags[1] && ZExpected == flags[2] && VExpected == flags[0] && NExpected == flags[3]) 
+			$display ($sformatf("exito para A = %b, B = %b", A, B));
+		else $error($sformatf("fallo para A = %b, B = %b", A, B));
+		
+		
+		A = 4'b0010;
+		B = 4'b1000;
+		OutExpected = 4'b0000;
+		ZExpected=1;
+		VExpected=0;
+		NExpected=0;
+		CExpected=0;
+		
+		#10
+		assert (Out == OutExpected && CExpected == flags[1] && ZExpected == flags[2] && VExpected == flags[0] && NExpected == flags[3]) 
+			$display ($sformatf("exito para A = %b, B = %b", A, B));
+		else $error($sformatf("fallo para A = %b, B = %b", A, B));
+		
 	end	
 	
 	
