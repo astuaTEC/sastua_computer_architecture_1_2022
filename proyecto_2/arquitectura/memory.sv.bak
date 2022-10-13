@@ -1,5 +1,5 @@
 /*
-	
+	todo: definir bien los tamanos de las memorias
 	Memory with segmentation
 	Inputs:
 	- clk: the clock
@@ -28,7 +28,7 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	logic [WIDTH*4-1:0] aAux, wdAux;
 	logic [WIDTH*4-1:0] rdAux;
 	
-	assign weAux[0] = 0; // instrucciones - no se necesita escribir
+	assign weAux[0] = 0;
 	assign wdAux[WIDTH-1:0] = 0;
 	assign aAux[WIDTH-1:0] = a1;
 	assign rd1 = rdAux[WIDTH-1:0];
