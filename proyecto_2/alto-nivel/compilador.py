@@ -25,6 +25,7 @@ INSTR = {
     "AND":	{"OP": 8, "category": "ART"},  # O bit a bit
     "DLD":	{"OP": 9, "category": "ART"},  # Desplazamiento lateral izquierda
     "MOD":	{"OP": 6, "category": "ART"},  # Resta
+    "MUL":	{"OP": 14, "category": "ART"},  # Multiplicacion
     "BI":	{"OP": 15, "category": "BI"},  # Salto a Label incondicional
     "BIR":	{"OP": 12, "category": "BR"},  # Salto a registro incondicional
     "BCM":	{"OP": 13, "category": "BI"},  # Salto si menor que a Label
@@ -152,7 +153,7 @@ def final(binResult):
 
 
 if __name__ == "__main__":
-    file = open("rsa.txt")
+    file = open("ourProgram.s")
     text = file.read()
     # clean the input text and separe it into lines
     text = cleanText(text)

@@ -1,11 +1,10 @@
-
 _start:
     JALI r0, 1806
     APR r1, r0 ; Apear de memoria mem[1806]
     JALI r0, 1
     CMP r0, r1 ; Verificar si iniciar algoritmo
     BCI algoritmo ; Brinco a algoritmo si es igual
-    B _start
+    BI _start
 
 algoritmo:
     JALI r11, 32 ; offset1 = 32, Donde comienza el texto
@@ -35,7 +34,7 @@ while:
     AND r3, r2, r3
     CMP r3, r2 ; if ((y & 1) == 1) :
     JAL r13, r15 ; se guarda PC + 1
-    BEQ actualizarRes
+    BCI actualizarRes
 
     DLD r8, r8, r2 ; y = y >> 1	 # y = y/2
     MUL r0, r0, r0 ; x= x* x
@@ -50,10 +49,11 @@ actualizarRes:
 
 guardarCero:
     JALI r0, 0
+    JALI r2, 1
     ECH r12, r0 ; mem[offset r12] = r0 ECHAR
-    SUM r9, r9, 1 ; actualiza contador
-    SUM r11, r11, 1 ;  se actualiza el offset de la palabra a leer
-    SUM r12, r12, 1 ; se actualiza el offset de donde escribir
+    SUM r9, r9, r2 ; actualiza contador
+    SUM r11, r11, r2 ;  se actualiza el offset de la palabra a leer
+    SUM r12, r12, r2 ; se actualiza el offset de donde escribir
     CMP r9, r10 ; se comparan las iteraciones maximas
     BCI salir ; si es igual se sale
 
@@ -61,9 +61,10 @@ guardarCero:
 
 returnRes:
     ECH r12, r1 ; ECHAR mem[offset r12] = r1
-    SUM r9, r9, 1 ; actualiza contador
-    SUM r11, r11, 1 ;  se actualiza el offset de la palabra a leer
-    SUM r12, r12, 1 ; se actualiza el offset de donde escribir
+    JALI r2, 1
+    SUM r9, r9, r2 ; actualiza contador
+    SUM r11, r11, r2 ;  se actualiza el offset de la palabra a leer
+    SUM r12, r12, r2 ; se actualiza el offset de donde escribir
     CMP r9, r10 ; se comparan las iteraciones maximas
     BCI salir ; si es igual se sale
     BI RSA
