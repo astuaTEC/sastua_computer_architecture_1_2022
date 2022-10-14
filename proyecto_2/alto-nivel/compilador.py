@@ -67,7 +67,7 @@ def cleanText(text):
 
     return newText
 
-def funcion1(binResult):
+def funcion1(binResult, BRANCHES):
 
     for (i, l) in enumerate(text):
         # The instruction is the first word of the line
@@ -160,5 +160,5 @@ if __name__ == "__main__":
     # map the branches inmediantes for jumps
     BRANCHES = findBranches(text)
     binResult = ""
-    binResult = funcion1(binResult)
+    binResult = funcion1(binResult, BRANCHES)
     final(binResult)
