@@ -1,6 +1,7 @@
 import sys
 import re
 
+### Se definen los registros
 REGISTERS = {
     "r0": 0,
     "r1": 1,
@@ -20,99 +21,89 @@ REGISTERS = {
     "r15": 15
 }
 
-INSTR = {
+### Se define las intruciones
+INSTRUCIONES = {
+    "ECH":	{"OP": 1, "category": "STW"},  # Guardar palabra
+    "JALI":	{"OP": 2, "category": "MOVI"},  # Mover inmediato
+    "JAL":	{"OP": 3, "category": "MOV"},  # Mover
+    "OUT":	{"OP": 4, "category": "OUT"},   # ???
     "SUM":	{"OP": 5, "category": "ART"},  # Suma
+    "MOD":	{"OP": 6, "category": "ART"},  # Resta
+    "APR":	{"OP": 7, "category": "LDW"},  # Cargar palabra
     "AND":	{"OP": 8, "category": "ART"},  # O bit a bit
     "DLD":	{"OP": 9, "category": "ART"},  # Desplazamiento lateral izquierda
-    "MOD":	{"OP": 6, "category": "ART"},  # Resta
-    "MUL":	{"OP": 14, "category": "ART"},  # Multiplicacion
-    "BI":	{"OP": 15, "category": "BI"},  # Salto a Label incondicional
+    "CMP":	{"OP": 10, "category": "CMP"},  # Comparar
+    "BCI":	{"OP": 11, "category": "BI"},  # Salto si igual que a Label
     "BIR":	{"OP": 12, "category": "BR"},  # Salto a registro incondicional
     "BCM":	{"OP": 13, "category": "BI"},  # Salto si menor que a Label
-    "BCI":	{"OP": 11, "category": "BI"},  # Salto si igual que a Label
-    "CMP":	{"OP": 10, "category": "CMP"},  # Comparar
-    "APR":	{"OP": 7, "category": "LDW"},  # Cargar palabra
-    "JAL":	{"OP": 3, "category": "MOV"},  # Mover
-    "JALI":	{"OP": 2, "category": "MOVI"},  # Mover inmediato
-    "ECH":	{"OP": 1, "category": "STW"},  # Guardar palabra
-    "OUT":	{"OP": 4, "category": "OUT"}   # ???
+    "MUL":	{"OP": 14, "category": "ART"},  # Multiplicacion
+    "BI":	{"OP": 15, "category": "BI"},  # Salto a Label incondicional
+
 }
 
 
-# Finds labels using the  ":" char, maps the name of the branche to the instruction line
-# and deletes de branch of the text in order to have only intrusctions to compile.
-# The dictorionary of branch name and instruction number is used for futures branches instructions as an inmediate
-def findBranches(text):
-    branches = {}
+# Encuentra las etiquetas usando el carácter ":", asigna el nombre de la rama a la línea de instrucción
+# y elimina la rama del texto para tener sólo intrusiones para compilar.
+# El diccionario del nombre de la rama y el número de la instrucción se utiliza para las futuras instrucciones de las ramas como un inmediato
+def BuscarBrincos(text):
+    brincos = {}
     i = 0
     while i < len(text):
         if (":" in text[i]):
-            branches[text[i][:-1]] = i
+            brincos[text[i][:-1]] = i
             text.pop(i)
         i += 1
+    return brincos
 
-    return branches
 
-
-# Removes the comments, whitespaces and tabs from the program to make it easier to compile
-def cleanText(text):
-    newText = []
+#Acooda el codigo de manera tal que se eliminan los epaciones en blanco y las tabulaciones
+#Para el el preoceso de compilacion sea mas sencillo
+def AcomodoDeTexto(text):
+    codigoO = []
     for l in text.split("\n"):
         line = l.split(";")[0]
         line = line.replace("\t", " ")
         line = line.strip()
         if (line == ""):
             continue
-        newText += [re.sub(' +', ' ', line)]
+        codigoO += [re.sub(' +', ' ', line)]
 
-    return newText
+    return codigoO
 
-def funcion1(binResult, BRANCHES):
+def generadorB(valorBinario, BRANCHES):
 
     for (i, l) in enumerate(text):
-        # The instruction is the first word of the line
         instr = l.split(" ")[0]
-        # The rest of words separed by ',' are parameters
         params = "".join(l.split(" ")[1:]).split(",")
-        # Check if the instruction match some of the ISA
-        if(not INSTR.get(instr)):
+        if(not INSTRUCIONES.get(instr)):
             raise Exception("OP NOT RECOGNIZED LINE ({}) '{}'".format(i, l))
 
-        # Creates a debug string that includes the bits inside () and a description
         result = "Instrucción actual: {1}OP{0}({0:04b})".format(
-            INSTR[instr]["OP"], l.ljust(28, "_"))
+            INSTRUCIONES[instr]["OP"], l.ljust(28, "_"))
 
-        # Switch to order the bits according to the category
-        category = INSTR[instr]["category"]
-        # Aritmetic
+# Separa las intrucines por tipo
+        category = INSTRUCIONES[instr]["category"]
         if (category == "ART"):
             for r in params:
                 result += "R{0}({0:04b})".format(REGISTERS[r])
-        # Branch inmediate
         elif (category == "BI"):
             result += "I{0}('0000'{0:016b})".format(int(BRANCHES[params[0]]))
-        # Branch to register
         elif (category == "BR"):
             result += "R{0}('0000'{0:04b})".format(REGISTERS[params[0]])
-        # Load word
         elif (category == "LDW"):
             for r in params:
                 result += "R{0}({0:04b})".format(REGISTERS[r])
-        # Store word
         elif (category == "STW"):
             result += "('0000')"
             for r in params:
                 result += "R{0}({0:04b})".format(REGISTERS[r])
-        # Move inmediate
         elif (category == "MOVI"):
             result += "R{0}({0:04b})".format(REGISTERS[params[0]])
-            result += "I{0}({0:016b})".format(int(params[1]))
-        # Compare
+            result += "I{0}({0:016b})".format(int(params[1]))   
         elif (category == "CMP"):
             result += "('0000')"
             for r in params:
                 result += "R{0}({0:04b})".format(REGISTERS[r])
-        # Out
         elif (category == "OUT"):
             result += "('0000')"
             result += "R{0}({0:04b})".format(REGISTERS[params[0]])
@@ -121,14 +112,12 @@ def funcion1(binResult, BRANCHES):
                 result += "R{0}({0:04b})".format(REGISTERS[r])
 
         print(result)
-        # Add the debug string to a final string
-        binResult += result + "\n"
+        valorBinario += result + "\n"
     
-    return binResult
+    return valorBinario
 
-# final is a list with just the binary code compiled
-# without the debug data, only the bits inside ()
-def final(binResult):
+# Se obtiene los bits dentro de la compilacion 
+def obtencionDeBits(binResult):
     final = []
     i = 0
     while (i < len(binResult)):
@@ -141,8 +130,6 @@ def final(binResult):
         if (binResult[i] == "\n"):
             final.append("\n")
         i += 1
-
-    # Join the final bits into one string in order to generate a txt with the binary code
     final = "".join(final)
     final = final.split("\n")
     final = [x.ljust(24, "0") for x in final]
@@ -155,10 +142,8 @@ def final(binResult):
 if __name__ == "__main__":
     file = open("ourProgram.s")
     text = file.read()
-    # clean the input text and separe it into lines
-    text = cleanText(text)
-    # map the branches inmediantes for jumps
-    BRANCHES = findBranches(text)
+    text = AcomodoDeTexto(text)
+    BRINCOS = BuscarBrincos(text)
     binResult = ""
-    binResult = funcion1(binResult, BRANCHES)
-    final(binResult)
+    binResult = generadorB(binResult, BRINCOS)
+    obtencionDeBits(binResult)
