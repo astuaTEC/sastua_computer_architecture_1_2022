@@ -1,20 +1,20 @@
 _start:
-    JALI r0, 1806
-    APR r1, r0 ; Apear de memoria mem[1806]
+    JALI r0, 202
+    APR r1, r0 ; Apear de memoria mem[202]
     JALI r0, 1
     CMP r0, r1 ; Verificar si iniciar algoritmo
     BCI algoritmo ; Brinco a algoritmo si es igual
     BI _start
 
 algoritmo:
-    JALI r11, 32 ; offset1 = 32, Donde comienza el texto
-    JALI r12, 1056 ; donde hay que guardar el texto desencriptado
+    JALI r11, 0 ; offset1 = 0, Donde comienza el texto
+    JALI r12, 102 ; donde hay que guardar el texto desencriptado
     JALI r10, 100 ; iteraciones maximas
     JALI r9, 0 ; contador
-    JALI r8, 2
-    APR r8, r8 ; Apear mem[2] valor de d - y
-    JALI r7, 8
-    APR r7, r7 ; Apear mem[8] valor de n - p
+    JALI r8, 100
+    APR r8, r8 ; Apear mem[100] valor de d - y
+    JALI r7, 101
+    APR r7, r7 ; Apear mem[101] valor de n - p
 
 RSA:
     APR r0, r11 ; Se obtiene la primera letra (carga 32 bits de un solo)
@@ -70,4 +70,18 @@ returnRes:
     BI RSA
 
 salir:
-    JALI r0, 1
+    JALI r12, 202 ; limite
+    JALI r11, 102 ; indice
+
+outWhile:
+    CMP         r11, r12
+    BCI         outBreak
+
+    APR         r0, r11
+    OUT         r0 ; saca el dato por hardware
+
+    JALI        r0, 1
+    SUM         r11, r11, r0 ; se aumenta el contador
+    BI          outWhile
+
+outBreak:
