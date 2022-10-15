@@ -1,6 +1,6 @@
 -- begin_signature
 -- loadedMem(WIDTH
--- 36)
+-- 16)
 -- end_signature
 WIDTH=16;
 DEPTH=102;

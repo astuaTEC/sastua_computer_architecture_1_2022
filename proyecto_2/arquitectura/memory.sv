@@ -25,18 +25,18 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	
 	
 	logic [3:0] weAux;
-	logic [WIDTH*4-1:0] aAux, wdAux;
-	logic [WIDTH*4-1:0] rdAux;
+	logic [WIDTH*3-1:0] aAux, wdAux;
+	logic [WIDTH*3-1:0] rdAux;
 	
 	assign weAux[0] = 0; // instrucciones - no se necesita escribir
 	assign wdAux[WIDTH-1:0] = 0;
 	assign aAux[WIDTH-1:0] = a1;
 	assign rd1 = rdAux[WIDTH-1:0];
 	
-	assign wdAux[WIDTH*4-1:WIDTH] = {wd, wd, wd};
-	assign aAux[WIDTH*2-1:WIDTH*1] = a2;
-	assign aAux[WIDTH*3-1:WIDTH*2] = a2-32;
-	assign aAux[WIDTH*4-1:WIDTH*3] = a2-(32+1024);
+	assign wdAux[WIDTH*3-1:WIDTH] = {wd, wd};
+	assign aAux[WIDTH*2-1:WIDTH*1] = a2; //mem2
+	assign aAux[WIDTH*3-1:WIDTH*2] = a2-102; //mem3
+	//assign aAux[WIDTH*4-1:WIDTH*3] = a2-(102+100);
 
 	
 	loadedMem #(WIDTH) loadedMem(	clk,
@@ -46,17 +46,17 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	
 	always_comb begin
 		rd2 = 0;
-		if (a2==1806) rd2 = startIOExtended;
-		else if(a2<32) rd2 = rdAux[WIDTH*2-1:WIDTH];
-		else if (a2<32+1024) rd2  = rdAux[WIDTH*3-1:WIDTH*2];
-		else if (a2<32+1024+750)  rd2  = rdAux[WIDTH*4-1:WIDTH*3];
+		if (a2==204) rd2 = startIOExtended;
+		else if(a2<102) rd2 = rdAux[WIDTH*2-1:WIDTH]; // mem2
+		else if (a2<102+100) rd2  = rdAux[WIDTH*3-1:WIDTH*2]; //mem3
+		//else if (a2<32+1024+750)  rd2  = rdAux[WIDTH*4-1:WIDTH*3]; //mem4
 		
 	
 		weAux[3:1] = 0;
 		if (we) begin
-			if(a2<32) weAux[1] = 1;
-			else if (a2<32+1024) weAux[2] = 1;
-			else if (a2<32+1024+750) weAux[3] = 1;
+			if(a2<102) weAux[1] = 1; //mem2
+			else if (a2<102+100) weAux[2] = 1; //mem3
+			//else if (a2<32+1024+750) weAux[3] = 1;
 		end
 		
 	end
