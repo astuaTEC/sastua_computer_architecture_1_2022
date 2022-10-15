@@ -35,8 +35,8 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	
 	assign wdAux[WIDTH*3-1:WIDTH] = {wd, wd};
 	assign aAux[WIDTH*2-1:WIDTH*1] = a2; //mem2
-	assign aAux[WIDTH*3-1:WIDTH*2] = a2-103; //mem3
-	//assign aAux[WIDTH*4-1:WIDTH*3] = a2-(103+100);
+	assign aAux[WIDTH*3-1:WIDTH*2] = a2-102; //mem3
+	//assign aAux[WIDTH*4-1:WIDTH*3] = a2-(102+100);
 
 	
 	loadedMem #(WIDTH) loadedMem(	clk,
@@ -54,8 +54,8 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	
 		weAux[3:1] = 0;
 		if (we) begin
-			if(a2<103) weAux[1] = 1; //mem2
-			else if (a2<103+100) weAux[2] = 1; //mem3
+			if(a2<102) weAux[1] = 1; //mem2
+			else if (a2<102+100) weAux[2] = 1; //mem3
 			//else if (a2<32+1024+750) weAux[3] = 1;
 		end
 		
