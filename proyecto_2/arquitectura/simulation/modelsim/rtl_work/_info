@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/simulation/modelsim
 vdecode_tb
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1665869011
+!s110 1665869723
 !i10b 1
 !s100 U]X?LYS0nXOceNKdQ0XG32
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1665869010.000000
+Z5 !s108 1665869722.000000
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z7 !s92 -sv -work work {+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repo
 Z8 tCvgOpt 0
 vloadedMem
 R1
-Z9 !s110 1665869010
+Z9 !s110 1665869722
 !i10b 1
 !s100 z>FMOQLoEdmZe4ZFU1Yb72
 R2
@@ -66,13 +66,13 @@ vmemory
 R1
 R9
 !i10b 1
-!s100 `oJ8`;3V^ClmN3J`cIIam3
+!s100 U3a:BVIza:Co0EXjNPFZf1
 R2
-ILUTRzmeYz1d>IY6X]22902
+IPVAbWHoR823Tf7gjULSab3
 R3
 S1
 R0
-w1665867981
+w1665869491
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv
 !i122 0
@@ -92,17 +92,17 @@ vmemory_tb
 R1
 R9
 !i10b 1
-!s100 92@hMm>iDo=DcT?Q2g>A=3
+!s100 3KY;]8k7`i[_eZ1dFh9@O3
 R2
-ID0hQ2FL]d3L3MWU^80?j[2
+IB0Q9E;Ve_d5ReU1ib;dJ41
 R3
 S1
 R0
-w1665868709
+w1665869702
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv
 !i122 1
-L0 3 82
+L0 3 83
 R4
 r1
 !s85 0

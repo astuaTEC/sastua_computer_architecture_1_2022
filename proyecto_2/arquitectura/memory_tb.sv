@@ -47,7 +47,7 @@ module memory_tb();
 		
 		we = 0; // lectura
 		a1 = a1+1; // PC + 1
-		a2 = 106; // verificamos la pos 106 en memoria (mem3)
+		a2 = 107; // verificamos la pos 107 en memoria (mem3)
 	   
 		#10;
 	   clk = 1;
@@ -64,6 +64,7 @@ module memory_tb();
 		clk = 0;
 		
 		a1 = a1+1; // PC + 1
+		a2 = 15;
 		wd = 8'h12;
 		we = 1; // escribir lo que tenga wd en a2
 		
@@ -74,7 +75,7 @@ module memory_tb();
 		clk = 0;
 		
 		we = 0; // leer
-		a2 = 17; // ver lo que tiene la pos 17
+		a2 = 107; // ver lo que tiene la pos 107
 		a1 = a1+1; // PC + 1
 	   
 		#10;

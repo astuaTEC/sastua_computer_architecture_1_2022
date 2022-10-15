@@ -12,49 +12,49 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:23:30 on Oct 15,2022
+# Start time: 15:35:22 on Oct 15,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# End time: 15:23:30 on Oct 15,2022, Elapsed time: 0:00:00
+# End time: 15:35:22 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:23:30 on Oct 15,2022
+# Start time: 15:35:22 on Oct 15,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv 
 # -- Compiling module memory_tb
 # 
 # Top level modules:
 # 	memory_tb
-# End time: 15:23:30 on Oct 15,2022, Elapsed time: 0:00:00
+# End time: 15:35:22 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:23:30 on Oct 15,2022
+# Start time: 15:35:22 on Oct 15,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv 
 # -- Compiling module loadedMem
 # 
 # Top level modules:
 # 	loadedMem
-# End time: 15:23:30 on Oct 15,2022, Elapsed time: 0:00:00
+# End time: 15:35:22 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:23:30 on Oct 15,2022
+# Start time: 15:35:22 on Oct 15,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv 
 # -- Compiling module decode_tb
 # 
 # Top level modules:
 # 	decode_tb
-# End time: 15:23:31 on Oct 15,2022, Elapsed time: 0:00:01
+# End time: 15:35:23 on Oct 15,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  decode_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" decode_tb 
-# Start time: 15:23:31 on Oct 15,2022
+# Start time: 15:35:23 on Oct 15,2022
 # Loading sv_std.std
 # Loading work.decode_tb
 # ** Error: (vsim-3033) Instantiation of 'decode' failed. The design unit was not found.
@@ -76,7 +76,7 @@
 # MACRO ./arquitectura_run_msim_rtl_verilog.do PAUSED at line 14
 vsim work.memory_tb
 # vsim work.memory_tb 
-# Start time: 15:23:31 on Oct 15,2022
+# Start time: 15:35:23 on Oct 15,2022
 # Loading sv_std.std
 # Loading work.memory_tb
 # Loading work.memory
@@ -84,5 +84,6 @@ vsim work.memory_tb
 add wave sim:/memory_tb/*
 run
 run
-# End time: 15:25:20 on Oct 15,2022, Elapsed time: 0:01:49
+run
+# End time: 15:36:29 on Oct 15,2022, Elapsed time: 0:01:06
 # Errors: 1, Warnings: 0
