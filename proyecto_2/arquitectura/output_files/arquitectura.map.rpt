@@ -1,5 +1,5 @@
 Analysis & Elaboration report for arquitectura
-Sat Oct 15 15:41:04 2022
+Sat Oct 15 18:04:03 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,43 +9,45 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |CPU
-  5. Parameter Settings for User Entity Instance: arqui:arqui
-  6. Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller
-  7. Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|control:controlunit
-  8. Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|conditional:condunit
-  9. Parameter Settings for User Entity Instance: arqui:arqui|hazardUnit:HazardUnit
- 10. Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory
- 11. Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory|loadedMem:loadedMem
- 12. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch
- 13. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|flopenrc:pcreg
- 14. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff
- 15. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|adder:pcadd
- 16. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:FetchFlipFlop
- 17. Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode
- 18. Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile
- 19. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:DecodeFlipFlop
- 20. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute
- 21. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:byp1mux
- 22. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:byp2mux
- 23. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux
- 24. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|ALU:alu
- 25. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:ExecuteFlipFlop
- 26. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:MemoryFlipFlop
- 27. Parameter Settings for User Entity Instance: arqui:arqui|Mux_2_to_1:writeBack
- 28. Analysis & Elaboration Settings
- 29. Port Connectivity Checks: "arqui:arqui|Mux_2_to_1:writeBack"
- 30. Port Connectivity Checks: "arqui:arqui|flopenrc:MemoryFlipFlop"
- 31. Port Connectivity Checks: "arqui:arqui|flopenrc:ExecuteFlipFlop"
- 32. Port Connectivity Checks: "arqui:arqui|execute:Execute|ALU:alu"
- 33. Port Connectivity Checks: "arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux"
- 34. Port Connectivity Checks: "arqui:arqui|execute:Execute"
- 35. Port Connectivity Checks: "arqui:arqui|flopenrc:DecodeFlipFlop"
- 36. Port Connectivity Checks: "arqui:arqui|fetch:Fetch|adder:pcadd"
- 37. Port Connectivity Checks: "arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff"
- 38. Port Connectivity Checks: "arqui:arqui|memory:Memory|loadedMem:loadedMem"
- 39. Port Connectivity Checks: "arqui:arqui|hazardUnit:HazardUnit"
- 40. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |CPU_tb
+  5. Parameter Settings for User Entity Instance: CPU:cpu
+  6. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui
+  7. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller
+  8. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|control:controlunit
+  9. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit
+ 10. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|hazardUnit:HazardUnit
+ 11. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory
+ 12. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem
+ 13. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch
+ 14. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg
+ 15. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff
+ 16. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd
+ 17. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop
+ 18. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode
+ 19. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile
+ 20. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop
+ 21. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute
+ 22. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:byp1mux
+ 23. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:byp2mux
+ 24. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux
+ 25. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|ALU:alu
+ 26. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop
+ 27. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop
+ 28. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack
+ 29. Analysis & Elaboration Settings
+ 30. Port Connectivity Checks: "CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack"
+ 31. Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop"
+ 32. Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop"
+ 33. Port Connectivity Checks: "CPU:cpu|arqui:arqui|execute:Execute|ALU:alu"
+ 34. Port Connectivity Checks: "CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux"
+ 35. Port Connectivity Checks: "CPU:cpu|arqui:arqui|execute:Execute"
+ 36. Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop"
+ 37. Port Connectivity Checks: "CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd"
+ 38. Port Connectivity Checks: "CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff"
+ 39. Port Connectivity Checks: "CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem"
+ 40. Port Connectivity Checks: "CPU:cpu|arqui:arqui|hazardUnit:HazardUnit"
+ 41. Port Connectivity Checks: "CPU:cpu"
+ 42. Analysis & Elaboration Messages
 
 
 
@@ -72,10 +74,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Oct 15 15:41:04 2022       ;
+; Analysis & Elaboration Status ; Successful - Sat Oct 15 18:04:03 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; arquitectura                                ;
-; Top-level Entity Name         ; CPU                                         ;
+; Top-level Entity Name         ; CPU_tb                                      ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -103,148 +105,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |CPU ;
-+------------------+-------+------------------------------------------+
-; Parameter Name   ; Value ; Type                                     ;
-+------------------+-------+------------------------------------------+
-; WIDTH            ; 36    ; Signed Integer                           ;
-; REGNUM           ; 16    ; Signed Integer                           ;
-; ADDRESSWIDTH     ; 4     ; Signed Integer                           ;
-; OPCODEWIDTH      ; 4     ; Signed Integer                           ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                           ;
-+------------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui ;
-+------------------+-------+-------------------------------+
-; Parameter Name   ; Value ; Type                          ;
-+------------------+-------+-------------------------------+
-; WIDTH            ; 36    ; Signed Integer                ;
-; REGNUM           ; 16    ; Signed Integer                ;
-; ADDRESSWIDTH     ; 4     ; Signed Integer                ;
-; OPCODEWIDTH      ; 4     ; Signed Integer                ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                ;
-+------------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; OPCODEWIDTH    ; 4     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|control:controlunit ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; OPCODEWIDTH    ; 4     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|conditional:condunit ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; OPCODEWIDTH    ; 4     ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|hazardUnit:HazardUnit ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                        ;
-; ADDRESSWIDTH   ; 4     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory ;
-+------------------+-------+---------------------------------------------+
-; Parameter Name   ; Value ; Type                                        ;
-+------------------+-------+---------------------------------------------+
-; WIDTH            ; 36    ; Signed Integer                              ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                              ;
-+------------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory|loadedMem:loadedMem ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|flopenrc:pcreg ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|adder:pcadd ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:FetchFlipFlop ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; WIDTH          ; 24    ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode ;
+; Parameter Settings for User Entity Instance: Top-level Entity: |CPU_tb ;
 +------------------+-------+---------------------------------------------+
 ; Parameter Name   ; Value ; Type                                        ;
 +------------------+-------+---------------------------------------------+
@@ -257,105 +119,259 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu ;
++------------------+-------+---------------------------+
+; Parameter Name   ; Value ; Type                      ;
++------------------+-------+---------------------------+
+; WIDTH            ; 36    ; Signed Integer            ;
+; REGNUM           ; 16    ; Signed Integer            ;
+; ADDRESSWIDTH     ; 4     ; Signed Integer            ;
+; OPCODEWIDTH      ; 4     ; Signed Integer            ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer            ;
++------------------+-------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui ;
++------------------+-------+---------------------------------------+
+; Parameter Name   ; Value ; Type                                  ;
++------------------+-------+---------------------------------------+
+; WIDTH            ; 36    ; Signed Integer                        ;
+; REGNUM           ; 16    ; Signed Integer                        ;
+; ADDRESSWIDTH     ; 4     ; Signed Integer                        ;
+; OPCODEWIDTH      ; 4     ; Signed Integer                        ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                        ;
++------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; OPCODEWIDTH    ; 4     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|control:controlunit ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; OPCODEWIDTH    ; 4     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; OPCODEWIDTH    ; 4     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|hazardUnit:HazardUnit ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                ;
+; ADDRESSWIDTH   ; 4     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory ;
++------------------+-------+-----------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                ;
++------------------+-------+-----------------------------------------------------+
+; WIDTH            ; 36    ; Signed Integer                                      ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                                      ;
++------------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile ;
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg ;
 +----------------+-------+--------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                               ;
 +----------------+-------+--------------------------------------------------------------------+
 ; WIDTH          ; 36    ; Signed Integer                                                     ;
-; REGNUM         ; 16    ; Signed Integer                                                     ;
-; ADDRESSWIDTH   ; 4     ; Signed Integer                                                     ;
 +----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode ;
++------------------+-------+-----------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                ;
++------------------+-------+-----------------------------------------------------+
+; WIDTH            ; 36    ; Signed Integer                                      ;
+; REGNUM           ; 16    ; Signed Integer                                      ;
+; ADDRESSWIDTH     ; 4     ; Signed Integer                                      ;
+; OPCODEWIDTH      ; 4     ; Signed Integer                                      ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                                      ;
++------------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                             ;
+; REGNUM         ; 16    ; Signed Integer                                                             ;
+; ADDRESSWIDTH   ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 136   ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:DecodeFlipFlop ;
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute ;
 +----------------+-------+---------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                    ;
 +----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 136   ; Signed Integer                                          ;
+; WIDTH          ; 36    ; Signed Integer                                          ;
 +----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:byp1mux ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:byp1mux ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:byp2mux ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:byp2mux ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|ALU:alu ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|ALU:alu ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; WIDTH          ; 79    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:ExecuteFlipFlop ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; WIDTH          ; 79    ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 78    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:MemoryFlipFlop ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 78    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arqui:arqui|Mux_2_to_1:writeBack ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -365,8 +381,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
-; Top-level entity name                                                           ; CPU                ; arquitectura       ;
+; Top-level entity name                                                           ; CPU_tb             ; arquitectura       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Verilog Show LMF Mapping Messages                                               ; Off                ;                    ;
+; Verilog Version                                                                 ; SystemVerilog_2005 ; Verilog_2001       ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
@@ -375,7 +393,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
 ; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
 ; Safe State Machine                                                              ; Off                ; Off                ;
@@ -447,7 +464,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|Mux_2_to_1:writeBack"                                                                                                                                                 ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack"                                                                                                                                         ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -457,7 +474,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|flopenrc:MemoryFlipFlop"                                                     ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop"                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -466,17 +483,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|flopenrc:ExecuteFlipFlop" ;
-+------+-------+----------+----------------------------------------+
-; Port ; Type  ; Severity ; Details                                ;
-+------+-------+----------+----------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                           ;
-+------+-------+----------+----------------------------------------+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                   ;
++------+-------+----------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|execute:Execute|ALU:alu"                                                                                                        ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|execute:Execute|ALU:alu"                                                                                                ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                      ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -485,7 +502,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux"                                                                                                                                   ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:srcbmux"                                                                                                                           ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -495,7 +512,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|execute:Execute"                                                                                                                                                           ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|execute:Execute"                                                                                                                                                   ;
 +-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port        ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -507,7 +524,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|flopenrc:DecodeFlipFlop"                                                 ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop"                                         ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -516,18 +533,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|fetch:Fetch|adder:pcadd" ;
-+----------+-------+----------+-----------------------------------+
-; Port     ; Type  ; Severity ; Details                           ;
-+----------+-------+----------+-----------------------------------+
-; b[35..1] ; Input ; Info     ; Stuck at GND                      ;
-; b[0]     ; Input ; Info     ; Stuck at VCC                      ;
-+----------+-------+----------+-----------------------------------+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd" ;
++----------+-------+----------+-------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                   ;
++----------+-------+----------+-------------------------------------------+
+; b[35..1] ; Input ; Info     ; Stuck at GND                              ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                              ;
++----------+-------+----------+-------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff"                                                                                                                                          ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff"                                                                                                                                  ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -537,7 +554,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|memory:Memory|loadedMem:loadedMem"                                            ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem"                                    ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -549,12 +566,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arqui:arqui|hazardUnit:HazardUnit"                                                                      ;
+; Port Connectivity Checks: "CPU:cpu|arqui:arqui|hazardUnit:HazardUnit"                                                              ;
 +--------------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port                     ; Type   ; Severity ; Details                                                                             ;
 +--------------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; data2ForwardSelectorE[1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:cpu"                                                                               ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; clock   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; outFlag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -563,94 +591,97 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 15 15:40:56 2022
+    Info: Processing started: Sat Oct 15 18:03:55 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arquitectura -c arquitectura --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv Line: 14
+    Info (12023): Found entity 1: ALU File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU_tb.sv Line: 1
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2_to_1.sv
-    Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv Line: 5
+    Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file mux_3_to_1.sv
-    Info (12023): Found entity 1: Mux_3_to_1 File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv Line: 5
+    Info (12023): Found entity 1: Mux_3_to_1 File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
-    Info (12023): Found entity 1: regfile File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/regfile.sv Line: 5
+    Info (12023): Found entity 1: regfile File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/adder.sv Line: 5
+    Info (12023): Found entity 1: adder File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/flopr.sv Line: 4
+    Info (12023): Found entity 1: flopr File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopr.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file regfile_tb.sv
-    Info (12023): Found entity 1: regfile_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/regfile_tb.sv Line: 1
+    Info (12023): Found entity 1: regfile_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file conditional.sv
-    Info (12023): Found entity 1: conditional File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/conditional.sv Line: 2
+    Info (12023): Found entity 1: conditional File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
-    Info (12023): Found entity 1: dmem File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/dmem.sv Line: 1
+    Info (12023): Found entity 1: dmem File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/dmem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
-    Info (12023): Found entity 1: imem File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/imem.sv Line: 2
+    Info (12023): Found entity 1: imem File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/imem.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
-    Info (12023): Found entity 1: control File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/control.sv Line: 2
+    Info (12023): Found entity 1: control File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/controller.sv Line: 3
+    Info (12023): Found entity 1: controller File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file decode.sv
-    Info (12023): Found entity 1: decode File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode.sv Line: 1
+    Info (12023): Found entity 1: decode File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fetch.sv
-    Info (12023): Found entity 1: fetch File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/fetch.sv Line: 1
+    Info (12023): Found entity 1: fetch File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopenrc.sv
-    Info (12023): Found entity 1: flopenrc File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/flopenrc.sv Line: 2
+    Info (12023): Found entity 1: flopenrc File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file execute.sv
-    Info (12023): Found entity 1: execute File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/execute.sv Line: 3
+    Info (12023): Found entity 1: execute File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file loadedmem.sv
-    Info (12023): Found entity 1: loadedMem File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 16
+    Info (12023): Found entity 1: loadedMem File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file arqui.sv
-    Info (12023): Found entity 1: arqui File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 1
+    Info (12023): Found entity 1: arqui File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hazardunit.sv
-    Info (12023): Found entity 1: hazardUnit File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/hazardUnit.sv Line: 3
+    Info (12023): Found entity 1: hazardUnit File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file memory.sv
-    Info (12023): Found entity 1: memory File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv Line: 15
+    Info (12023): Found entity 1: memory File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/CPU.sv Line: 2
+    Info (12023): Found entity 1: CPU File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file memory_tb.sv
-    Info (12023): Found entity 1: memory_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv Line: 3
+    Info (12023): Found entity 1: memory_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory_tb.sv Line: 3
 Warning (12019): Can't analyze file -- file Decoder_for_test.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file decode_tb.sv
-    Info (12023): Found entity 1: decode_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv Line: 1
+    Info (12023): Found entity 1: decode_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_tb.sv
-    Info (12023): Found entity 1: control_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/control_tb.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o1" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o2" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(30): created implicit net for "o3" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/ALU.sv Line: 30
-Info (12127): Elaborating entity "CPU" for the top level hierarchy
-Info (12128): Elaborating entity "arqui" for hierarchy "arqui:arqui" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/CPU.sv Line: 10
-Info (12128): Elaborating entity "controller" for hierarchy "arqui:arqui|controller:Controller" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 62
-Info (12128): Elaborating entity "control" for hierarchy "arqui:arqui|controller:Controller|control:controlunit" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/controller.sv Line: 18
-Info (12128): Elaborating entity "conditional" for hierarchy "arqui:arqui|controller:Controller|conditional:condunit" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/controller.sv Line: 26
-Info (12128): Elaborating entity "hazardUnit" for hierarchy "arqui:arqui|hazardUnit:HazardUnit" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 74
-Info (12128): Elaborating entity "memory" for hierarchy "arqui:arqui|memory:Memory" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 82
-Warning (10230): Verilog HDL assignment warning at memory.sv(34): truncated value with size 36 to match size of target (24) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv Line: 34
-Info (12128): Elaborating entity "loadedMem" for hierarchy "arqui:arqui|memory:Memory|loadedMem:loadedMem" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv Line: 45
-Warning (10850): Verilog HDL warning at loadedMem.sv(29): number of words (968) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 29
-Warning (10230): Verilog HDL assignment warning at loadedMem.sv(41): truncated value with size 36 to match size of target (24) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 41
-Warning (10230): Verilog HDL assignment warning at loadedMem.sv(42): truncated value with size 36 to match size of target (16) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 42
-Warning (10230): Verilog HDL assignment warning at loadedMem.sv(43): truncated value with size 36 to match size of target (8) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 43
-Info (12128): Elaborating entity "fetch" for hierarchy "arqui:arqui|fetch:Fetch" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 88
-Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|fetch:Fetch|flopenrc:pcreg" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/fetch.sv Line: 8
-Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/fetch.sv Line: 9
-Info (12128): Elaborating entity "adder" for hierarchy "arqui:arqui|fetch:Fetch|adder:pcadd" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/fetch.sv Line: 10
-Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:FetchFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 91
-Info (12128): Elaborating entity "decode" for hierarchy "arqui:arqui|decode:Decode" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 106
-Info (12128): Elaborating entity "regfile" for hierarchy "arqui:arqui|decode:Decode|regfile:registerFile" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode.sv Line: 23
-Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:DecodeFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 127
-Info (12128): Elaborating entity "execute" for hierarchy "arqui:arqui|execute:Execute" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 142
-Info (12128): Elaborating entity "Mux_3_to_1" for hierarchy "arqui:arqui|execute:Execute|Mux_3_to_1:byp1mux" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/execute.sv Line: 15
-Info (12128): Elaborating entity "ALU" for hierarchy "arqui:arqui|execute:Execute|ALU:alu" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/execute.sv Line: 19
-Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:ExecuteFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 160
-Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:MemoryFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/arqui.sv Line: 180
+    Info (12023): Found entity 1: control_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
+    Info (12023): Found entity 1: CPU_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o1" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o2" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(30): created implicit net for "o3" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv Line: 30
+Info (12127): Elaborating entity "CPU_tb" for the top level hierarchy
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:cpu" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv Line: 21
+Info (12128): Elaborating entity "arqui" for hierarchy "CPU:cpu|arqui:arqui" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv Line: 10
+Info (12128): Elaborating entity "controller" for hierarchy "CPU:cpu|arqui:arqui|controller:Controller" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 62
+Info (12128): Elaborating entity "control" for hierarchy "CPU:cpu|arqui:arqui|controller:Controller|control:controlunit" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv Line: 18
+Info (12128): Elaborating entity "conditional" for hierarchy "CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv Line: 26
+Info (12128): Elaborating entity "hazardUnit" for hierarchy "CPU:cpu|arqui:arqui|hazardUnit:HazardUnit" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 74
+Info (12128): Elaborating entity "memory" for hierarchy "CPU:cpu|arqui:arqui|memory:Memory" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 82
+Warning (10230): Verilog HDL assignment warning at memory.sv(34): truncated value with size 36 to match size of target (24) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv Line: 34
+Info (12128): Elaborating entity "loadedMem" for hierarchy "CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv Line: 45
+Warning (10850): Verilog HDL warning at loadedMem.sv(29): number of words (63) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at loadedMem.sv(41): truncated value with size 36 to match size of target (24) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at loadedMem.sv(42): truncated value with size 36 to match size of target (16) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at loadedMem.sv(43): truncated value with size 36 to match size of target (8) File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv Line: 43
+Info (12128): Elaborating entity "fetch" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 88
+Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv Line: 8
+Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv Line: 9
+Info (12128): Elaborating entity "adder" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv Line: 10
+Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 91
+Info (12128): Elaborating entity "decode" for hierarchy "CPU:cpu|arqui:arqui|decode:Decode" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 106
+Info (12128): Elaborating entity "regfile" for hierarchy "CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv Line: 23
+Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 127
+Info (12128): Elaborating entity "execute" for hierarchy "CPU:cpu|arqui:arqui|execute:Execute" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 142
+Info (12128): Elaborating entity "Mux_3_to_1" for hierarchy "CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:byp1mux" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv Line: 15
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:cpu|arqui:arqui|execute:Execute|ALU:alu" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv Line: 19
+Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 160
+Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop" File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 180
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Sat Oct 15 15:41:04 2022
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Sat Oct 15 18:04:03 2022
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 

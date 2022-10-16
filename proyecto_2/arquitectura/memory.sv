@@ -46,7 +46,7 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	
 	always_comb begin
 		rd2 = 0;
-		if (a2==204) rd2 = startIOExtended;
+		if (a2==202) rd2 = startIOExtended;
 		else if(a2<102) rd2 = rdAux[WIDTH*2-1:WIDTH]; // mem2
 		else if (a2<102+100) rd2  = rdAux[WIDTH*3-1:WIDTH*2]; //mem3
 		//else if (a2<32+1024+750)  rd2  = rdAux[WIDTH*4-1:WIDTH*3]; //mem4

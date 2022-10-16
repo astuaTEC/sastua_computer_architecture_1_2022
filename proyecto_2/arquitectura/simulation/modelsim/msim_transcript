@@ -10,80 +10,268 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:35:22 on Oct 15,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory.sv 
+# Start time: 18:04:13 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 18:04:13 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv 
+# -- Compiling module Mux_2_to_1
+# 
+# Top level modules:
+# 	Mux_2_to_1
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv 
+# -- Compiling module Mux_3_to_1
+# 
+# Top level modules:
+# 	Mux_3_to_1
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv 
+# -- Compiling module conditional
+# 
+# Top level modules:
+# 	conditional
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:14 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 18:04:14 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv 
+# -- Compiling module decode
+# 
+# Top level modules:
+# 	decode
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv 
+# -- Compiling module fetch
+# 
+# Top level modules:
+# 	fetch
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv 
+# -- Compiling module flopenrc
+# 
+# Top level modules:
+# 	flopenrc
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv 
+# -- Compiling module execute
+# 
+# Top level modules:
+# 	execute
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv 
+# -- Compiling module arqui
+# 
+# Top level modules:
+# 	arqui
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv 
+# -- Compiling module hazardUnit
+# 
+# Top level modules:
+# 	hazardUnit
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# End time: 15:35:22 on Oct 15,2022, Elapsed time: 0:00:00
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:35:22 on Oct 15,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/memory_tb.sv 
-# -- Compiling module memory_tb
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv 
+# -- Compiling module CPU
 # 
 # Top level modules:
-# 	memory_tb
-# End time: 15:35:22 on Oct 15,2022, Elapsed time: 0:00:00
+# 	CPU
+# End time: 18:04:15 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:35:22 on Oct 15,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/loadedMem.sv 
+# Start time: 18:04:15 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv 
+# -- Compiling module CPU_tb
+# 
+# Top level modules:
+# 	CPU_tb
+# End time: 18:04:16 on Oct 15,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:16 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv 
 # -- Compiling module loadedMem
 # 
 # Top level modules:
 # 	loadedMem
-# End time: 15:35:22 on Oct 15,2022, Elapsed time: 0:00:00
+# End time: 18:04:16 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui\ I/Repositorio\ GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:35:22 on Oct 15,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv 
+# Start time: 18:04:16 on Oct 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv 
 # -- Compiling module decode_tb
 # 
 # Top level modules:
 # 	decode_tb
-# End time: 15:35:23 on Oct 15,2022, Elapsed time: 0:00:01
+# End time: 18:04:16 on Oct 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  decode_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" decode_tb 
-# Start time: 15:35:23 on Oct 15,2022
+# Start time: 18:04:16 on Oct 15,2022
 # Loading sv_std.std
 # Loading work.decode_tb
-# ** Error: (vsim-3033) Instantiation of 'decode' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /decode_tb File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/decode_tb.sv Line: 14
-#         Searched libraries:
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
-#             C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/simulation/modelsim/rtl_work
-#             C:/Users/samas/Desktop/TEC/IIS-2022/Arqui I/Repositorio GitHub/proyecto_2/arquitectura/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./arquitectura_run_msim_rtl_verilog.do PAUSED at line 14
-vsim work.memory_tb
-# vsim work.memory_tb 
-# Start time: 15:35:23 on Oct 15,2022
+# Loading work.decode
+# Loading work.regfile
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module decode_tb at C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv line 21
+vsim work.CPU_tb
+# End time: 18:04:34 on Oct 15,2022, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim work.CPU_tb 
+# Start time: 18:04:34 on Oct 15,2022
 # Loading sv_std.std
-# Loading work.memory_tb
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.arqui
+# Loading work.controller
+# Loading work.control
+# Loading work.conditional
+# Loading work.hazardUnit
 # Loading work.memory
 # Loading work.loadedMem
-add wave sim:/memory_tb/*
+# Loading work.fetch
+# Loading work.flopenrc
+# Loading work.Mux_2_to_1
+# Loading work.adder
+# Loading work.decode
+# Loading work.regfile
+# Loading work.execute
+# Loading work.Mux_3_to_1
+# Loading work.ALU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (36) for port 'sel'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv(5).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Fetch/pcff File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (36) does not match connection size (1) for port 'B'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv(6).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Fetch/pcff File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'ForwardAE'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv(5).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 135
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ForwardBE'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv(5).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 135
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'ALUControlE'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv(6).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 135
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'ALUSrcE'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 135
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (36) for port 'sel'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv(5).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute/srcbmux File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (36) does not match connection size (1) for port 'B'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv(6).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute/srcbmux File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'ctrl'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/Execute/alu File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (36) for port 'sel'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv(5).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/writeBack File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 188
+# ** Warning: (vsim-3015) [PCDPC] - Port size (36) does not match connection size (1) for port 'B'. The port definition is at: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv(6).
+#    Time: 0 ns  Iteration: 0  Instance: /CPU_tb/cpu/arqui/writeBack File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv Line: 188
+add wave -position insertpoint  \
+sim:/CPU_tb/startIO \
+sim:/CPU_tb/reset \
+sim:/CPU_tb/outFlag \
+sim:/CPU_tb/out \
+sim:/CPU_tb/clk
 run
 run
 run
-# End time: 15:36:29 on Oct 15,2022, Elapsed time: 0:01:06
-# Errors: 1, Warnings: 0
+# End time: 18:06:15 on Oct 15,2022, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 11
