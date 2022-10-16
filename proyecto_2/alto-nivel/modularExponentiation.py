@@ -4,7 +4,7 @@
 # Iterative Function to calculate
 # (x^y)%p in O(log y)
 # Reference: https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/
-
+# element, d, n
 def power(x, y, p) :
 	res = 1	 # Initialize result
 
