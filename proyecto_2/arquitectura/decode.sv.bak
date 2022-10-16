@@ -20,6 +20,6 @@ module decode #(parameter WIDTH = 	32, parameter REGNUM = 8,
 		
 	
 	regfile #(WIDTH, REGNUM, ADDRESSWIDTH) registerFile (!clock, writeE, 
-				r1A, r2A, writeA, dataToSave, PC, rd1D, rd2D );
+				r1A,r2A, writeA, dataToSave, PC, rd1D, rd2D );
 
 endmodule 

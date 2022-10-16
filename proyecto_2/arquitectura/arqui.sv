@@ -88,7 +88,7 @@ module arqui #(parameter WIDTH = 36, parameter REGNUM = 16,
 	fetch #(WIDTH) Fetch(NewPCF, takeBranchE, clock, reset, !stallF, PCF, PCPlus1F);
 	
 	// Fetch - Decoding FlipFlop
-	flopenrc  #(INSTRUCTIONWIDTH) FetchFlipFlop(clock, flushD, !stallD, InstructionF, InstructionD);
+	flopenrc  #(INSTRUCTIONWIDTH) FetchFlipFlop(clock, flushD, !stallD, {InstructionF}, {InstructionD});
 	
 	
 	// *************************************************
@@ -185,7 +185,7 @@ module arqui #(parameter WIDTH = 36, parameter REGNUM = 16,
 	//Write Back
 	 
 	 
-	Mux_2_to_1  #(WIDTH) writeBack (aluOutputWB, MemoryDataOutputWB, resultSelectorWBWB, outputWB);
+	Mux_2_to_1  #(WIDTH) writeBack (resultSelectorWBWB, aluOutputWB, MemoryDataOutputWB, outputWB);
 	assign writeAddressD = regDestinationAddressWB;
 	assign dataToSaveD = outputWB;
 	assign forwardWB = outputWB;

@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1665878654
+Z2 !s110 1665962077
 !i10b 1
 !s100 RmkB6b]fg6codaJ?a087N1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ ImOJ`fnN[=?4EU4Fz8g9Oc2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1665875590
+Z5 w1665949791
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv
 !i122 4
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1665878654.000000
+Z8 !s108 1665962076.000000
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv|
 !i113 1
@@ -37,15 +37,15 @@ Z10 !s92 -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo
 Z11 tCvgOpt 0
 vALU
 R1
-!s110 1665878653
+!s110 1665962075
 !i10b 1
-!s100 z_5afBzL[g@@7UYjjAz;e1
+!s100 hihm066OXm<F>JQEkZoFz1
 R3
-I6lIWmJ[nDRKV<DYSSbDR[0
+IL;?D7UoE]_Q38O;gMcQc<1
 R4
 S1
 R0
-R5
+w1665954570
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv
 !i122 0
@@ -54,7 +54,7 @@ R7
 r1
 !s85 0
 31
-!s108 1665878653.000000
+!s108 1665962075.000000
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv|
 !i113 1
@@ -64,15 +64,15 @@ R11
 n@a@l@u
 varqui
 R1
-Z12 !s110 1665878655
+Z12 !s110 1665962078
 !i10b 1
-!s100 :9bMK`Z4^YAdS:@nSD7E03
+!s100 ^>@zfkgMEU]LZ?o^P_Rho2
 R3
-IWA;_Rb2o51Z=NlIKz3CM_0
+I;oW0Q?VlPV<;F>l]zf:313
 R4
 S1
 R0
-R5
+w1665960314
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv
 !i122 12
@@ -81,7 +81,7 @@ R7
 r1
 !s85 0
 31
-Z13 !s108 1665878655.000000
+Z13 !s108 1665962078.000000
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv|
 !i113 1
@@ -107,7 +107,7 @@ R7
 r1
 !s85 0
 31
-R8
+Z14 !s108 1665962077.000000
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv|
 !i113 1
@@ -118,13 +118,13 @@ vcontrol
 R1
 R2
 !i10b 1
-!s100 ?G7U>@fb9=mkD4dDhV]ZM2
+!s100 25]7B5dm=NA@ZNDjJI@hO1
 R3
-IJgV_3CVE3X=T=3kBhoT8;0
+I<?5^;Q?dzIUV5<gb``5_o0
 R4
 S1
 R0
-R5
+w1665957670
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv
 !i122 6
@@ -133,7 +133,7 @@ R7
 r1
 !s85 0
 31
-R8
+R14
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv|
 !i113 1
@@ -159,7 +159,7 @@ R7
 r1
 !s85 0
 31
-R8
+R14
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv|
 !i113 1
@@ -168,7 +168,7 @@ R10
 R11
 vCPU
 R1
-R12
+Z15 !s110 1665962079
 !i10b 1
 !s100 2Wn>Gb0^5TBaX6<FM@Q@?0
 R3
@@ -185,7 +185,7 @@ R7
 r1
 !s85 0
 31
-R13
+Z16 !s108 1665962079.000000
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv|
 !i113 1
@@ -195,24 +195,24 @@ R11
 n@c@p@u
 vCPU_tb
 R1
-Z14 !s110 1665878656
+R15
 !i10b 1
-!s100 k:;ok?F3J[fDd>UFE^5Dl1
+!s100 MjKS;m;SCWO8BG9^AMnQ91
 R3
-In<1B3jG6B`l22GV;00Acj2
+I]`oMmoQ@4RlKT@JmZb1IH1
 R4
 S1
 R0
-w1665877767
+w1665961409
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv
 !i122 16
-L0 3 35
+L0 3 54
 R7
 r1
 !s85 0
 31
-R13
+R16
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv|
 !i113 1
@@ -222,7 +222,7 @@ R11
 n@c@p@u_tb
 vdecode
 R1
-R12
+R2
 !i10b 1
 !s100 b`422<R;1Rgz362K6PMKD0
 R3
@@ -230,7 +230,7 @@ I8?C5Wj@FTU5`Q`Gl1?B:n2
 R4
 S1
 R0
-R5
+w1665960187
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv
 !i122 8
@@ -239,35 +239,9 @@ R7
 r1
 !s85 0
 31
-R13
+R14
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv|
-!i113 1
-R9
-R10
-R11
-vdecode_tb
-R1
-R14
-!i10b 1
-!s100 U]X?LYS0nXOceNKdQ0XG32
-R3
-IZ3zd[l6oc@mf:B8F]lANB3
-R4
-S1
-R0
-R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv
-!i122 18
-L0 1 53
-R7
-r1
-!s85 0
-31
-Z15 !s108 1665878656.000000
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode_tb.sv|
 !i113 1
 R9
 R10
@@ -276,17 +250,17 @@ vexecute
 R1
 R12
 !i10b 1
-!s100 @AQIo05?MQOT:Z8XQ4O5l1
+!s100 gC;3?@l^YR3Rl1eSo7BVR2
 R3
-IKYh2F_GeJ]=KBmfEXz@]b1
+I[AQfOcD;MJiR]hVCXT_`O1
 R4
 S1
 R0
-R5
+w1665954519
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv
 !i122 11
-L0 3 19
+L0 3 21
 R7
 r1
 !s85 0
@@ -302,13 +276,13 @@ vfetch
 R1
 R12
 !i10b 1
-!s100 Bcbm4=2lhg=I1b:JQWaAP3
+!s100 c_b>4FC3b4G]l5S05a[zM2
 R3
-Ib5d3zJfKB]la8i>@XM?[Y0
+Imof8z`IH9kiJ3>_Sa9hn?2
 R4
 S1
 R0
-R5
+w1665953747
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv
 !i122 9
@@ -328,17 +302,17 @@ vflopenrc
 R1
 R12
 !i10b 1
-!s100 [gm;kB:H3AZ0kZZERnma:1
+!s100 10F`LEodJk@ZSW<@RJH5=1
 R3
-IGjh7b1n6XYN=_NTi4SdYI3
+IYJ8a`n_n4EK3m0RQO1oW32
 R4
 S1
 R0
-R5
+w1665962044
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv
 !i122 10
-L0 2 10
+L0 2 14
 R7
 r1
 !s85 0
@@ -379,7 +353,7 @@ R11
 nhazard@unit
 vloadedMem
 R1
-R14
+R15
 !i10b 1
 !s100 z>FMOQLoEdmZe4ZFU1Yb72
 R3
@@ -396,7 +370,7 @@ R7
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv|
 !i113 1
@@ -414,7 +388,7 @@ III`U4[P>N[SL_Z?beDQ1L2
 R4
 S1
 R0
-w1665875964
+R5
 8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv
 FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv
 !i122 14
@@ -432,7 +406,7 @@ R10
 R11
 vMux_2_to_1
 R1
-R2
+Z17 !s110 1665962076
 !i10b 1
 !s100 5No_;>SModM1WQ_W3fhFY3
 R3
@@ -459,7 +433,7 @@ R11
 n@mux_2_to_1
 vMux_3_to_1
 R1
-R2
+R17
 !i10b 1
 !s100 7_o^>bfVo=D8:C]^NDYXU3
 R3
@@ -486,7 +460,7 @@ R11
 n@mux_3_to_1
 vregfile
 R1
-R2
+R17
 !i10b 1
 !s100 m7Ka``gAm?KPgc2X`HbD12
 R3

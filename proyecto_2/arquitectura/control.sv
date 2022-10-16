@@ -55,10 +55,10 @@ module control #(parameter OPCODEWIDTH = 4)
 				resultSelectorWBD = 0;
 				outFlag = 0;
 			end
-			4'b0110: begin // resta - En nuesto caso MOD
+			4'b0110: begin // MOD
 				writeEnableDD = 1;
 				data2SelectorED = 0;
-				aluControlED = 3'b001; //resta
+				aluControlED = 3'b100; //MOD
 				writeDataEnableMD = 0;
 				resultSelectorWBD = 0;
 				outFlag = 0;

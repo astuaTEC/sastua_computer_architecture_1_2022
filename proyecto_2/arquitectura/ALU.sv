@@ -13,7 +13,7 @@
 
 module ALU #(parameter N = 16)(
     input logic [N-1:0] a, b,
-    input logic [3:0] ctrl,
+    input logic [2:0] ctrl,
     output logic [N-1:0] res,
     output logic [3:0] flags // 3=negative, 2=zero, 1=carry, 0=overflow
 );

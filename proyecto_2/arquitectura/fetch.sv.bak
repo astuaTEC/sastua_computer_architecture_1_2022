@@ -6,7 +6,7 @@ module fetch #(parameter WIDTH = 8)(input logic [WIDTH-1:0] NewPC,
 	logic [WIDTH-1:0] TempPC;
 
 	flopenrc #(WIDTH) pcreg(clock, reset, enable, TempPC ,PC);
-	Mux_2_to_1 #(WIDTH) pcff(PCSelector, PCPlus1, NewPC, TempPC);
+	Mux_2_to_1 #(WIDTH) pcff(PCPlus1, NewPC, PCSelector, TempPC);
 	adder #(WIDTH) pcadd(PC, 36'b1, PCPlus1); //Revisar el valor 36'b1
 
 

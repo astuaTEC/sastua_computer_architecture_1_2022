@@ -8,26 +8,45 @@ module CPU_tb();
 	parameter OPCODEWIDTH = 4;
 	parameter INSTRUCTIONWIDTH = 24;
 	
-	logic clk, reset, startIO; 
+	logic clock, reset, startIO; 
 	logic outFlag;
 	logic [WIDTH-1:0] out;
 	
 
-	always begin
-		clk = 1; # 10; clk = 0; # 10;
-	end
+	/*always begin
+		clock = 1; # 10; clock = 0; # 10;
+	end*/
 	
 	CPU #(WIDTH, REGNUM, ADDRESSWIDTH, OPCODEWIDTH, INSTRUCTIONWIDTH)
-			cpu (clk, reset, startIO, outFlag, out);
-			
-			
+			cpu (clock, reset, startIO, outFlag, out);
+				
 	initial begin
+	
 		reset = 1;
+		clock = 0;
 		startIO = 0;
-		#25
 		
-		startIO = 1; // se enciende el switch
+		#10;
+		clock = 1;
+		
+		#10;
+		clock = 0;
 		reset = 0;
+		startIO = 1; // se enciende el switch
+		#10
+		
+		
+		repeat(1000) begin
+			clock = 1;
+			#10
+			if(outFlag) begin 
+					$display ("Out:  %d",out);
+			end
+			clock = 0;
+			#10;
+		end
+		
+		$stop;
 
 		
 	end
