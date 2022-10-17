@@ -1,0 +1,20 @@
+Fitter Status : Failed - Fri Oct 14 03:22:48 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : arquitectura
+Top-level Entity Name : memory
+Family : Cyclone V
+Device : 5CSEBA6U23I7
+Timing Models : Final
+Logic utilization (in ALMs) : 21,294 / 41,910 ( 51 % )
+Total registers : 30144
+Total pins : 155 / 314 ( 49 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 5,662,720 ( 0 % )
+Total RAM Blocks : 0 / 553 ( 0 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
