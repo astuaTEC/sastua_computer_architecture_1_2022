@@ -9,7 +9,7 @@ module CPU_tb();
 	parameter INSTRUCTIONWIDTH = 24;
 	
 	logic clock, reset, startIO; 
-	logic outFlag;
+	logic outFlag, endFlag;
 	logic [WIDTH-1:0] out;
 	
 
@@ -18,7 +18,7 @@ module CPU_tb();
 	end
 	
 	CPU #(WIDTH, REGNUM, ADDRESSWIDTH, OPCODEWIDTH, INSTRUCTIONWIDTH)
-			cpu (clock, reset, startIO, outFlag, out);
+			cpu (clock, reset, startIO, outFlag, endFlag, out);
 				
 	initial begin
 	
