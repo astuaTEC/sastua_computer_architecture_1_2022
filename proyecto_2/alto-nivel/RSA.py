@@ -58,7 +58,6 @@ if __name__ == "__main__":
     encryptedList = encrypt(asciiList, e, n)
     # Write the encrypted text into a file
     writeFile("textoEncriptado.txt", str(encryptedList))
-    print("!!!!!!!!!!!!!!!!")
 
     # decrypt the encrypted message with the private key
     decryptedList = decrypt(encryptedList, d, n)

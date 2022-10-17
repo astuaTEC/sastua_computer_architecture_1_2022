@@ -36,7 +36,7 @@ while:
     CMP r3, r2 ; if ((y & 1) == 1) :
     BCI actualizarRes
 
-volverBeto:
+volver:
     DLD r13, r13, r2 ; y = y >> 1	 # y = y/2
     MUL r0, r0, r0 ; x= x* x
     MOD r0, r0, r7 ; x % p
@@ -46,7 +46,7 @@ volverBeto:
 actualizarRes:
     MUL r1, r1, r0 ; res = res * x
     MOD r1, r1, r7 ; res = res % p
-    BI volverBeto ; Brinco incondicional a registro
+    BI volver ; Brinco incondicional a registro
 
 guardarCero:
     JALI r0, 0

@@ -20,14 +20,12 @@ def power(x, y, p) :
 		# If y is odd, multiply
 		# x with result
 		if ((y & 1) == 1) :
-			print("WWWWW")
 			res = (res * x) % p
 
 		# y must be even now
 		y = y >> 1	 # y = y/2
 		x = (x * x) % p
 	
-	print(res)	
 	return res
 	
 
