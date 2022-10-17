@@ -18,6 +18,7 @@ algoritmo:
 
 RSA:
     APR r0, r11 ; Se obtiene la primera letra (carga 32 bits de un solo)
+    JAL r13, r8
     JALI r1, 1 ; res
     MOD r0, r0, r7 ; x = x % p
     JALI r2, 0
@@ -26,17 +27,17 @@ RSA:
 
 while:
     JALI r2, 0
-    CMP r8, r2
+    CMP r13, r2
     BCI returnRes
 
-    JAL r3, r8
+    JAL r3, r13
     JALI r2, 1
     AND r3, r2, r3
     CMP r3, r2 ; if ((y & 1) == 1) :
-    JAL r13, r15 ; se guarda PC + 1
     BCI actualizarRes
 
-    DLD r8, r8, r2 ; y = y >> 1	 # y = y/2
+volverBeto:
+    DLD r13, r13, r2 ; y = y >> 1	 # y = y/2
     MUL r0, r0, r0 ; x= x* x
     MOD r0, r0, r7 ; x % p
 
@@ -45,7 +46,7 @@ while:
 actualizarRes:
     MUL r1, r1, r0 ; res = res * x
     MOD r1, r1, r7 ; res = res % p
-    BIR r13 ; Brinco incondicional a registro
+    BI volverBeto ; Brinco incondicional a registro
 
 guardarCero:
     JALI r0, 0
