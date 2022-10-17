@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/simulation/modelsim
 va_graycounter
-Z1 !s110 1665746586
+Z1 !s110 1665993106
 !i10b 1
 !s100 7RL@7]^Mkb[^0^A4A<DHg3
 IXDLl906YbU3g[X6l2lONm0
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1665746586.000000
+Z7 !s108 1665993105.000000
 Z8 !s107 d:/quartus/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|d:/quartus/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -177,7 +177,7 @@ R9
 R10
 R11
 valt_dfe
-Z12 !s110 1665746587
+R1
 !i10b 1
 !s100 BRh?MNcko8BiZ3z[zj;i[2
 ICNUoCaW?iJZUiA]Uh9eLo0
@@ -219,7 +219,7 @@ R9
 R10
 R11
 valt_fault_injection
-R12
+R1
 !i10b 1
 !s100 VJoWGAl]MK3ig9;O`4bhb3
 In;gEBMoGiOZUaOe>TezLo1
@@ -621,7 +621,7 @@ R9
 R10
 R11
 valtparallel_flash_loader
-R12
+R1
 !i10b 1
 !s100 l5@8GIdLTLzmOe??91YXf3
 IK7eTMW>O;N:;@z:PfC1TE2
@@ -663,7 +663,7 @@ R9
 R10
 R11
 valtserial_flash_loader
-R12
+R1
 !i10b 1
 !s100 EaRF`7<5?]9dA?`LT<07V1
 ILlz5jl5nB]PT`5H2EXhb83
@@ -705,7 +705,7 @@ R9
 R10
 R11
 valtsource_probe
-R12
+R1
 !i10b 1
 !s100 KQ?M2Jc4^@;XBJRANEANe0
 I=7Fb=5o@TSBH<YP=WE1011
@@ -768,7 +768,7 @@ R9
 R10
 R11
 valtstratixii_oct
-R12
+R1
 !i10b 1
 !s100 ignJe:gQMC?XzbB?A<V^a0
 I_QLGEKZXGm=0mdlAlRd@21
@@ -1146,7 +1146,7 @@ R9
 R10
 R11
 vdummy_hub
-R12
+R1
 !i10b 1
 !s100 i8_deI@ZM`MghmlNU7?Vi2
 I3W@=QDZl^5<^?Ni1G@E>F1
@@ -1209,7 +1209,7 @@ R9
 R10
 R11
 vjtag_tap_controller
-R12
+R1
 !i10b 1
 !s100 AnS3QEzANDB@We7faAz`b0
 IO3S1AJcj^jk9DECYLm5@P2
@@ -1512,7 +1512,7 @@ R9
 R10
 R11
 vsignal_gen
-R12
+R1
 !i10b 1
 !s100 CFUPOV=I]>[JoSHBml`0O1
 I63oT;?6SN^kb:Yb_SG1S;2
@@ -1533,7 +1533,7 @@ R9
 R10
 R11
 vsld_signaltap
-R12
+R1
 !i10b 1
 !s100 ;bNfnE=JkH5`M:Gei65gh3
 InF0_TKPnhSbH=Lc4H[cCe3
@@ -1554,7 +1554,7 @@ R9
 R10
 R11
 vsld_virtual_jtag
-R12
+R1
 !i10b 1
 !s100 =dP0:]MZD42oAG]526k0F0
 II2PWWJSC4VPaJg7:kPh<f1
@@ -1575,7 +1575,7 @@ R9
 R10
 R11
 vsld_virtual_jtag_basic
-R12
+R1
 !i10b 1
 !s100 4=QY<mcj^X^`A]];EEmFH3
 IkZ<=^29GbaRA<ZH@;UmFl1

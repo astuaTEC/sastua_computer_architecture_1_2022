@@ -13,9 +13,9 @@ module CPU_tb();
 	logic [WIDTH-1:0] out;
 	
 
-	/*always begin
+	always begin
 		clock = 1; # 10; clock = 0; # 10;
-	end*/
+	end
 	
 	CPU #(WIDTH, REGNUM, ADDRESSWIDTH, OPCODEWIDTH, INSTRUCTIONWIDTH)
 			cpu (clock, reset, startIO, outFlag, out);
@@ -23,31 +23,11 @@ module CPU_tb();
 	initial begin
 	
 		reset = 1;
-		clock = 0;
 		startIO = 0;
-		
 		#10;
-		clock = 1;
-		
-		#10;
-		clock = 0;
 		reset = 0;
 		startIO = 1; // se enciende el switch
-		#10
-		
-		
-		repeat(1000) begin
-			clock = 1;
-			#10
-			if(outFlag) begin 
-					$display ("Out:  %d",out);
-			end
-			clock = 0;
-			#10;
-		end
-		
-		$stop;
-
+		#10;
 		
 	end
 		
