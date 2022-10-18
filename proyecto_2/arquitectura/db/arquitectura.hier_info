@@ -45,6 +45,36 @@ out[34] <= arqui:arqui.port4
 out[35] <= arqui:arqui.port4
 
 
+|CPU_tb|CPU:cpu|divisorFrecuencia:divisorFrecuencia
+C_50Mhz => C_1Hz~reg0.CLK
+C_50Mhz => contador[0].CLK
+C_50Mhz => contador[1].CLK
+C_50Mhz => contador[2].CLK
+C_50Mhz => contador[3].CLK
+C_50Mhz => contador[4].CLK
+C_50Mhz => contador[5].CLK
+C_50Mhz => contador[6].CLK
+C_50Mhz => contador[7].CLK
+C_50Mhz => contador[8].CLK
+C_50Mhz => contador[9].CLK
+C_50Mhz => contador[10].CLK
+C_50Mhz => contador[11].CLK
+C_50Mhz => contador[12].CLK
+C_50Mhz => contador[13].CLK
+C_50Mhz => contador[14].CLK
+C_50Mhz => contador[15].CLK
+C_50Mhz => contador[16].CLK
+C_50Mhz => contador[17].CLK
+C_50Mhz => contador[18].CLK
+C_50Mhz => contador[19].CLK
+C_50Mhz => contador[20].CLK
+C_50Mhz => contador[21].CLK
+C_50Mhz => contador[22].CLK
+C_50Mhz => contador[23].CLK
+C_50Mhz => contador[24].CLK
+C_1Hz <= C_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |CPU_tb|CPU:cpu|arqui:arqui
 clock => clock.IN7
 reset => reset.IN4
