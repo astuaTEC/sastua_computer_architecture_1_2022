@@ -1,54 +1,68 @@
-Analysis & Elaboration report for arquitectura
-Mon Oct 17 23:42:26 2022
-Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Analysis & Synthesis report for arquitectura
+Wed Oct 19 05:01:50 2022
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |CPU_tb
-  5. Parameter Settings for User Entity Instance: CPU:cpu
-  6. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui
-  7. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller
-  8. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|control:controlunit
-  9. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit
- 10. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|hazardUnit:HazardUnit
- 11. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory
- 12. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem
- 13. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch
- 14. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg
- 15. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff
- 16. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd
- 17. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop
- 18. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode
- 19. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile
- 20. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop
- 21. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute
- 22. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX
- 23. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX
- 24. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX
- 25. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|ALU:ALU
- 26. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop
- 27. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop
- 28. Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack
- 29. Analysis & Elaboration Settings
- 30. Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop"
- 31. Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop"
- 32. Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop"
- 33. Port Connectivity Checks: "CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd"
- 34. Port Connectivity Checks: "CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem"
- 35. Port Connectivity Checks: "CPU:cpu"
- 36. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0|altsyncram_e6j1:auto_generated
+ 14. Source assignments for arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1|altsyncram_e6j1:auto_generated
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |CPU
+ 16. Parameter Settings for User Entity Instance: arqui:arqui
+ 17. Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller
+ 18. Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|control:controlunit
+ 19. Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|conditional:condunit
+ 20. Parameter Settings for User Entity Instance: arqui:arqui|hazardUnit:HazardUnit
+ 21. Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory
+ 22. Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory|loadedMem:loadedMem
+ 23. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch
+ 24. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|flopenrc:pcreg
+ 25. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff
+ 26. Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|adder:pcadd
+ 27. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:FetchFlipFlop
+ 28. Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode
+ 29. Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile
+ 30. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:DecodeFlipFlop
+ 31. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute
+ 32. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX
+ 33. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX
+ 34. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX
+ 35. Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|ALU:ALU
+ 36. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:ExecuteFlipFlop
+ 37. Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:MemoryFlipFlop
+ 38. Parameter Settings for User Entity Instance: arqui:arqui|Mux_2_to_1:writeBack
+ 39. Parameter Settings for Inferred Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0
+ 40. Parameter Settings for Inferred Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1
+ 41. Parameter Settings for Inferred Entity Instance: arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0
+ 42. altsyncram Parameter Settings by Entity Instance
+ 43. Port Connectivity Checks: "arqui:arqui|flopenrc:MemoryFlipFlop"
+ 44. Port Connectivity Checks: "arqui:arqui|flopenrc:ExecuteFlipFlop"
+ 45. Port Connectivity Checks: "arqui:arqui|flopenrc:DecodeFlipFlop"
+ 46. Port Connectivity Checks: "arqui:arqui|fetch:Fetch|adder:pcadd"
+ 47. Port Connectivity Checks: "arqui:arqui|memory:Memory|loadedMem:loadedMem"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -65,317 +79,36 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Oct 17 23:42:26 2022       ;
-; Quartus Prime Version         ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
-; Revision Name                 ; arquitectura                                ;
-; Top-level Entity Name         ; CPU_tb                                      ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |CPU_tb ;
-+------------------+-------+---------------------------------------------+
-; Parameter Name   ; Value ; Type                                        ;
-+------------------+-------+---------------------------------------------+
-; WIDTH            ; 36    ; Signed Integer                              ;
-; REGNUM           ; 16    ; Signed Integer                              ;
-; ADDRESSWIDTH     ; 4     ; Signed Integer                              ;
-; OPCODEWIDTH      ; 4     ; Signed Integer                              ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                              ;
-+------------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu ;
-+------------------+-------+---------------------------+
-; Parameter Name   ; Value ; Type                      ;
-+------------------+-------+---------------------------+
-; WIDTH            ; 36    ; Signed Integer            ;
-; REGNUM           ; 16    ; Signed Integer            ;
-; ADDRESSWIDTH     ; 4     ; Signed Integer            ;
-; OPCODEWIDTH      ; 4     ; Signed Integer            ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer            ;
-+------------------+-------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui ;
-+------------------+-------+---------------------------------------+
-; Parameter Name   ; Value ; Type                                  ;
-+------------------+-------+---------------------------------------+
-; WIDTH            ; 36    ; Signed Integer                        ;
-; REGNUM           ; 16    ; Signed Integer                        ;
-; ADDRESSWIDTH     ; 4     ; Signed Integer                        ;
-; OPCODEWIDTH      ; 4     ; Signed Integer                        ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                        ;
-+------------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; OPCODEWIDTH    ; 4     ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|control:controlunit ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-; OPCODEWIDTH    ; 4     ; Signed Integer                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; OPCODEWIDTH    ; 4     ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|hazardUnit:HazardUnit ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                ;
-; ADDRESSWIDTH   ; 4     ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory ;
-+------------------+-------+-----------------------------------------------------+
-; Parameter Name   ; Value ; Type                                                ;
-+------------------+-------+-----------------------------------------------------+
-; WIDTH            ; 36    ; Signed Integer                                      ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                                      ;
-+------------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop ;
-+----------------+-------+----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                           ;
-+----------------+-------+----------------------------------------------------------------+
-; WIDTH          ; 24    ; Signed Integer                                                 ;
-+----------------+-------+----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode ;
-+------------------+-------+-----------------------------------------------------+
-; Parameter Name   ; Value ; Type                                                ;
-+------------------+-------+-----------------------------------------------------+
-; WIDTH            ; 36    ; Signed Integer                                      ;
-; REGNUM           ; 16    ; Signed Integer                                      ;
-; ADDRESSWIDTH     ; 4     ; Signed Integer                                      ;
-; OPCODEWIDTH      ; 4     ; Signed Integer                                      ;
-; INSTRUCTIONWIDTH ; 24    ; Signed Integer                                      ;
-+------------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                             ;
-; REGNUM         ; 16    ; Signed Integer                                                             ;
-; ADDRESSWIDTH   ; 4     ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; WIDTH          ; 136   ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; WIDTH          ; 36    ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|execute:Execute|ALU:ALU ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; WIDTH          ; 79    ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; WIDTH          ; 78    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; N              ; 36    ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Oct 19 05:01:50 2022       ;
+; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name                   ; arquitectura                                ;
+; Top-level Entity Name           ; CPU                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 2744                                        ;
+; Total pins                      ; 14                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 1,152                                       ;
+; Total DSP Blocks                ; 2                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
-; Top-level entity name                                                           ; CPU_tb             ; arquitectura       ;
+; Top-level entity name                                                           ; CPU                ; arquitectura       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
 ; Verilog Show LMF Mapping Messages                                               ; Off                ;                    ;
@@ -458,45 +191,710 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                  ;
-+------+-------+----------+-----------------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv                     ;         ;
+; Mux_2_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv              ;         ;
+; Mux_3_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv              ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv                 ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv                   ;         ;
+; conditional.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv             ;         ;
+; control.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv                 ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv              ;         ;
+; decode.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv                  ;         ;
+; fetch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv                   ;         ;
+; flopenrc.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv                ;         ;
+; execute.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv                 ;         ;
+; mem3.txt                         ; yes             ; User File                    ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/mem3.txt                   ;         ;
+; mem2.txt                         ; yes             ; User File                    ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/mem2.txt                   ;         ;
+; mem1.txt                         ; yes             ; User File                    ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/mem1.txt                   ;         ;
+; loadedMem.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv               ;         ;
+; arqui.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv                   ;         ;
+; hazardUnit.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv              ;         ;
+; memory.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv                  ;         ;
+; CPU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv                     ;         ;
+; divisorFrecuencia.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv       ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                 ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                          ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                    ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                 ;         ;
+; aglobal211.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/aglobal211.inc                                                                                                 ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                  ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altrom.inc                                                                                                     ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altram.inc                                                                                                     ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altdpram.inc                                                                                                   ;         ;
+; db/altsyncram_e6j1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/altsyncram_e6j1.tdf     ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf                                                                                                 ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/abs_divider.inc                                                                                                ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                                            ;         ;
+; db/lpm_divide_e5m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/lpm_divide_e5m.tdf      ;         ;
+; db/sign_div_unsign_hnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/sign_div_unsign_hnh.tdf ;         ;
+; db/alt_u_div_83f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/alt_u_div_83f.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                             ;
++---------------------------------------------+-------------------------------------------+
+; Resource                                    ; Usage                                     ;
++---------------------------------------------+-------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 2780                                      ;
+;                                             ;                                           ;
+; Combinational ALUT usage for logic          ; 3646                                      ;
+;     -- 7 input functions                    ; 578                                       ;
+;     -- 6 input functions                    ; 458                                       ;
+;     -- 5 input functions                    ; 944                                       ;
+;     -- 4 input functions                    ; 742                                       ;
+;     -- <=3 input functions                  ; 924                                       ;
+;                                             ;                                           ;
+; Dedicated logic registers                   ; 2744                                      ;
+;                                             ;                                           ;
+; I/O pins                                    ; 14                                        ;
+; Total MLAB memory bits                      ; 0                                         ;
+; Total block memory bits                     ; 1152                                      ;
+;                                             ;                                           ;
+; Total DSP Blocks                            ; 2                                         ;
+;                                             ;                                           ;
+; Maximum fan-out node                        ; divisorFrecuencia:divisorFrecuencia|C_1Hz ;
+; Maximum fan-out                             ; 2792                                      ;
+; Total fan-out                               ; 25824                                     ;
+; Average fan-out                             ; 3.98                                      ;
++---------------------------------------------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                      ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Entity Name         ; Library Name ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |CPU                                            ; 3646 (9)            ; 2744 (2)                  ; 1152              ; 2          ; 14   ; 0            ; |CPU                                                                                                                                     ; CPU                 ; work         ;
+;    |arqui:arqui|                                ; 3603 (0)            ; 2716 (0)                  ; 1152              ; 2          ; 0    ; 0            ; |CPU|arqui:arqui                                                                                                                         ; arqui               ; work         ;
+;       |Mux_2_to_1:writeBack|                    ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|Mux_2_to_1:writeBack                                                                                                    ; Mux_2_to_1          ; work         ;
+;       |controller:Controller|                   ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|controller:Controller                                                                                                   ; controller          ; work         ;
+;          |conditional:condunit|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|controller:Controller|conditional:condunit                                                                              ; conditional         ; work         ;
+;          |control:controlunit|                  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|controller:Controller|control:controlunit                                                                               ; control             ; work         ;
+;       |decode:Decode|                           ; 2 (0)               ; 0 (0)                     ; 1152              ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|decode:Decode                                                                                                           ; decode              ; work         ;
+;          |regfile:registerFile|                 ; 2 (2)               ; 0 (0)                     ; 1152              ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|decode:Decode|regfile:registerFile                                                                                      ; regfile             ; work         ;
+;             |altsyncram:rf_rtl_0|               ; 0 (0)               ; 0 (0)                     ; 576               ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0                                                                  ; altsyncram          ; work         ;
+;                |altsyncram_e6j1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 576               ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0|altsyncram_e6j1:auto_generated                                   ; altsyncram_e6j1     ; work         ;
+;             |altsyncram:rf_rtl_1|               ; 0 (0)               ; 0 (0)                     ; 576               ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1                                                                  ; altsyncram          ; work         ;
+;                |altsyncram_e6j1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 576               ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1|altsyncram_e6j1:auto_generated                                   ; altsyncram_e6j1     ; work         ;
+;       |execute:Execute|                         ; 1764 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute                                                                                                         ; execute             ; work         ;
+;          |ALU:ALU|                              ; 1637 (238)          ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|ALU:ALU                                                                                                 ; ALU                 ; work         ;
+;             |lpm_divide:Mod0|                   ; 1399 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;                |lpm_divide_e5m:auto_generated|  ; 1399 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0|lpm_divide_e5m:auto_generated                                                   ; lpm_divide_e5m      ; work         ;
+;                   |sign_div_unsign_hnh:divider| ; 1399 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0|lpm_divide_e5m:auto_generated|sign_div_unsign_hnh:divider                       ; sign_div_unsign_hnh ; work         ;
+;                      |alt_u_div_83f:divider|    ; 1399 (1399)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0|lpm_divide_e5m:auto_generated|sign_div_unsign_hnh:divider|alt_u_div_83f:divider ; alt_u_div_83f       ; work         ;
+;          |Mux_2_to_1:data2MUX|                  ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX                                                                                     ; Mux_2_to_1          ; work         ;
+;          |Mux_3_to_1:data1ForwardMUX|           ; 57 (57)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX                                                                              ; Mux_3_to_1          ; work         ;
+;          |Mux_3_to_1:data2ForwardMUX|           ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX                                                                              ; Mux_3_to_1          ; work         ;
+;       |fetch:Fetch|                             ; 37 (0)              ; 36 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|fetch:Fetch                                                                                                             ; fetch               ; work         ;
+;          |adder:pcadd|                          ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|fetch:Fetch|adder:pcadd                                                                                                 ; adder               ; work         ;
+;          |flopenrc:pcreg|                       ; 1 (1)               ; 36 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|fetch:Fetch|flopenrc:pcreg                                                                                              ; flopenrc            ; work         ;
+;       |flopenrc:DecodeFlipFlop|                 ; 0 (0)               ; 107 (107)                 ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|flopenrc:DecodeFlipFlop                                                                                                 ; flopenrc            ; work         ;
+;       |flopenrc:ExecuteFlipFlop|                ; 0 (0)               ; 59 (59)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|flopenrc:ExecuteFlipFlop                                                                                                ; flopenrc            ; work         ;
+;       |flopenrc:FetchFlipFlop|                  ; 10 (10)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|flopenrc:FetchFlipFlop                                                                                                  ; flopenrc            ; work         ;
+;       |flopenrc:MemoryFlipFlop|                 ; 9 (9)               ; 58 (58)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|flopenrc:MemoryFlipFlop                                                                                                 ; flopenrc            ; work         ;
+;       |hazardUnit:HazardUnit|                   ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|hazardUnit:HazardUnit                                                                                                   ; hazardUnit          ; work         ;
+;       |memory:Memory|                           ; 1718 (20)           ; 2432 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|memory:Memory                                                                                                           ; memory              ; work         ;
+;          |loadedMem:loadedMem|                  ; 1698 (1698)         ; 2432 (2432)               ; 0                 ; 0          ; 0    ; 0            ; |CPU|arqui:arqui|memory:Memory|loadedMem:loadedMem                                                                                       ; loadedMem           ; work         ;
+;    |divisorFrecuencia:divisorFrecuencia|        ; 34 (34)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU|divisorFrecuencia:divisorFrecuencia                                                                                                 ; divisorFrecuencia   ; work         ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0|altsyncram_e6j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 36           ; 16           ; 36           ; 576  ; None ;
+; arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1|altsyncram_e6j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 36           ; 16           ; 36           ; 576  ; None ;
++--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Two Independent 18x18           ; 1           ;
+; Sum of two 18x18                ; 1           ;
+; Total number of DSP blocks      ; 2           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 3           ;
++---------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                        ;
++-------------------------------------------------+---------------------------------------------------------+
+; Register name                                   ; Reason for Removal                                      ;
++-------------------------------------------------+---------------------------------------------------------+
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[40..59] ; Stuck at GND due to stuck port data_in                  ;
+; arqui:arqui|flopenrc:MemoryFlipFlop|out[22..41] ; Stuck at GND due to stuck port data_in                  ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[35]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[19] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[34]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[18] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[33]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[17] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[32]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[16] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[39]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[23] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[38]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[22] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[37]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[21] ;
+; arqui:arqui|flopenrc:DecodeFlipFlop|out[36]     ; Merged with arqui:arqui|flopenrc:DecodeFlipFlop|out[20] ;
+; Total Number of Removed Registers = 48          ;                                                         ;
++-------------------------------------------------+---------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2744  ;
+; Number of registers using Synchronous Clear  ; 294   ;
+; Number of registers using Synchronous Load   ; 108   ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2484  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 3:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |CPU|arqui:arqui|flopenrc:DecodeFlipFlop|out[64]                 ;
+; 3:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |CPU|arqui:arqui|flopenrc:DecodeFlipFlop|out[128]                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |CPU|arqui:arqui|flopenrc:FetchFlipFlop|out[6]                   ;
+; 4:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |CPU|arqui:arqui|fetch:Fetch|flopenrc:pcreg|out[18]              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |CPU|arqui:arqui|flopenrc:MemoryFlipFlop|out[18]                 ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 21 LEs               ; 0 LEs                  ; Yes        ; |CPU|arqui:arqui|flopenrc:MemoryFlipFlop|out[11]                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |CPU|arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX|y[6] ;
+; 3:1                ; 36 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |CPU|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX|y[2] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |CPU|arqui:arqui|flopenrc:FetchFlipFlop|out                      ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |CPU|arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX|C[29]       ;
+; 8:1                ; 35 bits   ; 175 LEs       ; 175 LEs              ; 0 LEs                  ; No         ; |CPU|arqui:arqui|execute:Execute|ALU:ALU|res[14]                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0|altsyncram_e6j1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                         ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                          ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1|altsyncram_e6j1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                         ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                          ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |CPU ;
++------------------+-------+------------------------------------------+
+; Parameter Name   ; Value ; Type                                     ;
++------------------+-------+------------------------------------------+
+; WIDTH            ; 36    ; Signed Integer                           ;
+; REGNUM           ; 16    ; Signed Integer                           ;
+; ADDRESSWIDTH     ; 4     ; Signed Integer                           ;
+; OPCODEWIDTH      ; 4     ; Signed Integer                           ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                           ;
++------------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui ;
++------------------+-------+-------------------------------+
+; Parameter Name   ; Value ; Type                          ;
++------------------+-------+-------------------------------+
+; WIDTH            ; 36    ; Signed Integer                ;
+; REGNUM           ; 16    ; Signed Integer                ;
+; ADDRESSWIDTH     ; 4     ; Signed Integer                ;
+; OPCODEWIDTH      ; 4     ; Signed Integer                ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                ;
++------------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; OPCODEWIDTH    ; 4     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|control:controlunit ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; OPCODEWIDTH    ; 4     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|controller:Controller|conditional:condunit ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; OPCODEWIDTH    ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|hazardUnit:HazardUnit ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                        ;
+; ADDRESSWIDTH   ; 4     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory ;
++------------------+-------+---------------------------------------------+
+; Parameter Name   ; Value ; Type                                        ;
++------------------+-------+---------------------------------------------+
+; WIDTH            ; 36    ; Signed Integer                              ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                              ;
++------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|memory:Memory|loadedMem:loadedMem ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|flopenrc:pcreg ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|fetch:Fetch|adder:pcadd ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:FetchFlipFlop ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode ;
++------------------+-------+---------------------------------------------+
+; Parameter Name   ; Value ; Type                                        ;
++------------------+-------+---------------------------------------------+
+; WIDTH            ; 36    ; Signed Integer                              ;
+; REGNUM           ; 16    ; Signed Integer                              ;
+; ADDRESSWIDTH     ; 4     ; Signed Integer                              ;
+; OPCODEWIDTH      ; 4     ; Signed Integer                              ;
+; INSTRUCTIONWIDTH ; 24    ; Signed Integer                              ;
++------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                     ;
+; REGNUM         ; 16    ; Signed Integer                                                     ;
+; ADDRESSWIDTH   ; 4     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:DecodeFlipFlop ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 136   ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop" ;
-+------+-------+----------+------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                        ;
-+------+-------+----------+------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                   ;
-+------+-------+----------+------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                  ;
-+------+-------+----------+-----------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd" ;
-+----------+-------+----------+-------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                   ;
-+----------+-------+----------+-------------------------------------------+
-; b[35..1] ; Input ; Info     ; Stuck at GND                              ;
-; b[0]     ; Input ; Info     ; Stuck at VCC                              ;
-+----------+-------+----------+-------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 36    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|execute:Execute|ALU:ALU ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:ExecuteFlipFlop ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; WIDTH          ; 79    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|flopenrc:MemoryFlipFlop ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 78    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arqui:arqui|Mux_2_to_1:writeBack ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 36    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0 ;
++------------------------------------+----------------------+---------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                    ;
++------------------------------------+----------------------+---------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                 ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                          ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                 ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                 ;
+; WIDTH_A                            ; 36                   ; Untyped                                                 ;
+; WIDTHAD_A                          ; 4                    ; Untyped                                                 ;
+; NUMWORDS_A                         ; 16                   ; Untyped                                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                 ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                 ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                 ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; WIDTH_B                            ; 36                   ; Untyped                                                 ;
+; WIDTHAD_B                          ; 4                    ; Untyped                                                 ;
+; NUMWORDS_B                         ; 16                   ; Untyped                                                 ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                 ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                 ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                 ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                 ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                 ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                 ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                 ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                 ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                 ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                 ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                 ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                 ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                 ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                 ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                 ;
+; CBXI_PARAMETER                     ; altsyncram_e6j1      ; Untyped                                                 ;
++------------------------------------+----------------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1 ;
++------------------------------------+----------------------+---------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                    ;
++------------------------------------+----------------------+---------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                 ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                          ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                 ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                 ;
+; WIDTH_A                            ; 36                   ; Untyped                                                 ;
+; WIDTHAD_A                          ; 4                    ; Untyped                                                 ;
+; NUMWORDS_A                         ; 16                   ; Untyped                                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                 ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                 ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                 ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; WIDTH_B                            ; 36                   ; Untyped                                                 ;
+; WIDTHAD_B                          ; 4                    ; Untyped                                                 ;
+; NUMWORDS_B                         ; 16                   ; Untyped                                                 ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                 ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                 ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                 ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                 ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                 ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                 ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                 ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                 ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                 ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                 ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                 ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                 ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                 ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                 ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                 ;
+; CBXI_PARAMETER                     ; altsyncram_e6j1      ; Untyped                                                 ;
++------------------------------------+----------------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                       ;
++------------------------+----------------+------------------------------------------------------------+
+; LPM_WIDTHN             ; 36             ; Untyped                                                    ;
+; LPM_WIDTHD             ; 36             ; Untyped                                                    ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                    ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                    ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                    ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                    ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                    ;
+; CBXI_PARAMETER         ; lpm_divide_e5m ; Untyped                                                    ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                    ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                    ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                               ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                             ;
++------------------------+----------------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                               ;
++-------------------------------------------+--------------------------------------------------------------------+
+; Name                                      ; Value                                                              ;
++-------------------------------------------+--------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                  ;
+; Entity Instance                           ; arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                          ;
+;     -- WIDTH_A                            ; 36                                                                 ;
+;     -- NUMWORDS_A                         ; 16                                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                       ;
+;     -- WIDTH_B                            ; 36                                                                 ;
+;     -- NUMWORDS_B                         ; 16                                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                          ;
+; Entity Instance                           ; arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_1 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                          ;
+;     -- WIDTH_A                            ; 36                                                                 ;
+;     -- NUMWORDS_A                         ; 16                                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                       ;
+;     -- WIDTH_B                            ; 36                                                                 ;
+;     -- NUMWORDS_B                         ; 16                                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                          ;
++-------------------------------------------+--------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "arqui:arqui|flopenrc:MemoryFlipFlop" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                          ;
++------+-------+----------+---------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "arqui:arqui|flopenrc:ExecuteFlipFlop" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "arqui:arqui|flopenrc:DecodeFlipFlop" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                          ;
++------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "arqui:arqui|fetch:Fetch|adder:pcadd" ;
++----------+-------+----------+-----------------------------------+
+; Port     ; Type  ; Severity ; Details                           ;
++----------+-------+----------+-----------------------------------+
+; b[35..1] ; Input ; Info     ; Stuck at GND                      ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                      ;
++----------+-------+----------+-----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem"                                    ;
+; Port Connectivity Checks: "arqui:arqui|memory:Memory|loadedMem:loadedMem"                                            ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -507,119 +905,237 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:cpu"                                                                               ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; clock   ; Input  ; Info     ; Stuck at GND                                                                        ;
-; outFlag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; endFlag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 2744                        ;
+;     ENA               ; 2432                        ;
+;     ENA SCLR          ; 16                          ;
+;     ENA SCLR SLD      ; 36                          ;
+;     SCLR              ; 170                         ;
+;     SCLR SLD          ; 72                          ;
+;     plain             ; 18                          ;
+; arriav_lcell_comb     ; 3646                        ;
+;     arith             ; 847                         ;
+;         0 data inputs ; 68                          ;
+;         1 data inputs ; 62                          ;
+;         2 data inputs ; 18                          ;
+;         4 data inputs ; 34                          ;
+;         5 data inputs ; 665                         ;
+;     extend            ; 578                         ;
+;         7 data inputs ; 578                         ;
+;     normal            ; 2216                        ;
+;         1 data inputs ; 608                         ;
+;         2 data inputs ; 79                          ;
+;         3 data inputs ; 85                          ;
+;         4 data inputs ; 707                         ;
+;         5 data inputs ; 279                         ;
+;         6 data inputs ; 458                         ;
+;     shared            ; 5                           ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         4 data inputs ; 1                           ;
+; arriav_mac            ; 2                           ;
+; boundary_port         ; 14                          ;
+; stratixv_ram_block    ; 72                          ;
+;                       ;                             ;
+; Max LUT depth         ; 114.00                      ;
+; Average LUT depth     ; 39.63                       ;
++-----------------------+-----------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Mon Oct 17 23:42:18 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arquitectura -c arquitectura --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Wed Oct 19 05:01:39 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arquitectura -c arquitectura
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 14
+    Info (12023): Found entity 1: ALU File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU_tb.sv Line: 1
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2_to_1.sv
-    Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv Line: 5
+    Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file mux_3_to_1.sv
-    Info (12023): Found entity 1: Mux_3_to_1 File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv Line: 5
+    Info (12023): Found entity 1: Mux_3_to_1 File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
-    Info (12023): Found entity 1: regfile File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv Line: 5
+    Info (12023): Found entity 1: regfile File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv Line: 5
+    Info (12023): Found entity 1: adder File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopr.sv Line: 4
+    Info (12023): Found entity 1: flopr File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopr.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file regfile_tb.sv
-    Info (12023): Found entity 1: regfile_tb File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile_tb.sv Line: 1
+    Info (12023): Found entity 1: regfile_tb File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file conditional.sv
-    Info (12023): Found entity 1: conditional File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv Line: 2
+    Info (12023): Found entity 1: conditional File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
-    Info (12023): Found entity 1: dmem File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/dmem.sv Line: 1
+    Info (12023): Found entity 1: dmem File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/dmem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
-    Info (12023): Found entity 1: imem File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/imem.sv Line: 2
+    Info (12023): Found entity 1: imem File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/imem.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
-    Info (12023): Found entity 1: control File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv Line: 2
+    Info (12023): Found entity 1: control File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv Line: 3
+    Info (12023): Found entity 1: controller File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file decode.sv
-    Info (12023): Found entity 1: decode File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv Line: 1
+    Info (12023): Found entity 1: decode File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fetch.sv
-    Info (12023): Found entity 1: fetch File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 1
+    Info (12023): Found entity 1: fetch File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopenrc.sv
-    Info (12023): Found entity 1: flopenrc File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv Line: 2
+    Info (12023): Found entity 1: flopenrc File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file execute.sv
-    Info (12023): Found entity 1: execute File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv Line: 3
+    Info (12023): Found entity 1: execute File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file loadedmem.sv
-    Info (12023): Found entity 1: loadedMem File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 16
+    Info (12023): Found entity 1: loadedMem File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file arqui.sv
-    Info (12023): Found entity 1: arqui File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 1
+    Info (12023): Found entity 1: arqui File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hazardunit.sv
-    Info (12023): Found entity 1: hazardUnit File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv Line: 3
+    Info (12023): Found entity 1: hazardUnit File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file memory.sv
-    Info (12023): Found entity 1: memory File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv Line: 15
+    Info (12023): Found entity 1: memory File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 2
+    Info (12023): Found entity 1: CPU File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file memory_tb.sv
-    Info (12023): Found entity 1: memory_tb File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory_tb.sv Line: 3
+    Info (12023): Found entity 1: memory_tb File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory_tb.sv Line: 3
 Warning (12019): Can't analyze file -- file Decoder_for_test.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file decode_tb.sv
-    Info (12023): Found entity 1: decode_tb File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode_tb.sv Line: 1
+    Info (12023): Found entity 1: decode_tb File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_tb.sv
-    Info (12023): Found entity 1: control_tb File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control_tb.sv Line: 1
+    Info (12023): Found entity 1: control_tb File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
-    Info (12023): Found entity 1: CPU_tb File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv Line: 3
+    Info (12023): Found entity 1: CPU_tb File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file divisorfrecuencia.sv
-    Info (12023): Found entity 1: divisorFrecuencia File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o1" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o2" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(30): created implicit net for "o3" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 30
-Info (12127): Elaborating entity "CPU_tb" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:cpu" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv Line: 21
-Info (12128): Elaborating entity "divisorFrecuencia" for hierarchy "CPU:cpu|divisorFrecuencia:divisorFrecuencia" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 10
-Warning (10230): Verilog HDL assignment warning at divisorFrecuencia.sv(11): truncated value with size 32 to match size of target (25) File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv Line: 11
-Info (12128): Elaborating entity "arqui" for hierarchy "CPU:cpu|arqui:arqui" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 13
-Info (12128): Elaborating entity "controller" for hierarchy "CPU:cpu|arqui:arqui|controller:Controller" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 62
-Info (12128): Elaborating entity "control" for hierarchy "CPU:cpu|arqui:arqui|controller:Controller|control:controlunit" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv Line: 18
-Info (12128): Elaborating entity "conditional" for hierarchy "CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv Line: 26
-Info (12128): Elaborating entity "hazardUnit" for hierarchy "CPU:cpu|arqui:arqui|hazardUnit:HazardUnit" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 74
-Info (12128): Elaborating entity "memory" for hierarchy "CPU:cpu|arqui:arqui|memory:Memory" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 82
-Warning (10230): Verilog HDL assignment warning at memory.sv(34): truncated value with size 36 to match size of target (24) File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv Line: 34
-Info (12128): Elaborating entity "loadedMem" for hierarchy "CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv Line: 45
-Warning (10850): Verilog HDL warning at loadedMem.sv(29): number of words (65) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 29
-Warning (10230): Verilog HDL assignment warning at loadedMem.sv(41): truncated value with size 36 to match size of target (24) File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 41
-Warning (10230): Verilog HDL assignment warning at loadedMem.sv(42): truncated value with size 36 to match size of target (16) File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 42
-Warning (10230): Verilog HDL assignment warning at loadedMem.sv(43): truncated value with size 36 to match size of target (8) File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 43
-Info (12128): Elaborating entity "fetch" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 88
-Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 8
-Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 9
-Info (12128): Elaborating entity "adder" for hierarchy "CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 10
-Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 91
-Info (12128): Elaborating entity "decode" for hierarchy "CPU:cpu|arqui:arqui|decode:Decode" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 106
-Info (12128): Elaborating entity "regfile" for hierarchy "CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv Line: 23
-Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 127
-Info (12128): Elaborating entity "execute" for hierarchy "CPU:cpu|arqui:arqui|execute:Execute" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 142
-Info (12128): Elaborating entity "Mux_3_to_1" for hierarchy "CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv Line: 15
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:cpu|arqui:arqui|execute:Execute|ALU:ALU" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv Line: 21
-Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 160
-Info (12128): Elaborating entity "flopenrc" for hierarchy "CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 180
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Mon Oct 17 23:42:26 2022
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:11
+    Info (12023): Found entity 1: divisorFrecuencia File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o1" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o2" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(30): created implicit net for "o3" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 30
+Info (12127): Elaborating entity "CPU" for the top level hierarchy
+Info (12128): Elaborating entity "divisorFrecuencia" for hierarchy "divisorFrecuencia:divisorFrecuencia" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at divisorFrecuencia.sv(11): truncated value with size 32 to match size of target (25) File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv Line: 11
+Info (12128): Elaborating entity "arqui" for hierarchy "arqui:arqui" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 15
+Info (12128): Elaborating entity "controller" for hierarchy "arqui:arqui|controller:Controller" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 62
+Info (12128): Elaborating entity "control" for hierarchy "arqui:arqui|controller:Controller|control:controlunit" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv Line: 18
+Info (12128): Elaborating entity "conditional" for hierarchy "arqui:arqui|controller:Controller|conditional:condunit" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv Line: 26
+Info (12128): Elaborating entity "hazardUnit" for hierarchy "arqui:arqui|hazardUnit:HazardUnit" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 74
+Info (12128): Elaborating entity "memory" for hierarchy "arqui:arqui|memory:Memory" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 82
+Warning (10230): Verilog HDL assignment warning at memory.sv(34): truncated value with size 36 to match size of target (24) File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv Line: 34
+Info (12128): Elaborating entity "loadedMem" for hierarchy "arqui:arqui|memory:Memory|loadedMem:loadedMem" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv Line: 45
+Warning (10850): Verilog HDL warning at loadedMem.sv(29): number of words (65) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at loadedMem.sv(41): truncated value with size 36 to match size of target (24) File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at loadedMem.sv(42): truncated value with size 36 to match size of target (16) File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at loadedMem.sv(43): truncated value with size 36 to match size of target (8) File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 43
+Info (12128): Elaborating entity "fetch" for hierarchy "arqui:arqui|fetch:Fetch" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 88
+Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|fetch:Fetch|flopenrc:pcreg" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 8
+Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 9
+Info (12128): Elaborating entity "adder" for hierarchy "arqui:arqui|fetch:Fetch|adder:pcadd" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv Line: 10
+Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:FetchFlipFlop" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 91
+Info (12128): Elaborating entity "decode" for hierarchy "arqui:arqui|decode:Decode" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 106
+Info (12128): Elaborating entity "regfile" for hierarchy "arqui:arqui|decode:Decode|regfile:registerFile" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv Line: 23
+Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:DecodeFlipFlop" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 127
+Info (12128): Elaborating entity "execute" for hierarchy "arqui:arqui|execute:Execute" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 142
+Info (12128): Elaborating entity "Mux_3_to_1" for hierarchy "arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv Line: 15
+Info (12128): Elaborating entity "ALU" for hierarchy "arqui:arqui|execute:Execute|ALU:ALU" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv Line: 21
+Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:ExecuteFlipFlop" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 160
+Info (12128): Elaborating entity "flopenrc" for hierarchy "arqui:arqui|flopenrc:MemoryFlipFlop" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv Line: 180
+Warning (276027): Inferred dual-clock RAM node "arqui:arqui|decode:Decode|regfile:registerFile|rf_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning (276027): Inferred dual-clock RAM node "arqui:arqui|decode:Decode|regfile:registerFile|rf_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "arqui:arqui|memory:Memory|loadedMem:loadedMem|RAM1" is uninferred due to asynchronous read logic File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 23
+    Info (276007): RAM logic "arqui:arqui|memory:Memory|loadedMem:loadedMem|RAM2" is uninferred due to asynchronous read logic File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 24
+    Info (276007): RAM logic "arqui:arqui|memory:Memory|loadedMem:loadedMem|RAM3" is uninferred due to asynchronous read logic File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv Line: 25
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/arquitectura.ram0_loadedMem_c27de88d.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Critical Warning (127005): Memory depth (128) in the design file differs from memory depth (100) in the Memory Initialization File "C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/arquitectura.ram2_loadedMem_c27de88d.hdl.mif" -- setting initial value for remaining addresses to 0
+Critical Warning (127005): Memory depth (128) in the design file differs from memory depth (102) in the Memory Initialization File "C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/arquitectura.ram1_loadedMem_c27de88d.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (19000): Inferred 2 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "arqui:arqui|decode:Decode|regfile:registerFile|rf_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 36
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 36
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "arqui:arqui|decode:Decode|regfile:registerFile|rf_rtl_1" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 36
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 36
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "arqui:arqui|execute:Execute|ALU:ALU|Mod0" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 51
+Info (12130): Elaborated megafunction instantiation "arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0"
+Info (12133): Instantiated megafunction "arqui:arqui|decode:Decode|regfile:registerFile|altsyncram:rf_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "36"
+    Info (12134): Parameter "WIDTHAD_A" = "4"
+    Info (12134): Parameter "NUMWORDS_A" = "16"
+    Info (12134): Parameter "WIDTH_B" = "36"
+    Info (12134): Parameter "WIDTHAD_B" = "4"
+    Info (12134): Parameter "NUMWORDS_B" = "16"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_e6j1.tdf
+    Info (12023): Found entity 1: altsyncram_e6j1 File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/altsyncram_e6j1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0" File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 51
+Info (12133): Instantiated megafunction "arqui:arqui|execute:Execute|ALU:ALU|lpm_divide:Mod0" with the following parameter: File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv Line: 51
+    Info (12134): Parameter "LPM_WIDTHN" = "36"
+    Info (12134): Parameter "LPM_WIDTHD" = "36"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_e5m.tdf
+    Info (12023): Found entity 1: lpm_divide_e5m File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/lpm_divide_e5m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_hnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_hnh File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/sign_div_unsign_hnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_83f.tdf
+    Info (12023): Found entity 1: alt_u_div_83f File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/db/alt_u_div_83f.tdf Line: 23
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5824 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 5736 logic cells
+    Info (21064): Implemented 72 RAM segments
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Wed Oct 19 05:01:50 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:18
 
 
