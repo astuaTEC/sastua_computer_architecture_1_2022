@@ -192,17 +192,17 @@ set_location_assignment PIN_W20 -to startIO
 set_location_assignment PIN_Y13 -to clock
 set_location_assignment PIN_W15 -to endFlag
 set_global_assignment -name SYSTEMVERILOG_FILE divisorFrecuencia.sv
+set_location_assignment PIN_AF4 -to outFlag
+set_location_assignment PIN_V12 -to out[0]
+set_location_assignment PIN_E8 -to out[1]
+set_location_assignment PIN_W12 -to out[2]
+set_location_assignment PIN_D11 -to out[3]
+set_location_assignment PIN_D8 -to out[4]
+set_location_assignment PIN_AH13 -to out[5]
+set_location_assignment PIN_AF7 -to out[6]
+set_location_assignment PIN_AH14 -to out[7]
+set_location_assignment PIN_V15 -to clk_1Hz
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_AE26 -to outFlag
-set_location_assignment PIN_AG14 -to out[0]
-set_location_assignment PIN_AE6 -to out[1]
-set_location_assignment PIN_AE24 -to out[2]
-set_location_assignment PIN_AD20 -to out[3]
-set_location_assignment PIN_AD17 -to out[4]
-set_location_assignment PIN_AC22 -to out[5]
-set_location_assignment PIN_AB23 -to out[6]
-set_location_assignment PIN_W11 -to out[7]
-set_location_assignment PIN_V15 -to clk_1Hz
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

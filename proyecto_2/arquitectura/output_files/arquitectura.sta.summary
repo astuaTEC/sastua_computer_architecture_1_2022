@@ -3,99 +3,99 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 100C Model Setup 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : -102.713
-TNS   : -42307.893
+Slack : -103.215
+TNS   : -36530.792
 
 Type  : Slow 1100mV 100C Model Setup 'clock'
-Slack : -7.973
-TNS   : -133.247
+Slack : -7.834
+TNS   : -128.910
 
 Type  : Slow 1100mV 100C Model Hold 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : 0.430
+Slack : 0.363
 TNS   : 0.000
 
 Type  : Slow 1100mV 100C Model Hold 'clock'
-Slack : 0.623
+Slack : 0.514
 TNS   : 0.000
 
 Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
 Slack : -2.636
-TNS   : -2852.524
+TNS   : -2982.592
 
 Type  : Slow 1100mV 100C Model Minimum Pulse Width 'clock'
-Slack : -0.647
-TNS   : -20.756
+Slack : -0.617
+TNS   : -20.685
 
 Type  : Slow 1100mV -40C Model Setup 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : -108.297
-TNS   : -41130.154
+Slack : -108.970
+TNS   : -35548.867
 
 Type  : Slow 1100mV -40C Model Setup 'clock'
-Slack : -8.432
-TNS   : -138.470
+Slack : -7.981
+TNS   : -128.533
 
 Type  : Slow 1100mV -40C Model Hold 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : 0.367
+Slack : 0.389
 TNS   : 0.000
 
 Type  : Slow 1100mV -40C Model Hold 'clock'
-Slack : 0.671
+Slack : 0.543
 TNS   : 0.000
 
 Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
 Slack : -2.636
-TNS   : -2808.601
+TNS   : -2782.218
 
 Type  : Slow 1100mV -40C Model Minimum Pulse Width 'clock'
-Slack : -0.642
-TNS   : -22.234
+Slack : -0.610
+TNS   : -21.912
 
 Type  : Fast 1100mV 100C Model Setup 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : -50.852
-TNS   : -23791.631
+Slack : -51.102
+TNS   : -20260.449
 
 Type  : Fast 1100mV 100C Model Setup 'clock'
-Slack : -4.109
-TNS   : -53.887
+Slack : -3.994
+TNS   : -51.695
 
 Type  : Fast 1100mV 100C Model Hold 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : 0.161
+Slack : 0.133
 TNS   : 0.000
 
 Type  : Fast 1100mV 100C Model Hold 'clock'
-Slack : 0.274
+Slack : 0.246
 TNS   : 0.000
 
 Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
 Slack : -2.174
-TNS   : -433.850
+TNS   : -519.954
 
 Type  : Fast 1100mV 100C Model Minimum Pulse Width 'clock'
-Slack : -0.488
-TNS   : -2.825
+Slack : -0.528
+TNS   : -2.962
 
 Type  : Fast 1100mV -40C Model Setup 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : -46.078
-TNS   : -19633.739
+Slack : -46.304
+TNS   : -16596.086
 
 Type  : Fast 1100mV -40C Model Setup 'clock'
-Slack : -3.644
-TNS   : -47.296
+Slack : -3.445
+TNS   : -43.758
 
 Type  : Fast 1100mV -40C Model Hold 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
-Slack : 0.129
+Slack : 0.128
 TNS   : 0.000
 
 Type  : Fast 1100mV -40C Model Hold 'clock'
-Slack : 0.254
+Slack : 0.228
 TNS   : 0.000
 
 Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divisorFrecuencia:divisorFrecuencia|C_1Hz'
 Slack : -2.174
-TNS   : -323.333
+TNS   : -326.143
 
 Type  : Fast 1100mV -40C Model Minimum Pulse Width 'clock'
-Slack : -0.517
-TNS   : -2.903
+Slack : -0.518
+TNS   : -2.947
 
 ------------------------------------------------------------

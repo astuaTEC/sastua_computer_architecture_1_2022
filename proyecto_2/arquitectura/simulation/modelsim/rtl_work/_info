@@ -1,486 +1,493 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/simulation/modelsim
+Z0 dC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/simulation/modelsim
 vadder
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1666038110
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1666376568
 !i10b 1
-!s100 RmkB6b]fg6codaJ?a087N1
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ImOJ`fnN[=?4EU4Fz8g9Oc2
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 =HH;;c_mGUL:`l_2zhD5V1
+IJeZZ_EbLf_z:i?5AA45l]3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
 S1
 R0
-Z5 w1666033399
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv
-!i122 4
-Z6 L0 5 6
-Z7 OV;L;2020.1;71
+Z4 w1665985691
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv
+L0 5
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1666038110.000000
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/adder.sv|
+Z6 !s108 1666376568.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv|
 !i113 1
-Z9 o-sv -work work
-Z10 !s92 -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura
-Z11 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura}
+Z9 tCvgOpt 0
 vALU
 R1
-!s110 1666038108
+Z10 !s110 1666376567
 !i10b 1
-!s100 hihm066OXm<F>JQEkZoFz1
+!s100 JmEb?U[V4jQ6H1^A6CEFD3
+I8doR;CQSQ?JK`;:3M=z1R0
 R3
-IL;?D7UoE]_Q38O;gMcQc<1
-R4
+!s105 ALU_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv
+L0 14
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv
-!i122 0
-L0 14 44
-R7
 r1
 !s85 0
 31
-!s108 1666038108.000000
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/ALU.sv|
+Z11 !s108 1666376567.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 n@a@l@u
 varqui
 R1
-Z12 !s110 1666038111
+Z12 !s110 1666376569
 !i10b 1
-!s100 ^>@zfkgMEU]LZ?o^P_Rho2
+!s100 ;<CD6ZHGY@zB]>Yc3enMT2
+I;PUHKkl0o114lg5T<3OTR0
 R3
-I;oW0Q?VlPV<;F>l]zf:313
-R4
+!s105 arqui_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv
+L0 1
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv
-!i122 12
-L0 1 199
-R7
 r1
 !s85 0
 31
-Z13 !s108 1666038111.000000
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/arqui.sv|
+Z13 !s108 1666376569.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vconditional
 R1
 R2
 !i10b 1
-!s100 3i0K4L@_]cB>fe17h^Bg=1
+!s100 clad_b>HDY?z<[8<38@Oj3
+I[f=iQ8]Yia[hOQ7CJ4]6S0
 R3
-Ig[zEj_giZ;lh=]XBY4cDO1
-R4
+!s105 conditional_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv
+L0 2
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv
-!i122 5
-L0 2 15
-R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/conditional.sv|
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vcontrol
 R1
 R2
 !i10b 1
-!s100 25]7B5dm=NA@ZNDjJI@hO1
+!s100 ^L64X0k[Zk<gE5nEa7fRi1
+II7KQ1Z`SF[PZ<Q?NUYKhm1
 R3
-I<?5^;Q?dzIUV5<gb``5_o0
-R4
+!s105 control_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv
+L0 2
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv
-!i122 6
-L0 2 152
-R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/control.sv|
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vcontroller
 R1
 R2
 !i10b 1
-!s100 2mKhlLBib04d?e_nC_AnI2
+!s100 90aM?NA7DMP3C:>PXA^:I0
+Ib?3dCMU4JjODL8<<fDH3d1
 R3
-IDU1SUKKXKGOb`6Q2F4zV=2
-R4
+!s105 controller_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv
+L0 3
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv
-!i122 7
-L0 3 26
-R7
 r1
 !s85 0
 31
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv|
+!i113 1
+R7
 R8
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/controller.sv|
-!i113 1
 R9
-R10
-R11
 vCPU
-R1
-Z14 !s110 1666038112
-!i10b 1
-!s100 Ad^^TA]HkTS<GS6<BFNO41
-R3
-ID5ffdY7YBogXPomm`WB5D1
-R4
-S1
-R0
-w1666038016
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv
-!i122 15
-L0 2 16
-R7
-r1
-!s85 0
-31
-Z15 !s108 1666038112.000000
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU.sv|
-!i113 1
-R9
-R10
-R11
-n@c@p@u
-vCPU_tb
-R1
-R14
-!i10b 1
-!s100 1LDeY<kUHShA]8jcDlEm[0
-R3
-IB4XZ>@RahNzWg^B0<R_=o1
-R4
-S1
-R0
-w1666037513
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv
-!i122 16
-L0 3 34
-R7
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/CPU_tb.sv|
-!i113 1
-R9
-R10
-R11
-n@c@p@u_tb
-vdecode
 R1
 R12
 !i10b 1
-!s100 b`422<R;1Rgz362K6PMKD0
+!s100 WgoFCNeePDTQof4>z5]W73
+I7_hoG:4:]44S8KVR9dLn92
 R3
-I8?C5Wj@FTU5`Q`Gl1?B:n2
-R4
+!s105 CPU_sv_unit
 S1
 R0
+w1666376507
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv
+L0 2
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv
-!i122 8
-L0 1 25
-R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/decode.sv|
+R13
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
+n@c@p@u
+vCPU_tb
+R1
+R12
+!i10b 1
+!s100 gDKlY8`h`nHZ]FT?UCW>Q1
+IbEhZ9jnVg59S1RKT9IOgS2
+R3
+!s105 CPU_tb_sv_unit
+S1
+R0
+w1666376543
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv|
+!i113 1
+R7
+R8
+R9
+n@c@p@u_tb
+vdecode
+R1
+R2
+!i10b 1
+!s100 R[>MAQ=mHCOFbeS=@P5HT2
+I<Z35?NF`LSQjnWJg_`6CT0
+R3
+!s105 decode_sv_unit
+S1
+R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv|
+!i113 1
+R7
+R8
+R9
+vdivisorFrecuencia
+R1
+R12
+!i10b 1
+!s100 czif=2Ci2F7cM5N39RgLM1
+IZLORDVzSbW9Kk625Nm;bL0
+R3
+!s105 divisorFrecuencia_sv_unit
+S1
+R0
+w1666372070
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv|
+!i113 1
+R7
+R8
+R9
+ndivisor@frecuencia
 vexecute
 R1
 R12
 !i10b 1
-!s100 gC;3?@l^YR3Rl1eSo7BVR2
+!s100 jR:JkYOFg]CPC_]I?5ad=3
+I29AaSfDo@2^C9P:zif5=L1
 R3
-I[AQfOcD;MJiR]hVCXT_`O1
-R4
+!s105 execute_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv
+L0 3
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv
-!i122 11
-L0 3 21
-R7
 r1
 !s85 0
 31
 R13
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/execute.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vfetch
 R1
-R12
+R2
 !i10b 1
-!s100 c_b>4FC3b4G]l5S05a[zM2
+!s100 9g=g8:@>A2eEMY>:h@1=93
+I]KzTO7@6AF]Y`J5h09Qab2
 R3
-Imof8z`IH9kiJ3>_Sa9hn?2
-R4
+!s105 fetch_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv
+L0 1
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv
-!i122 9
-L0 1 13
-R7
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/fetch.sv|
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vflopenrc
 R1
-R12
+R2
 !i10b 1
-!s100 10F`LEodJk@ZSW<@RJH5=1
+!s100 kP@[HJH[SMhA8OK74nWkn0
+IK<7ENz@J^Wdm^ED^E=m:e2
 R3
-IYJ8a`n_n4EK3m0RQO1oW32
-R4
+!s105 flopenrc_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv
+L0 2
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv
-!i122 10
-L0 2 14
-R7
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/flopenrc.sv|
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vhazardUnit
 R1
-R14
+R12
 !i10b 1
-!s100 LAbUOE_NP0VGkRhl?S_5=3
+!s100 25Ae1mhnb]o6ne[GJW9mz1
+I:L]1oAOnlPYTA1g]4gJPb3
 R3
-IS2>R>A3l@=WECSNHmPPX`1
-R4
+!s105 hazardUnit_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv
+L0 3
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv
-!i122 13
-L0 3 44
-R7
 r1
 !s85 0
 31
 R13
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/hazardUnit.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 nhazard@unit
 vloadedMem
 R1
-R14
+!s110 1666376570
 !i10b 1
-!s100 z>FMOQLoEdmZe4ZFU1Yb72
+!s100 LiNAIm<BONcB3MZ3^`98I2
+Ih1I@`PJHZ:1F34NGcMlz?3
 R3
-IbKe=Yl8Z9AN[CnnSaidYJ0
-R4
+!s105 loadedMem_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv
+L0 16
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv
-!i122 17
-L0 16 31
-R7
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/loadedMem.sv|
+!s108 1666376570.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 nloaded@mem
 vmemory
 R1
-R14
+R12
 !i10b 1
-!s100 N6lajR<_FXPGHLXW[NXKg2
+!s100 oVkOJGYVAL<MN58h;TESR1
+I_S^OR>OT_dJel`FaRaUYd1
 R3
-III`U4[P>N[SL_Z?beDQ1L2
-R4
+!s105 memory_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv
+L0 15
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv
-!i122 14
-L0 15 50
-R7
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/memory.sv|
+R13
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv|
 !i113 1
+R7
+R8
 R9
-R10
-R11
 vMux_2_to_1
 R1
-Z16 !s110 1666038109
+R10
 !i10b 1
-!s100 5No_;>SModM1WQ_W3fhFY3
+!s100 1R<cX3a2WM9T_39g7DXBP3
+Ik8^VB:OL[gK0Se6EGi_]g2
 R3
-I33PlazPBVMiQ:CZz>HaXA3
-R4
+!s105 Mux_2_to_1_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv
+L0 5
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv
-!i122 1
-R6
-R7
 r1
 !s85 0
 31
-Z17 !s108 1666038109.000000
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_2_to_1.sv|
-!i113 1
-R9
-R10
 R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv|
+!i113 1
+R7
+R8
+R9
 n@mux_2_to_1
 vMux_3_to_1
 R1
-R16
+R10
 !i10b 1
-!s100 7_o^>bfVo=D8:C]^NDYXU3
+!s100 ]h1g7eE_C9fDfaYkjmibi2
+I8PjIM9=;FRgi[S9PV>BQC2
 R3
-IR^nGo6A`K3CXoF6z<3Te22
-R4
+!s105 Mux_3_to_1_sv_unit
 S1
 R0
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv
+L0 5
 R5
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv
-!i122 2
-L0 5 8
-R7
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/Mux_3_to_1.sv|
-!i113 1
-R9
-R10
 R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv|
+!i113 1
+R7
+R8
+R9
 n@mux_3_to_1
 vregfile
 R1
-R16
+R10
 !i10b 1
-!s100 m7Ka``gAm?KPgc2X`HbD12
+!s100 chP8n^]dO;[PZYcCdA^283
+I6l5CC?fllHizl42l3=9eY2
 R3
-IIi=J;?RbG8:oVCFXKIN?:3
-R4
+!s105 regfile_sv_unit
 S1
 R0
-w1666033400
-8C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv
-FC:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv
-!i122 3
-L0 5 20
-R7
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv
+L0 5
+R5
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura|C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repositorio-GitHub/proyecto_2/arquitectura/regfile.sv|
-!i113 1
-R9
-R10
 R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv|
+!i113 1
+R7
+R8
+R9

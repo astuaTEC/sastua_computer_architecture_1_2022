@@ -16,6 +16,12 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 			
 	assign out = outaux[7:0];
 	
+	initial begin 
+		
+		outFlag = 0;
+		
+	end
+	
 	always_ff @(posedge clk_1Hz) begin
 		if(outaux === 500) begin
 			flag <= 1;

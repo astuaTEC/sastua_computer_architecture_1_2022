@@ -2,17 +2,17 @@
 clock => clock.IN1
 reset => reset.IN1
 startIO => startIO.IN1
-outFlag <= arqui:arqui.port3
-endFlag <= endFlag~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk_1Hz <= clk_1Hz.DB_MAX_OUTPUT_PORT_TYPE
-out[0] <= arqui:arqui.port4
-out[1] <= arqui:arqui.port4
-out[2] <= arqui:arqui.port4
-out[3] <= arqui:arqui.port4
-out[4] <= arqui:arqui.port4
-out[5] <= arqui:arqui.port4
-out[6] <= arqui:arqui.port4
-out[7] <= arqui:arqui.port4
+outFlag << arqui:arqui.port3
+endFlag << endFlag~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_1Hz << clk_1Hz.DB_MAX_OUTPUT_PORT_TYPE
+out[0] << arqui:arqui.port4
+out[1] << arqui:arqui.port4
+out[2] << arqui:arqui.port4
+out[3] << arqui:arqui.port4
+out[4] << arqui:arqui.port4
+out[5] << arqui:arqui.port4
+out[6] << arqui:arqui.port4
+out[7] << arqui:arqui.port4
 
 
 |CPU|divisorFrecuencia:divisorFrecuencia
