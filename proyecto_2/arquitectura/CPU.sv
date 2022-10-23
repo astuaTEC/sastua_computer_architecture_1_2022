@@ -12,7 +12,7 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 	divisorFrecuencia	divisorFrecuencia(clock, clk_1Hz); //la señal de 50Mhz se pasa a 1Hz
 
 	arqui #(WIDTH, REGNUM, ADDRESSWIDTH, OPCODEWIDTH, INSTRUCTIONWIDTH) 
-			arqui(clk_1Hz, reset, startIO, outFlag, outaux);
+			arqui(clock, reset, startIO, outFlag, outaux);
 			
 	assign out = outaux[7:0];
 	
@@ -22,7 +22,7 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 		
 	end
 	
-	always_ff @(posedge clk_1Hz) begin
+	always_ff @(posedge clock) begin
 		if(outaux === 500) begin
 			flag <= 1;
 			endFlag <= 1;

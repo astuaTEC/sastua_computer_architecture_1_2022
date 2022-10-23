@@ -40,7 +40,10 @@ module loadedMem #(parameter WIDTH = 36)
 	always_ff @(posedge clk) begin
 		if (we[0]) RAM1[a[WIDTH-1:0]] <= wd[WIDTH-1:0];
 		if (we[1]) RAM2[a[WIDTH*2-1:WIDTH]] <= wd[WIDTH*2-1:WIDTH];
-		if (we[2]) RAM3[a[WIDTH*3-1:WIDTH*2]] <= wd[WIDTH*3-1:WIDTH*2];
+		if (we[2]) begin
+			RAM3[a[WIDTH*3-1:WIDTH*2]] <= wd[WIDTH*3-1:WIDTH*2];
+			$writememb("mem3.txt", RAM3);
+		end
 		//if (we[3]) RAM4[a[WIDTH*4-1:WIDTH*3]] <= wd[WIDTH*4-1:WIDTH*3];
 	end
 endmodule
