@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/simulation/modelsim
 vio_buf_opdrn
-Z1 !s110 1666376557
+Z1 !s110 1666701800
 !i10b 1
 !s100 VhizJG_UoJ<b<SS=?:bCT2
 I?[C4ZgWNl89XU6^JUo<I73
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1666376557.000000
+Z7 !s108 1666701800.000000
 Z8 !s107 d:/quartus/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|d:/quartus/quartus/eda/sim_lib/sgate.v|
 !i113 1
