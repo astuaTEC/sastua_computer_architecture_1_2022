@@ -86,3 +86,5 @@ outWhile:
     BI          outWhile
 
 outBreak:
+    JALI r0, 500
+    OUT r0
