@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/simulation/modelsim
 vlpm_abs
-Z1 !s110 1665993105
+Z1 !s110 1666701800
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 I>ffbkFfCk2VhTUZSg49VC3
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1665993105.000000
+Z7 !s108 1666701799.000000
 Z8 !s107 d:/quartus/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|d:/quartus/quartus/eda/sim_lib/220model.v|
 !i113 1
