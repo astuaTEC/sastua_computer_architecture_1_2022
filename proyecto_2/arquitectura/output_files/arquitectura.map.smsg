@@ -1,1 +1,1 @@
-Warning (10273): Verilog HDL warning at CPU.sv(13): extended using "x" or "z" File: C:/Users/J_Sol/OneDrive/Desktop/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 13
+Warning (10268): Verilog HDL information at CPU.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 39

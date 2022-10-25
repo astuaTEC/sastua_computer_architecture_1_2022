@@ -16,7 +16,8 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
   (input logic clk, we, startIO,
 	input logic [WIDTH-1:0] a1, a2, wd,
 	output logic [INSTRUCTIONWIDTH-1:0] rd1,
-	output logic [WIDTH-1:0] rd2);
+	output logic [WIDTH-1:0] rd2,
+	output logic  [7:0] chars [99:0]);
 	
 	
 	logic [WIDTH-1:0] startIOExtended;
@@ -42,7 +43,7 @@ module memory #(parameter WIDTH = 32, parameter INSTRUCTIONWIDTH = 24)
 	loadedMem #(WIDTH) loadedMem(	clk,
 											weAux,
 											aAux, wdAux,
-											rdAux);
+											rdAux,chars);
 	
 	always_comb begin
 		rd2 = 0;

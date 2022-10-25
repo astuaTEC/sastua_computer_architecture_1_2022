@@ -3,7 +3,7 @@ module arqui #(parameter WIDTH = 36, parameter REGNUM = 16,
 				parameter INSTRUCTIONWIDTH = 24)
 	(input logic clock, reset, startIO, 
 	output logic outFlagIOE,
-	output logic [WIDTH-1:0] out);
+	output logic [WIDTH-1:0] out, output logic  [7:0] chars [99:0]);
 	
 	logic writeEnableDD, writeDataEnableMD, resultSelectorWBD, data2SelectorED, takeBranchE, outFlagIOD;
 	
@@ -79,7 +79,7 @@ module arqui #(parameter WIDTH = 36, parameter REGNUM = 16,
 	//Memory
 	
 	memory #(WIDTH, INSTRUCTIONWIDTH) Memory(clock, writeDataEnableMM, startIO, PCF, MemoryDataAddress, 
-					MemoryDataToWrite, InstructionF, MemoryDataOutputM);
+					MemoryDataToWrite, InstructionF, MemoryDataOutputM,chars);
 					
 	
 	//**************************************************

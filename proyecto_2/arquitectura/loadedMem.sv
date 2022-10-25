@@ -17,18 +17,21 @@ module loadedMem #(parameter WIDTH = 36)
   (input logic clk,
 	input logic [3:0] we,
 	input logic [WIDTH*3-1:0] a, wd,
-	output logic [WIDTH*3-1:0] rd);
+	output logic [WIDTH*3-1:0] rd, 
+	output logic  [7:0] chars [99:0]);
 	
 	// tamaños
 	logic [24-1:0] RAM1 [1024-1:0]; // instrucciones
 	logic [16-1:0] RAM2 [102-1:0]; // 16 bits
 	logic [8-1:0] RAM3 [100-1:0]; // 8 bits
 	//logic [WIDTH-1:0] RAM4 [750-1:0];
+	logic [8-1:0] RAM4[99:0];
 
 	initial begin
 		$readmemb("mem1.txt", RAM1); //instrucciones
 		$readmemb("mem2.txt", RAM2); //datos precargados
-		$readmemb("mem3.txt", RAM3); //escribir el resultado del algoritmo
+		$readmemb("mem3.txt", RAM3);//escribir el resultado del algoritmo
+		$readmemb("mem3.txt", RAM4);
 		//$readmemb("mem4.txt", RAM4);
 	end
 	
@@ -42,8 +45,10 @@ module loadedMem #(parameter WIDTH = 36)
 		if (we[1]) RAM2[a[WIDTH*2-1:WIDTH]] <= wd[WIDTH*2-1:WIDTH];
 		if (we[2]) begin
 			RAM3[a[WIDTH*3-1:WIDTH*2]] <= wd[WIDTH*3-1:WIDTH*2];
+			RAM4[a[WIDTH*3-1:WIDTH*2]] <= wd[WIDTH*3-1:WIDTH*2];
 			$writememb("mem3.txt", RAM3);
 		end
 		//if (we[3]) RAM4[a[WIDTH*4-1:WIDTH*3]] <= wd[WIDTH*4-1:WIDTH*3];
 	end
+	assign chars = RAM4[99:0];
 endmodule

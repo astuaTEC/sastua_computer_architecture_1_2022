@@ -8,12 +8,18 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 	//logic clk_1Hz;
 	logic [WIDTH-1:0] outaux;
 	logic flag = 0;
+	logic  [7:0] chars [99:0];
+	logic  [7:0] chars_indi;
+	reg[4:0] con = 0;
+	reg[8:0] pos = 0;
+	
 	
 	divisorFrecuencia	divisorFrecuencia(clock, clk_1Hz); //la señal de 50Mhz se pasa a 1Hz
 
 	arqui #(WIDTH, REGNUM, ADDRESSWIDTH, OPCODEWIDTH, INSTRUCTIONWIDTH) 
-			arqui(clock, reset, startIO, outFlag, outaux);
+			arqui(clock, reset, startIO, outFlag, outaux,chars);
 			
+	
 	assign out = outaux[7:0];
 	
 	initial begin 
@@ -29,5 +35,24 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 		end
 		else if(flag === 0) endFlag <= 0;
 	end
+	
+	always_ff @(posedge clock) begin
+		if(endFlag == 1) begin
+			if(con == 5) begin
+				if(pos == 99) begin
+					//NADA
+				end
+				else begin
+					chars_indi <=chars[pos];
+					pos=pos+1;
+					con=0;
+				end
+			end
+			else con=con +1;
+		end
+		
+	end
+	
+	
 	
 endmodule 
