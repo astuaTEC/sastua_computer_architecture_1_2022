@@ -1,6 +1,3 @@
-// memory data file (do not edit the following line - required for mem load use)
-// instance=/CPU_tb/cpu/arqui/Memory/loadedMem/RAM3
-// format=bin addressradix=h dataradix=b version=1.0 wordsperline=1 noaddress
 01000100
 01100101
 01110011

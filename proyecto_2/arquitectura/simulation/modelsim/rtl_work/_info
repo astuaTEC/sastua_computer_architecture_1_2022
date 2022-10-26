@@ -7,53 +7,53 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/simulation/modelsim
+Z0 dC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1666684275
+Z2 !s110 1666755273
 !i10b 1
 !s100 =HH;;c_mGUL:`l_2zhD5V1
-I8>Z;l3Caj`8I4hm`el0fm2
+IJeZZ_EbLf_z:i?5AA45l]3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 adder_sv_unit
 S1
 R0
-Z4 w1666679306
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv
+Z4 w1666773016
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv
 L0 5
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1666684275.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv|
+Z6 !s108 1666755273.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura}
+Z8 !s92 -sv -work work {+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura}
 Z9 tCvgOpt 0
 vALU
 R1
-Z10 !s110 1666684274
+R2
 !i10b 1
 !s100 JmEb?U[V4jQ6H1^A6CEFD3
-I=Z8z8NYLH=a6G@jMDZbMF0
+I8doR;CQSQ?JK`;:3M=z1R0
 R3
 !s105 ALU_sv_unit
 S1
 R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv
 L0 14
 R5
 r1
 !s85 0
 31
-Z11 !s108 1666684274.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv|
+!s108 1666755272.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv|
 !i113 1
 R7
 R8
@@ -61,25 +61,25 @@ R9
 n@a@l@u
 varqui
 R1
-Z12 !s110 1666684276
+Z10 !s110 1666755274
 !i10b 1
 !s100 <H[`Km4l`AEN?K14Em[211
-IU38KY]n_QVc=3_WObkVR^2
+IYk31OiHV3OgUzS^]QU=zN0
 R3
 !s105 arqui_sv_unit
 S1
 R0
-w1666682632
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv
+R4
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv
 L0 1
 R5
 r1
 !s85 0
 31
-Z13 !s108 1666684276.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv|
+Z11 !s108 1666755274.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv|
 !i113 1
 R7
 R8
@@ -89,22 +89,22 @@ R1
 R2
 !i10b 1
 !s100 clad_b>HDY?z<[8<38@Oj3
-IEn_e[]oge8VO=NK0<m4zQ2
+I[f=iQ8]Yia[hOQ7CJ4]6S0
 R3
 !s105 conditional_sv_unit
 S1
 R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv
 L0 2
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv|
 !i113 1
 R7
 R8
@@ -114,149 +114,123 @@ R1
 R2
 !i10b 1
 !s100 ^L64X0k[Zk<gE5nEa7fRi1
-I9;3^gk@39WUAF[l2OBfm[3
+II7KQ1Z`SF[PZ<Q?NUYKhm1
 R3
 !s105 control_sv_unit
 S1
 R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv
 L0 2
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv|
 !i113 1
 R7
 R8
 R9
 vcontroller
 R1
-R2
+R10
 !i10b 1
 !s100 90aM?NA7DMP3C:>PXA^:I0
-ILYUI=7^XBokd2A2@kaclM1
+Ib?3dCMU4JjODL8<<fDH3d1
 R3
 !s105 controller_sv_unit
 S1
 R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv
 L0 3
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv|
 !i113 1
 R7
 R8
 R9
 vCPU
 R1
-R12
+Z12 !s110 1666755275
 !i10b 1
-!s100 >FeRN<RJ@YG@KXdCZ7PnT3
-I8N<KQ_oiojR?b3d2MWTL]1
+!s100 W70hYYPkcMmaaAjlcNnQh1
+I6`P@hh9>;3]9aJNCC>8X<1
 R3
 !s105 CPU_sv_unit
 S1
 R0
-w1666684131
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv
+w1666753661
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv
 L0 2
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv|
+Z13 !s108 1666755275.000000
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv|
 !i113 1
 R7
 R8
 R9
 n@c@p@u
-vCPU_tb
-R1
-Z14 !s110 1666684277
-!i10b 1
-!s100 gDKlY8`h`nHZ]FT?UCW>Q1
-I4JlXhjFeP=YeK7`ZoCJPA0
-R3
-!s105 CPU_tb_sv_unit
-S1
-R0
-R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv
-L0 3
-R5
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv|
-!i113 1
-R7
-R8
-R9
-n@c@p@u_tb
 vdecode
 R1
-R2
+R10
 !i10b 1
 !s100 R[>MAQ=mHCOFbeS=@P5HT2
-I>NhXTX^>Ok[5ENze:;M]c0
+I<Z35?NF`LSQjnWJg_`6CT0
 R3
 !s105 decode_sv_unit
 S1
 R0
-Z15 w1666679308
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv
+Z14 w1666773017
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv|
+R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv|
 !i113 1
 R7
 R8
 R9
 vdivisorFrecuencia
 R1
-R14
+R12
 !i10b 1
-!s100 A^O_Q=6Mdz:5PL[M4ImYI1
-IQ=]7W60R4nRVz4<OE9cQU3
+!s100 6IZ=ZDMgf@V`hn?PbG[l53
+IQFld3B1zlBKJ>TObzn?5P2
 R3
 !s105 divisorFrecuencia_sv_unit
 S1
 R0
-R15
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv
+w1666755209
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv
 L0 1
 R5
 r1
 !s85 0
 31
-Z16 !s108 1666684277.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv|
+R13
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv|
 !i113 1
 R7
 R8
@@ -264,100 +238,100 @@ R9
 ndivisor@frecuencia
 vexecute
 R1
-R12
+R10
 !i10b 1
 !s100 jR:JkYOFg]CPC_]I?5ad=3
-IjeBeS[27TTJ0?lZb>2[BP0
+I29AaSfDo@2^C9P:zif5=L1
 R3
 !s105 execute_sv_unit
 S1
 R0
-R15
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv
 L0 3
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv|
+R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv|
 !i113 1
 R7
 R8
 R9
 vfetch
 R1
-R12
+R10
 !i10b 1
 !s100 9g=g8:@>A2eEMY>:h@1=93
-I_Xh:]cNODJY45zGPRYM`=0
+I]KzTO7@6AF]Y`J5h09Qab2
 R3
 !s105 fetch_sv_unit
 S1
 R0
-R15
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv|
+R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv|
 !i113 1
 R7
 R8
 R9
 vflopenrc
 R1
-R12
+R10
 !i10b 1
 !s100 kP@[HJH[SMhA8OK74nWkn0
-Ic7RHcC07R_JAk6bbG<_Yi3
+IK<7ENz@J^Wdm^ED^E=m:e2
 R3
 !s105 flopenrc_sv_unit
 S1
 R0
-R15
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv
 L0 2
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv|
+R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv|
 !i113 1
 R7
 R8
 R9
 vhazardUnit
 R1
-R12
+R10
 !i10b 1
 !s100 25Ae1mhnb]o6ne[GJW9mz1
-IJhO6EJ<?7;>iFTL4Of:KL1
+I:L]1oAOnlPYTA1g]4gJPb3
 R3
 !s105 hazardUnit_sv_unit
 S1
 R0
-R15
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv
 L0 3
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv|
+R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv|
 !i113 1
 R7
 R8
@@ -365,25 +339,25 @@ R9
 nhazard@unit
 vloadedMem
 R1
-R14
+R12
 !i10b 1
 !s100 BCGTB9l1H4iOM^CWZ7[Wi3
-IY?Rf;AOOh@zXhmC`4O@n90
+Ik5V3?]cKihf9QJJiXDJ280
 R3
 !s105 loadedMem_sv_unit
 S1
 R0
-w1666682479
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv
 L0 16
 R5
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv|
+R13
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv|
 !i113 1
 R7
 R8
@@ -391,50 +365,50 @@ R9
 nloaded@mem
 vmemory
 R1
-R12
+R10
 !i10b 1
 !s100 V@0Y3icHVdfLj3N1EX[H60
-Ig35X<d;V=IfJIO`fkzIGb1
+I3;?HH2>T41TRUFkD7XJYc3
 R3
 !s105 memory_sv_unit
 S1
 R0
-w1666682597
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv
 L0 15
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv|
+R11
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv|
 !i113 1
 R7
 R8
 R9
 vMux_2_to_1
 R1
-R10
+R2
 !i10b 1
 !s100 1R<cX3a2WM9T_39g7DXBP3
-I=UfObPI5CXjEDRS3Jf^Uh0
+Ik8^VB:OL[gK0Se6EGi_]g2
 R3
 !s105 Mux_2_to_1_sv_unit
 S1
 R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv
 L0 5
 R5
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv|
+R6
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv|
 !i113 1
 R7
 R8
@@ -445,22 +419,22 @@ R1
 R2
 !i10b 1
 !s100 ]h1g7eE_C9fDfaYkjmibi2
-I=oTzZWL@S6CKO<_5dRz<>2
+I8PjIM9=;FRgi[S9PV>BQC2
 R3
 !s105 Mux_3_to_1_sv_unit
 S1
 R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv
 L0 5
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv|
 !i113 1
 R7
 R8
@@ -471,22 +445,22 @@ R1
 R2
 !i10b 1
 !s100 chP8n^]dO;[PZYcCdA^283
-I594DJ:CVWa7oU_g9ce4E91
+I6l5CC?fllHizl42l3=9eY2
 R3
 !s105 regfile_sv_unit
 S1
 R0
-R15
-8C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv
-FC:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv
+R14
+8C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv
+FC:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv
 L0 5
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv|
+!s107 C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura|C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv|
 !i113 1
 R7
 R8

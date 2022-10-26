@@ -3,7 +3,7 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 				parameter ADDRESSWIDTH = 4, parameter OPCODEWIDTH = 4, 
 				parameter INSTRUCTIONWIDTH = 24)
 				(input logic clock, reset, startIO, 
-				output logic outFlag, endFlag, clk_1Hz,
+				output logic outFlag, endFlag, clk_1Hz, testFlag,
 				output logic [7:0] out);
 	//logic clk_1Hz;
 	logic [WIDTH-1:0] outaux;
@@ -20,7 +20,7 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 			arqui(clock, reset, startIO, outFlag, outaux,chars);
 			
 	
-	assign out = outaux[7:0];
+	assign out = chars_indi;
 	
 	initial begin 
 		
@@ -36,17 +36,22 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 		else if(flag === 0) endFlag <= 0;
 	end
 	
-	always_ff @(posedge clock) begin
+	always_ff @(posedge clk_1Hz) begin
 		if(endFlag == 1) begin
 			if(con == 5) begin
-				if(pos == 99) begin
+				if(pos == 101) begin
 					//NADA
 				end
 				else begin
 					chars_indi <=chars[pos];
 					pos=pos+1;
-					con=0;
+					testFlag=0;
+					con=con +1;
 				end
+			end
+			else if(con == 10) begin
+				testFlag=1;
+				con=0;
 			end
 			else con=con +1;
 		end

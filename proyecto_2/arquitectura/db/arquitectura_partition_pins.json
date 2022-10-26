@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "testFlag",
+					"strict" : false
+				},
+				{
 					"name" : "out[0]",
 					"strict" : false
 				},

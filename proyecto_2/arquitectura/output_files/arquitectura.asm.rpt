@@ -1,5 +1,5 @@
 Assembler report for arquitectura
-Tue Oct 25 00:53:51 2022
+Tue Oct 25 23:05:01 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/output_files/arquitectura.sof
+  5. Assembler Device Options: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/output_files/arquitectura.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 25 00:53:51 2022 ;
+; Assembler Status      ; Successful - Tue Oct 25 23:05:01 2022 ;
 ; Revision Name         ; arquitectura                          ;
 ; Top-level Entity Name ; CPU                                   ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/output_files/arquitectura.sof ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/output_files/arquitectura.sof ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/MartinPC/Documents/Semestre 2 - 2022/ARQUI/sdasdsa/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/output_files/arquitectura.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                                        ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x011245F4                                                                                                                                                     ;
-; Checksum       ; 0x011245F4                                                                                                                                                     ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/output_files/arquitectura.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                               ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x011D19CA                                                                                                                                                            ;
+; Checksum       ; 0x011D19CA                                                                                                                                                            ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Oct 25 00:53:27 2022
+    Info: Processing started: Tue Oct 25 23:04:55 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off arquitectura -c arquitectura
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4900 megabytes
-    Info: Processing ended: Tue Oct 25 00:53:51 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4917 megabytes
+    Info: Processing ended: Tue Oct 25 23:05:01 2022
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
