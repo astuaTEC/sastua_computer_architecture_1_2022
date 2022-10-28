@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at CPU.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Users/Admin/Desktop/Semestre 2 2022/Arqui 1/Proyectos/Proyecto2/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 39
+Warning (10268): Verilog HDL information at CPU.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv Line: 39

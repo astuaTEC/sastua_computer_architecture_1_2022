@@ -21,7 +21,7 @@ def formatNumIfBinary(list):
     return newList
 
 def writeFile(list):
-    formatList = formatNumIfBinary(list)
+    formatList = formatNumIfDecimal(list)
     file = open("mem2.txt", "w")
     # Writing data to a file
     for e in formatList:
@@ -31,5 +31,5 @@ def writeFile(list):
     file.close()
 
 if __name__ == "__main__":
-    myList = readFile("textoEncriptadoProfe2.txt")
+    myList = readFile("textoEncriptadoProfe.txt")
     writeFile(myList)

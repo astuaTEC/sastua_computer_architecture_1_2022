@@ -47,9 +47,9 @@ def decrypt(encryptedtList, d, n):
     return newList
 
 if __name__ == "__main__":
-    e = 2831
-    d = 1631
-    n = 5963
+    e = 4399
+    d = 439
+    n = 4757
     # Reads the input file
     string = readFile("textoEntrada.txt")
     # Convert to ascii array

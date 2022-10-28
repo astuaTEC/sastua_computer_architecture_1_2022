@@ -52,7 +52,7 @@ void loop() {
   bit0Val = digitalRead(bit0);
   
   if(outFlagValor == 1 && flag == 0){
-    Serial.println(contador);
+    //Serial.println(contador);
     flag = 1;
     bitWrite(Byte, 0, bit0Val);
     bitWrite(Byte, 1, bit1Val);
@@ -62,8 +62,7 @@ void loop() {
     bitWrite(Byte, 5, bit5Val);
     bitWrite(Byte, 6, bit6Val);
     bitWrite(Byte, 7, bit7Val);
-    Serial.print(contador);
-    Serial.println(char(Byte));
+    Serial.print(char(Byte));
     
     contador++;
   } else if (outFlagValor == 0){
