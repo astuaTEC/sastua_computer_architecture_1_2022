@@ -1,0 +1,278 @@
+# Reading pref.tcl
+# do arquitectura_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:47 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 11:32:47 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:47 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_2_to_1.sv 
+# -- Compiling module Mux_2_to_1
+# 
+# Top level modules:
+# 	Mux_2_to_1
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/Mux_3_to_1.sv 
+# -- Compiling module Mux_3_to_1
+# 
+# Top level modules:
+# 	Mux_3_to_1
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/conditional.sv 
+# -- Compiling module conditional
+# 
+# Top level modules:
+# 	conditional
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 11:32:48 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:48 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/decode.sv 
+# -- Compiling module decode
+# 
+# Top level modules:
+# 	decode
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/fetch.sv 
+# -- Compiling module fetch
+# 
+# Top level modules:
+# 	fetch
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/flopenrc.sv 
+# -- Compiling module flopenrc
+# 
+# Top level modules:
+# 	flopenrc
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/execute.sv 
+# -- Compiling module execute
+# 
+# Top level modules:
+# 	execute
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/arqui.sv 
+# -- Compiling module arqui
+# 
+# Top level modules:
+# 	arqui
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/hazardUnit.sv 
+# -- Compiling module hazardUnit
+# 
+# Top level modules:
+# 	hazardUnit
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU.sv 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 11:32:49 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:49 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/CPU_tb.sv 
+# -- Compiling module CPU_tb
+# 
+# Top level modules:
+# 	CPU_tb
+# End time: 11:32:50 on Oct 27,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:50 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/divisorFrecuencia.sv 
+# -- Compiling module divisorFrecuencia
+# 
+# Top level modules:
+# 	divisorFrecuencia
+# End time: 11:32:50 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura {C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:50 on Oct 27,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura" C:/Users/samas/Desktop/TEC/IIS-2022/Arqui-I/Repo/sastua_computer_architecture_1_2022/proyecto_2/arquitectura/loadedMem.sv 
+# -- Compiling module loadedMem
+# 
+# Top level modules:
+# 	loadedMem
+# End time: 11:32:50 on Oct 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Start time: 11:32:58 on Oct 27,2022
+# Loading sv_std.std
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.divisorFrecuencia
+# Loading work.arqui
+# Loading work.controller
+# Loading work.control
+# Loading work.conditional
+# Loading work.hazardUnit
+# Loading work.memory
+# Loading work.loadedMem
+# Loading work.fetch
+# Loading work.flopenrc
+# Loading work.Mux_2_to_1
+# Loading work.adder
+# Loading work.decode
+# Loading work.regfile
+# Loading work.execute
+# Loading work.Mux_3_to_1
+# Loading work.ALU
+add wave sim:/CPU_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samas  Hostname: DESKTOP-5O6VH3K  ProcessID: 21328
+#           Attempting to use alternate WLF file "./wlftqrfaia".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqrfaia
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:35:49 on Oct 27,2022, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 2
