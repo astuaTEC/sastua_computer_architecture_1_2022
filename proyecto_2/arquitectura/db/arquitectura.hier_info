@@ -1,4 +1,7 @@
-|CPU
+|CPU_tb
+
+
+|CPU_tb|CPU:cpu
 clock => clock.IN1
 reset => arqui:arqui.reset
 startIO => arqui:arqui.startIO
@@ -16,7 +19,7 @@ out[6] <= chars_indi[6].DB_MAX_OUTPUT_PORT_TYPE
 out[7] <= chars_indi[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|divisorFrecuencia:divisorFrecuencia
+|CPU_tb|CPU:cpu|divisorFrecuencia:divisorFrecuencia
 C_50Mhz => C_1Hz~reg0.CLK
 C_50Mhz => contador[0].CLK
 C_50Mhz => contador[1].CLK
@@ -46,7 +49,7 @@ C_50Mhz => contador[24].CLK
 C_1Hz <= C_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui
+|CPU_tb|CPU:cpu|arqui:arqui
 clock => clock.IN6
 reset => reset.IN4
 startIO => memory:Memory.startIO
@@ -889,7 +892,7 @@ chars[99][6] <= memory:Memory.chars[99][6]
 chars[99][7] <= memory:Memory.chars[99][7]
 
 
-|CPU|arqui:arqui|controller:Controller
+|CPU_tb|CPU:cpu|arqui:arqui|controller:Controller
 writeEnableDD <= control:controlunit.port0
 writeDataEnableMD <= control:controlunit.port1
 resultSelectorWBD <= control:controlunit.port2
@@ -913,7 +916,7 @@ VE2 => VE2.IN1
 CE2 => CE2.IN1
 
 
-|CPU|arqui:arqui|controller:Controller|control:controlunit
+|CPU_tb|CPU:cpu|arqui:arqui|controller:Controller|control:controlunit
 writeEnableDD <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 writeDataEnableMD <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 resultSelectorWBD <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
@@ -928,7 +931,7 @@ opcodeD[2] => Decoder0.IN1
 opcodeD[3] => Decoder0.IN0
 
 
-|CPU|arqui:arqui|controller:Controller|conditional:condunit
+|CPU_tb|CPU:cpu|arqui:arqui|controller:Controller|conditional:condunit
 takeBranchE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 opcodeE[0] => Mux0.IN18
 opcodeE[1] => Mux0.IN17
@@ -940,7 +943,7 @@ V => takeBranchE.IN1
 C => ~NO_FANOUT~
 
 
-|CPU|arqui:arqui|hazardUnit:HazardUnit
+|CPU_tb|CPU:cpu|arqui:arqui|hazardUnit:HazardUnit
 writeEnableDWB => data1ForwardSelectorE.OUTPUTSELECT
 writeEnableDWB => data2ForwardSelectorE.OUTPUTSELECT
 writeEnableDM => data1ForwardSelectorE.OUTPUTSELECT
@@ -1008,7 +1011,7 @@ flushE <= flushE.DB_MAX_OUTPUT_PORT_TYPE
 flushD <= takeBranchE.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|memory:Memory
+|CPU_tb|CPU:cpu|arqui:arqui|memory:Memory
 clk => loadedMem:loadedMem.clk
 we => weAux[2].OUTPUTSELECT
 we => weAux[1].OUTPUTSELECT
@@ -2235,7 +2238,7 @@ chars[99][6] <= loadedMem:loadedMem.chars[99][6]
 chars[99][7] <= loadedMem:loadedMem.chars[99][7]
 
 
-|CPU|arqui:arqui|memory:Memory|loadedMem:loadedMem
+|CPU_tb|CPU:cpu|arqui:arqui|memory:Memory|loadedMem:loadedMem
 clk => RAM1.we_a.CLK
 clk => RAM1.waddr_a[9].CLK
 clk => RAM1.waddr_a[8].CLK
@@ -5950,7 +5953,7 @@ chars[99][6] <= RAM3[99][6].DB_MAX_OUTPUT_PORT_TYPE
 chars[99][7] <= RAM3[99][7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|fetch:Fetch
+|CPU_tb|CPU:cpu|arqui:arqui|fetch:Fetch
 NewPC[0] => NewPC[0].IN1
 NewPC[1] => NewPC[1].IN1
 NewPC[2] => NewPC[2].IN1
@@ -6065,7 +6068,7 @@ PCPlus1[34] <= PCPlus1[34].DB_MAX_OUTPUT_PORT_TYPE
 PCPlus1[35] <= PCPlus1[35].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|fetch:Fetch|flopenrc:pcreg
+|CPU_tb|CPU:cpu|arqui:arqui|fetch:Fetch|flopenrc:pcreg
 clk => out[0].CLK
 clk => out[1].CLK
 clk => out[2].CLK
@@ -6248,7 +6251,7 @@ q[34] <= out[34].DB_MAX_OUTPUT_PORT_TYPE
 q[35] <= out[35].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff
+|CPU_tb|CPU:cpu|arqui:arqui|fetch:Fetch|Mux_2_to_1:pcff
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -6395,7 +6398,7 @@ C[34] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[35] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|fetch:Fetch|adder:pcadd
+|CPU_tb|CPU:cpu|arqui:arqui|fetch:Fetch|adder:pcadd
 a[0] => Add0.IN36
 a[1] => Add0.IN35
 a[2] => Add0.IN34
@@ -6506,7 +6509,7 @@ y[34] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 y[35] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|flopenrc:FetchFlipFlop
+|CPU_tb|CPU:cpu|arqui:arqui|flopenrc:FetchFlipFlop
 clk => out[0].CLK
 clk => out[1].CLK
 clk => out[2].CLK
@@ -6629,7 +6632,7 @@ q[22] <= out[22].DB_MAX_OUTPUT_PORT_TYPE
 q[23] <= out[23].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|decode:Decode
+|CPU_tb|CPU:cpu|arqui:arqui|decode:Decode
 writeA[0] => writeA[0].IN1
 writeA[1] => writeA[1].IN1
 writeA[2] => writeA[2].IN1
@@ -6859,7 +6862,7 @@ opcode[2] <= instruction[22].DB_MAX_OUTPUT_PORT_TYPE
 opcode[3] <= instruction[23].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|decode:Decode|regfile:registerFile
+|CPU_tb|CPU:cpu|arqui:arqui|decode:Decode|regfile:registerFile
 clk => rf.we_a.CLK
 clk => rf.waddr_a[3].CLK
 clk => rf.waddr_a[2].CLK
@@ -7146,7 +7149,7 @@ rd2[34] <= rd2.DB_MAX_OUTPUT_PORT_TYPE
 rd2[35] <= rd2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|flopenrc:DecodeFlipFlop
+|CPU_tb|CPU:cpu|arqui:arqui|flopenrc:DecodeFlipFlop
 clk => out[0].CLK
 clk => out[1].CLK
 clk => out[2].CLK
@@ -7829,7 +7832,7 @@ q[134] <= out[134].DB_MAX_OUTPUT_PORT_TYPE
 q[135] <= out[135].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|execute:Execute
+|CPU_tb|CPU:cpu|arqui:arqui|execute:Execute
 data1[0] => data1[0].IN1
 data1[1] => data1[1].IN1
 data1[2] => data1[2].IN1
@@ -8096,7 +8099,7 @@ ALUFlagsE[2] <= ALU:ALU.port4
 ALUFlagsE[3] <= ALU:ALU.port4
 
 
-|CPU|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX
+|CPU_tb|CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data1ForwardMUX
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -8315,7 +8318,7 @@ y[34] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[35] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX
+|CPU_tb|CPU:cpu|arqui:arqui|execute:Execute|Mux_3_to_1:data2ForwardMUX
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -8534,7 +8537,7 @@ y[34] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[35] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX
+|CPU_tb|CPU:cpu|arqui:arqui|execute:Execute|Mux_2_to_1:data2MUX
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -8681,7 +8684,7 @@ C[34] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[35] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|execute:Execute|ALU:ALU
+|CPU_tb|CPU:cpu|arqui:arqui|execute:Execute|ALU:ALU
 a[0] => Add0.IN36
 a[0] => ares[0].DATAB
 a[0] => Mod0.IN35
@@ -9250,7 +9253,7 @@ flags[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 flags[3] <= res.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|flopenrc:ExecuteFlipFlop
+|CPU_tb|CPU:cpu|arqui:arqui|flopenrc:ExecuteFlipFlop
 clk => out[0].CLK
 clk => out[1].CLK
 clk => out[2].CLK
@@ -9648,7 +9651,7 @@ q[77] <= out[77].DB_MAX_OUTPUT_PORT_TYPE
 q[78] <= out[78].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|flopenrc:MemoryFlipFlop
+|CPU_tb|CPU:cpu|arqui:arqui|flopenrc:MemoryFlipFlop
 clk => out[0].CLK
 clk => out[1].CLK
 clk => out[2].CLK
@@ -10041,7 +10044,7 @@ q[76] <= out[76].DB_MAX_OUTPUT_PORT_TYPE
 q[77] <= out[77].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arqui:arqui|Mux_2_to_1:writeBack
+|CPU_tb|CPU:cpu|arqui:arqui|Mux_2_to_1:writeBack
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT

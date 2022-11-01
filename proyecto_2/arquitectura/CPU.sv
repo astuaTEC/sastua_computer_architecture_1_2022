@@ -36,7 +36,7 @@ module CPU #(parameter WIDTH = 36, parameter REGNUM = 16,
 		else if(flag === 0) endFlag <= 0;
 	end
 	
-	always_ff @(posedge clk_1Hz) begin
+	always_ff @(posedge clock) begin
 		if(endFlag == 1) begin
 			if(con == 5) begin
 				if(pos == 101) begin
