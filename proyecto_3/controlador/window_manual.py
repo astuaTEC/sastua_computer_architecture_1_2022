@@ -1,5 +1,8 @@
 from tkinter import *
 import tkinter
+from arduino_connection import enviar
+
+modo= "Manual"
 
 def manualWindow(window): 
       
@@ -25,11 +28,20 @@ def manualWindow(window):
     cerrar_button = PhotoImage(file="resources/cerrar.png")
 
     #Botones
-    button_adelat = Button(manualWind, image=adelant_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black').place(x=187, y=193)
-    button_atras = Button(manualWind, image=atras_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black').place(x=210, y=396)
-    button_izq = Button(manualWind, image=izq_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black').place(x=38, y=296)
-    button_derec = Button(manualWind, image=derec_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black').place(x=346, y=296)
-    button_cer = Button(manualWind, image=cerrar_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black',command=lambda:close(window,manualWind)).place(x=449, y=471)
+    button_adelat = Button(manualWind, image=adelant_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black', command=lambda:adelante())
+    button_adelat.place(x=187, y=193)
+
+    button_atras = Button(manualWind, image=atras_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black', command=lambda:atras())
+    button_atras.place(x=210, y=396)
+    
+    button_izq = Button(manualWind, image=izq_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black', command=lambda:izquierda())
+    button_izq.place(x=38, y=296)
+    
+    button_derec = Button(manualWind, image=derec_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black', command=lambda:derecha())
+    button_derec.place(x=346, y=296)
+    
+    button_cer = Button(manualWind, image=cerrar_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black', command=lambda:close(window,manualWind))
+    button_cer.place(x=449, y=471)
 
 
     manualWind.mainloop()
@@ -37,3 +49,16 @@ def manualWindow(window):
 def close(window, manuWind):
         manuWind.destroy()
         window.deiconify()
+        enviar(modo, "C")
+
+def adelante(): 
+    enviar(modo, "A")
+
+def atras():
+    enviar(modo, "B")
+
+def izquierda(): 
+    enviar(modo, "I")
+
+def derecha():
+    enviar(modo, "D")
