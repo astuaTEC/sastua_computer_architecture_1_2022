@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import*
 import tkinter
 from arduino_connection import enviar
 

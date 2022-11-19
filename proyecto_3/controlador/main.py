@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter
 from window_auto import autoWindow
 from window_manual import manualWindow
-
+from arduino_connection import enviar
 
 
 
@@ -24,8 +24,18 @@ auto_button= PhotoImage(file="resources/automatico.png")
 bd_f = Label(window1, image = bd_img).place(x=0,y=0)
 
 #Botones
-button_m = Button(window1, image=manual_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black',command=lambda:manualWindow(window1)).place(x=190, y=330)
-button_a = Button(window1,  highlightbackground = "black", highlightthickness = 2, bd=0, image=auto_button, bg='black',command=lambda:autoWindow(window1)).place(x=164, y=390)
+button_m = Button(window1, image=manual_button,  highlightbackground = "black", highlightthickness = 2, bd=0, bg='black',command=lambda:mWindow(window1)).place(x=190, y=330)
+button_a = Button(window1,  highlightbackground = "black", highlightthickness = 2, bd=0, image=auto_button, bg='black',command=lambda:aWindow(window1)).place(x=164, y=390)
 
 
 window1.mainloop()
+
+
+
+def mWindow(window):
+    enviar("Manual", "1")
+    manualWindow(window)
+
+def aWindow(window):
+    enviar("Automatico","2")
+    autoWindow(window)

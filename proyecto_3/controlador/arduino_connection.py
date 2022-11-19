@@ -2,9 +2,11 @@ import serial
 
 def enviar(modo,letra):
     try:
-        ser = serial.Serial("com3",9600)
+        ser = serial.Serial("com12",9600)
         if(modo == "Manual"):
-            if(letra == "A"):
+            if(letra == "1"):
+                ser.write(b'1')
+            elif(letra == "A"):
                 ser.write(b'A')
             elif(letra == "B"):
                 ser.write(b'B')
@@ -13,7 +15,9 @@ def enviar(modo,letra):
             elif(letra == "D"):
                 ser.write(b'D')
         elif(modo == "Automatico"):
-            if(letra == "S"):
+            if(letra == "2"):
+                ser.write(b'2')
+            elif(letra == "S"):
                 ser.write(b'S')
             elif(letra == "E"):
                 ser.write(b'E')
