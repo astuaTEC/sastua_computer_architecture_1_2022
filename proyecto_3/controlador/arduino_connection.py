@@ -2,7 +2,7 @@ import serial
 
 def enviar(modo,letra):
     try:
-        ser = serial.Serial("com12",9600)
+        ser = serial.Serial("com12",9600, timeout=1)
         if(modo == "Manual"):
             if(letra == "1"):
                 ser.write(b'1')

@@ -5,6 +5,13 @@ from window_manual import manualWindow
 from arduino_connection import enviar
 
 
+def mWindow(window):
+    #enviar("Manual", "1")
+    manualWindow(window)
+
+def aWindow(window):
+    #enviar("Automatico","2")
+    autoWindow(window)
 
 window1 = Tk() 
 window1.title("TA-Limpio Controller")
@@ -31,11 +38,3 @@ button_a = Button(window1,  highlightbackground = "black", highlightthickness = 
 window1.mainloop()
 
 
-
-def mWindow(window):
-    enviar("Manual", "1")
-    manualWindow(window)
-
-def aWindow(window):
-    enviar("Automatico","2")
-    autoWindow(window)
