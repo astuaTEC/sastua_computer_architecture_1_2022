@@ -6,11 +6,11 @@ from arduino_connection import enviar
 
 
 def mWindow(window):
-    #enviar("Manual", "1")
+    enviar("Manual", "1")
     manualWindow(window)
 
 def aWindow(window):
-    #enviar("Automatico","2")
+    enviar("Automatico","2")
     autoWindow(window)
 
 window1 = Tk() 
