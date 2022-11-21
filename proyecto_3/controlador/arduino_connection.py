@@ -2,7 +2,7 @@ import serial
 
 def enviar(modo,letra):
     try:
-        ser = serial.Serial("com12",9600, timeout=1)
+        ser = serial.Serial("com15",9600, timeout=1)
         if(modo == "Manual"):
             if(letra == "1"):
                 ser.write(b'1')
@@ -22,6 +22,7 @@ def enviar(modo,letra):
             elif(letra == "E"):
                 ser.write(b'E')
         if(letra == "C"):
+            ser.write(b'S')
             ser.close()
 
 

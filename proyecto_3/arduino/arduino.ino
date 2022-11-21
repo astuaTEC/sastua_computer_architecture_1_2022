@@ -45,6 +45,7 @@ void loop()
   char receive = (char)HC06.read();
   int valorHumedad = map(analogRead(sensor), 0, 1023, 100, 0);
 
+  //Serial.println(valorHumedad);
   if(valorHumedad > 0){
      detener = true;
      apagarMotores();
@@ -116,37 +117,36 @@ void Automatico() {
 
   t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso
   d = t / 59;           //escalamos el tiempo a una distancia en cm
+  Serial.print(d);
 
   delay(100);          //Hacemos una pausa de 100ms
-  if (d < 30) {
+  if (d < 50) {
     randomNumber = random(1, 3);
     if (randomNumber == 1 && auxDirection == 0) {
       auxDirection = 1;
       girarDerecha();
-      delay(200);
+      delay(500);
     } else if (randomNumber == 2 && auxDirection == 0) {
       auxDirection = 2;
       girarIzquierda();
-      delay(200);
+      delay(500);
     }
     digitalWrite(motorLimpieza, LOW);
   }
   else {
     encenderMotores();
-    digitalWrite(motorLimpieza, HIGH);
     auxDirection = 0;
   }
 }
 
 void Manual() {
-  analogWrite(enA, 150);
-  analogWrite(enB, 150);
+  analogWrite(enA, 125);
+  analogWrite(enB, 125);
   if (dir == 'I') {
     digitalWrite(motorLimpieza, LOW);
     girarIzquierda();
   }
   else if (dir == 'B') {
-    digitalWrite(motorLimpieza, LOW);
     moverAtras();
   }
   else if (dir == 'D') {
@@ -154,7 +154,6 @@ void Manual() {
     girarDerecha();
   }
   else if (dir == 'A') {
-    digitalWrite(motorLimpieza, HIGH);
     moverAdelante();
   }
   delay(100); 
@@ -179,6 +178,8 @@ void moverAtras() {
   digitalWrite(in2, LOW);
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
+
+  digitalWrite(motorLimpieza, HIGH);
 }
 
 void moverAdelante() {
@@ -186,6 +187,8 @@ void moverAdelante() {
   digitalWrite(in2, HIGH);
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
+
+  digitalWrite(motorLimpieza, HIGH);
 }
 
 void encenderMotores() {
@@ -193,6 +196,8 @@ void encenderMotores() {
   digitalWrite(in2, HIGH);
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
+
+  digitalWrite(motorLimpieza, HIGH);
 }
 
 void apagarMotores() {
@@ -200,4 +205,6 @@ void apagarMotores() {
   digitalWrite(in2, LOW);
   digitalWrite(in3, LOW);
   digitalWrite(in4, LOW);
+
+  digitalWrite(motorLimpieza, LOW);
 }
